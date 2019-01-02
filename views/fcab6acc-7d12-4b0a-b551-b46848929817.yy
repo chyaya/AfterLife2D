@@ -1,0 +1,14 @@
+{
+    "id": "fcab6acc-7d12-4b0a-b551-b46848929817",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "fcab6acc-7d12-4b0a-b551-b46848929817",
+    "children": [
+        "83be301e-787f-4ff6-ac0c-2f57c09f782a",
+        "b79b863d-e996-4471-98bb-f7a10c9c4d6d"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "man",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

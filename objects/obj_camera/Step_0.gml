@@ -1,10 +1,16 @@
 x += (xTo - x)/25;
 y += (yTo - y)/25;
 
+follow = obj_player_controller.player_object_inst_id;
+
 if(follow != noone)
 {
-		xTo = follow.x;
-		yTo = follow.y;
+	xTo = follow.x;
+	yTo = follow.y;
+}
+else
+{
+	
 }
 
 

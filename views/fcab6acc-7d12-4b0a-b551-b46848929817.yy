@@ -6,7 +6,8 @@
     "children": [
         "83be301e-787f-4ff6-ac0c-2f57c09f782a",
         "b79b863d-e996-4471-98bb-f7a10c9c4d6d",
-        "6db60e4a-e388-4fc0-a467-a3bf2e2b4616"
+        "6db60e4a-e388-4fc0-a467-a3bf2e2b4616",
+        "56238392-12f4-4390-a9a6-b6e5b0233134"
     ],
     "filterType": "GMSprite",
     "folderName": "man",

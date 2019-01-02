@@ -11,7 +11,5 @@ camera_set_proj_mat(camera, pm);
 
 view_camera[0] = camera;
 
-follow = obj_player;
-
 xTo = x;
 yTo = y;

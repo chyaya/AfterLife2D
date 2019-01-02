@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "6db60e4a-e388-4fc0-a467-a3bf2e2b4616",
+            "Value": {
+                "id": "7cdb8633-daf5-4e65-9607-f5e95b1241c9",
+                "resourcePath": "sprites\\spr_man_idle\\spr_man_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7a0b6e88-e6b3-4731-9b64-944274219f48",
             "Value": {
                 "id": "6a45f6c3-2fe9-444b-b3c6-51093082b01e",

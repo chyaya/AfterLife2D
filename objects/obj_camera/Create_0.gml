@@ -1,6 +1,6 @@
 camera = camera_create();
 
-zoom = 2.0;
+zoom = 4.0;
 zoom_speed = 1.1;
 
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);

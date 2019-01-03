@@ -1,3 +1,5 @@
+show_debug_message("Init Camera");
+
 camera = camera_create();
 
 zoom = 4.0;

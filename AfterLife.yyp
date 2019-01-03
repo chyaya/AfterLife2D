@@ -679,6 +679,14 @@
             }
         },
         {
+            "Key": "d12db2eb-876f-47a3-80d3-aecb4cb500ef",
+            "Value": {
+                "id": "4f0ffa9c-0831-4dec-9cf9-e2a8abe6eb4d",
+                "resourcePath": "objects\\obj_generate_map\\obj_generate_map.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d36403e2-c216-4139-aa25-ca87c76f8c5c",
             "Value": {
                 "id": "e4f8edb2-f630-45f0-942e-f03d78ce003f",

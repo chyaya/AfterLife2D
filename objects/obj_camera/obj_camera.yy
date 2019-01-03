@@ -5,16 +5,6 @@
     "name": "obj_camera",
     "eventList": [
         {
-            "id": "45e71630-73bb-4b7e-b28d-c916d5833fc4",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "65e5b5ec-b276-4eda-baf6-621a4cb4c0b1"
-        },
-        {
             "id": "dc287ac2-6650-442c-a31b-c14463af5e95",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -22,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
+            "m_owner": "65e5b5ec-b276-4eda-baf6-621a4cb4c0b1"
+        },
+        {
+            "id": "e6789462-1a77-42ef-a0a1-faf6495d10be",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
             "m_owner": "65e5b5ec-b276-4eda-baf6-621a4cb4c0b1"
         }
     ],

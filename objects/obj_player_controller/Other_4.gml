@@ -1,3 +1,5 @@
+show_debug_message("Init Player Controller");
+
 if(instance_exists(obj_ghost) == false)
 {
 	show_message("no player ghost");	

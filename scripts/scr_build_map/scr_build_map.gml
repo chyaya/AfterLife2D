@@ -81,8 +81,8 @@ for (var j = 0; j < grid_h; j++;)
         case bsp_corridor: // Add corridor tiles
             break;
         case bsp_door_h: //Create horizontal door
-            break;
         case bsp_door_v: //Create vertical door
+			instance_create_layer(i * ts, j * ts, argument[5], obj_door);
             break;
         }
     }
@@ -109,25 +109,22 @@ for (var j = 0; j < grid_h; j++;)
 // or write your own scripts and call them here...
 
 
-/*
-
 // Spawn a potion object in every room area, including the player area. 
 // Note that we do this BEFORE we spawn anything else, as it does NOT 
 // use the BSP collision parent, and we want to spawn things over them.
-scr_BSP_Populate_Rooms(obj_DEMO_Potion, cc, cc, -1, ts, true, true, argument[6]);
+scr_BSP_Populate_Rooms(obj_chest, 10, cc, -1, ts, false, true, argument[6]);
 
 // Now spawn a room full of gold that is NOT the player room
-var ran = irandom(cc - 1);
-while (ran == pos) ran = irandom(cc - 1);
-scr_BSP_Populate_Area(obj_DEMO_Gold, 20, ran, ts, false, argument[6]);
+//var ran = irandom(cc - 1);
+//while (ran == pos) ran = irandom(cc - 1);
+//scr_BSP_Populate_Area(obj_DEMO_Gold, 20, ran, ts, false, argument[6]);
 
 // Spawn a boss in a random room that is NOT the player room
-var ran = irandom(cc - 1);
-while (ran == pos) ran = irandom(cc - 1);
-scr_BSP_Populate_Area(obj_DEMO_Boss, 1, ran, ts, true, argument[6]);
+//var ran = irandom(cc - 1);
+//while (ran == pos) ran = irandom(cc - 1);
+//scr_BSP_Populate_Area(obj_DEMO_Boss, 1, ran, ts, true, argument[6]);
     
 // Spawn 200 enemies randomly throughout the WHOLE maze, and not just one room
-scr_BSP_Populate_Rooms(obj_DEMO_Enemy, 200, cc, pos, ts, false, true, argument[6]);
+scr_BSP_Populate_Rooms(obj_man, 10, cc, pos, ts, false, true, argument[6]);
 
-
-*/
+scr_BSP_Populate_Rooms(obj_man_corpse, 10, cc, pos, ts, false, true, argument[6]);

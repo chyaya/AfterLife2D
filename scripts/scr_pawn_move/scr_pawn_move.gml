@@ -1,6 +1,6 @@
 #macro TILE_SIZE	16
 #macro TILE_SHIFT   4		// 1<<4 = 16
-#macro TILE_OFFSET	8
+#macro TILE_OFFSET	0
 
 #macro OBJ_HALF_W	5
 #macro OBJ_HALF_H	5

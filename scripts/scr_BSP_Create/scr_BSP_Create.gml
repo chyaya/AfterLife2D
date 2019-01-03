@@ -27,6 +27,8 @@ show_debug_message("BSP: Room random seed is " + string(random_get_seed()));
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
+show_debug_message("BSP: Room width(" + string(room_width) + "), Room height(" + string(room_height) + ")");
+
 // Create and clear the grid then return it for future use
 var grid = ds_grid_create((room_width div cell_size) - 2, (room_height div cell_size) - 2);
 ds_grid_clear(grid, 0);

@@ -2,8 +2,8 @@
 #macro TILE_SHIFT   4		// 1<<4 = 16
 #macro TILE_OFFSET	8
 
-#macro OBJ_HALF_W	8
-#macro OBJ_HALF_H	8
+#macro OBJ_HALF_W	5
+#macro OBJ_HALF_H	5
 
 var seconds_passed = delta_time/1000000;
 var move_speed_this_frame = move_speed*seconds_passed;

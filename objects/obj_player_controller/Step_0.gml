@@ -15,9 +15,12 @@ if(last_mouseover_object == m_player_object)
 
 m_mouseover_object = instance_position( mouse_x, mouse_y, all);
 
-if(m_mouseover_object == m_player_object)
+if(m_mouseover_object != noone)
 {
-	m_mouseover_object = noone;
+	if(m_mouseover_object == m_player_object || object_is_ancestor(m_mouseover_object.object_index, obj_pawn) == false)
+	{
+		m_mouseover_object = noone;
+	}
 }
 
 if(last_mouseover_object != m_mouseover_object)

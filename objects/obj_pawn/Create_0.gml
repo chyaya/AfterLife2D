@@ -3,3 +3,8 @@ xDir = 0;
 yDir = 0;
 outline_color = c_white;
 outline_enable = false;
+
+if(irandom(1) == 0)
+{
+	image_xscale = -1;	
+}

@@ -1,48 +1,11 @@
 with(m_player_object)
 {
-	var seconds_passed = delta_time/1000000;
-	var move_speed_this_frame = move_speed*seconds_passed;
-
-	//////////////////////////////////////////////////////////
-	// Move Input
-	var last_x = x, last_y = y;
-
-	if(keyboard_check(ord("W")))
-	{
-		y -= move_speed_this_frame;
-	}
-
-	if(keyboard_check(ord("S")))
-	{
-		y += move_speed_this_frame;
-	}
-
-	if(keyboard_check(ord("A")))
-	{
-		x -= move_speed_this_frame;
-	}
-
-	if(keyboard_check(ord("D")))
-	{
-		x += move_speed_this_frame;
-	}
-
-	xDir = x - last_x;
-	yDir = y - last_y;
-
-	//////////////////////////////////////////////////////////
-	// Ability Input
-	
-	if(object_index != obj_ghost)
-	{
-		if(mouse_check_button_pressed(mb_left))
-		{
-			if(ability1 != noone)
-				script_execute(ability1);
-		}
-	}
+	scr_pawn_doinput();
+	scr_pawn_move();
 }
 
+//////////////////////////////////////////////////////////
+// Mouse Over
 var last_mouseover_object = m_mouseover_object;
 
 if(last_mouseover_object == m_player_object)
@@ -72,6 +35,8 @@ if(last_mouseover_object != m_mouseover_object)
 	
 }
 
+//////////////////////////////////////////////////////////
+// Ability / Possess
 if(m_player_object.object_index == obj_ghost)
 {
 	if(mouse_check_button_pressed(mb_left))
@@ -92,7 +57,7 @@ if(m_player_object.object_index == obj_ghost)
 }
 else
 {
-	if(keyboard_check_pressed(ord("0")))
+	if(keyboard_check_pressed(vk_tab))
 	{
 		var ghost_obj = instance_create_layer(m_player_object.x, m_player_object.y, "Instances", obj_ghost);
 		m_player_object.cur_health = 0;

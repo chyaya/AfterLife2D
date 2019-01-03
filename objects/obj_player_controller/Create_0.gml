@@ -1,6 +1,3 @@
-
-
-
 if(instance_exists(obj_ghost) == false)
 {
 	show_message("no player ghost");	
@@ -8,3 +5,5 @@ if(instance_exists(obj_ghost) == false)
 
 m_player_object = instance_find(obj_ghost, 0);
 m_mouseover_object = noone;
+
+m_wall_map = layer_tilemap_get_id("Tiles");

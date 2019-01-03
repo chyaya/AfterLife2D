@@ -39,11 +39,27 @@
             }
         },
         {
+            "Key": "1258254b-87dd-4698-9e3d-3eaeb42df24c",
+            "Value": {
+                "id": "78615d6e-cc4f-499c-8863-db85a7b14758",
+                "resourcePath": "shaders\\sh_outline_silhouette\\sh_outline_silhouette.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "28fc977b-e1d7-4f0a-8812-e074bce0f7e0",
             "Value": {
                 "id": "36d51943-c5c5-48f2-ad8d-d9ee5611efbe",
                 "resourcePath": "views\\28fc977b-e1d7-4f0a-8812-e074bce0f7e0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2b91dedf-3372-4e1f-bd4b-b1f75bfc52c4",
+            "Value": {
+                "id": "a65350e9-1d07-4fb0-bd95-dfceade7e66a",
+                "resourcePath": "shaders\\sh_silhouette\\sh_silhouette.yy",
+                "resourceType": "GMShader"
             }
         },
         {

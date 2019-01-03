@@ -30,4 +30,6 @@ with(obj)
 	{
 		sprite_index = sprite_index_dead;	
 	}
+	
+	
 }

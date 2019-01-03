@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_ghost",
     "eventList": [
-        
+        {
+            "id": "b294b1f0-1a0b-4f15-9348-5a1a5155818a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "a2e1eed0-1e76-427b-8af7-d41f01d6e17f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [

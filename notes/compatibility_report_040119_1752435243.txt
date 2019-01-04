@@ -1,0 +1,34 @@
+Converting GML script: ${project_dir}\scripts\scr_FOW_Init\scr_FOW_Init.gml
+Converted description /// @description  scr_FOW_Init(depth, tile_size, width, height, light, alpha);/// @param depth
+/// @param  tile_size
+/// @param  width
+/// @param  height
+/// @param  light
+/// @param  alpha
+
+Converting GML script: ${project_dir}\scripts\scr_FOW_Init_Instance\scr_FOW_Init_Instance.gml
+Converted description /// @description  scr_FOW_Init_Instance(radius, x, y, quadratic);/// @param radius
+/// @param  x
+/// @param  y
+/// @param  quadratic
+
+Converting GML script: ${project_dir}\scripts\scr_FOW_Update\scr_FOW_Update.gml
+Converted description /// @description  scr_FOW_Update(x, y, solid_object);/// @param x
+/// @param  y
+/// @param  solid_object
+
+Converting GML script: ${project_dir}\scripts\scr_FOW_Bresenhams\scr_FOW_Bresenhams.gml
+Converted description /// @description  scr_FOW_Bresenhams(x1, y1, x2, y2, object_solid, tile_size);/// @param x1
+/// @param  y1
+/// @param  x2
+/// @param  y2
+/// @param  object_solid
+/// @param  tile_size
+
+Font fnt_FOW has been converted to font family Arial (Regular) - Font has been regenerated, small inconsistencies may occur
+Imported layer depths for room(s) 'rm_FOW_Normal, rm_FOW_Light, rm_FOW_Views' were not adequately spaced. Unless updated this will have undefined results in game.
+Added compatibility script 'tile/tile_add.gml'
+Added compatibility script 'tile/tile_delete.gml'
+Added compatibility script 'tile/tile_exists.gml'
+Added compatibility script 'tile/tile_get_alpha.gml'
+Added compatibility script 'tile/tile_set_alpha.gml'

@@ -1,6 +1,3 @@
-yDir = 0;
-xDir = 0;
-
 if(keyboard_check(ord("W")))
 {
 	yDir -= 1;

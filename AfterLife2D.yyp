@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "18092258-e9e2-480b-a61a-24ac0424da87",
+            "Value": {
+                "id": "af7a80a6-8429-4a97-bb3c-83d30fe2d674",
+                "resourcePath": "scripts\\scr_pawn_dogamepad\\scr_pawn_dogamepad.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1aae1036-a768-4095-987f-2e1d0658d81a",
             "Value": {
                 "id": "a94c1ef8-0c8a-44b6-aac4-95398236a889",
@@ -791,6 +799,14 @@
             }
         },
         {
+            "Key": "e3b87911-ccd1-47d7-8777-212976b367b9",
+            "Value": {
+                "id": "fc8fbe96-4307-4df2-9fc8-cabb1693aaed",
+                "resourcePath": "fonts\\font_fixedsys\\font_fixedsys.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "e4fb895e-0512-4057-b3c0-01f4f8f56334",
             "Value": {
                 "id": "0a985164-c1a1-414d-a4fc-25bb988f671a",
@@ -933,6 +949,7 @@
         "63041d90-dbd1-46c3-9b82-8796ecf052aa",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
         "eafab41e-4f15-478f-adf7-1f2bb49d4911",
+        "18092258-e9e2-480b-a61a-24ac0424da87",
         "6c3b5d31-9aa9-461f-a16e-b16d7fd6cb26",
         "8a40ec99-3ca7-49b9-943e-898d85771bd0",
         "4ee8b7f7-222c-4a6e-8696-ed7ed2208e14",

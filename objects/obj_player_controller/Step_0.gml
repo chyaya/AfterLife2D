@@ -1,6 +1,10 @@
 with(m_player_object)
 {
+	yDir = 0;
+	xDir = 0;
+	
 	scr_pawn_doinput();
+	scr_pawn_dogamepad();
 	scr_pawn_move();
 }
 

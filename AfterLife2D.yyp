@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "2405de54-57c7-4f7e-bfae-e69e140dcd36",
+            "Value": {
+                "id": "7de3bc44-4048-4bac-ab6d-88ecd9b07d9f",
+                "resourcePath": "sprites\\spr_gui_dpad_right\\spr_gui_dpad_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "24c65588-c331-45fd-a8f0-e0e0d0a82a03",
             "Value": {
                 "id": "68919a9d-3974-4421-8f0d-1fc8c9f130ec",
@@ -148,6 +156,14 @@
                 "id": "360d9e60-f473-4e80-8fde-c19754a18073",
                 "resourcePath": "views\\35444537-918c-4ade-8b9d-47f91cdd516b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3b456ebe-f1d9-4311-8fbc-08cdeaf9c640",
+            "Value": {
+                "id": "2443f08a-63dc-4e0a-8ae8-6d7d0edbc12e",
+                "resourcePath": "sprites\\spr_gui_dpad_down\\spr_gui_dpad_down.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -359,6 +375,14 @@
             }
         },
         {
+            "Key": "7045c0a2-a308-432d-82a9-f85a65645ccb",
+            "Value": {
+                "id": "45035019-628a-466b-bd00-5066c3f92646",
+                "resourcePath": "sprites\\spr_gui_dpad_left\\spr_gui_dpad_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71188983-a6e8-48cd-8676-f964bd7eb56e",
             "Value": {
                 "id": "23efbaaf-f83b-44ae-ae5e-c95f7e6b4157",
@@ -404,6 +428,14 @@
                 "id": "49098971-d572-4ab4-9ed8-c72ecb71a751",
                 "resourcePath": "objects\\obj_DEMO_Player\\obj_DEMO_Player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7d208c2e-45be-441e-b326-71e955120dc8",
+            "Value": {
+                "id": "7fce5313-c0de-4f1b-825d-7cdbbd249a84",
+                "resourcePath": "sprites\\spr_gui_dpad_up\\spr_gui_dpad_up.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

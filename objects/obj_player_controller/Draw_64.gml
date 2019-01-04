@@ -23,3 +23,10 @@ draw_sprite_stretched(spr_gui_gamepad_y, -1, pad_x + 50, pad_y, 48, 48);
 draw_sprite_stretched(spr_gui_gamepad_x, -1, pad_x, pad_y + 50, 48, 48);
 draw_sprite_stretched(spr_gui_gamepad_a, -1, pad_x + 50, pad_y + 100, 48, 48);
 draw_sprite_stretched(spr_gui_gamepad_b, -1, pad_x + 100, pad_y + 50, 48, 48);
+
+pad_x = 300;
+pad_y = view_hport[0] - 400;
+draw_sprite_stretched(spr_gui_dpad_up, -1, pad_x + 50, pad_y, 48, 48);
+draw_sprite_stretched(spr_gui_dpad_left, -1, pad_x, pad_y + 50, 48, 48);
+draw_sprite_stretched(spr_gui_dpad_down, -1, pad_x + 50, pad_y + 100, 48, 48);
+draw_sprite_stretched(spr_gui_dpad_right, -1, pad_x + 100, pad_y + 50, 48, 48);

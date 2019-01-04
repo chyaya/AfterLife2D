@@ -3,6 +3,7 @@ show_debug_message("Init Camera");
 camera = camera_create();
 
 zoom = 4.0;
+last_zoom = zoom;
 zoom_speed = 1.1;
 
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);

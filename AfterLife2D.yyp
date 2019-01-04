@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "05c217c3-8794-4b92-9be5-180c0cf05e58",
+            "Value": {
+                "id": "8d8e2f75-4eb4-4a1a-9c0e-465603ca7431",
+                "resourcePath": "sprites\\spr_gui_gamepad_a\\spr_gui_gamepad_a.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1258254b-87dd-4698-9e3d-3eaeb42df24c",
             "Value": {
                 "id": "78615d6e-cc4f-499c-8863-db85a7b14758",
@@ -495,6 +503,14 @@
             }
         },
         {
+            "Key": "92a2bc58-a803-4cb3-b924-87824a6e89cb",
+            "Value": {
+                "id": "36dece2e-56f2-461d-96fd-788fa7c9ca91",
+                "resourcePath": "sprites\\spr_gui_gamepad_b\\spr_gui_gamepad_b.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "93fffd89-c1a5-4c46-bae7-a45dbe61f062",
             "Value": {
                 "id": "b7d5686e-a64c-4e62-ac93-775ab62f1e61",
@@ -599,10 +615,26 @@
             }
         },
         {
+            "Key": "b05fc72a-6bcb-4832-9a00-87d34f3f8825",
+            "Value": {
+                "id": "8ea1f4b5-8cb5-4d64-81ac-2dd62cf276e2",
+                "resourcePath": "views\\b05fc72a-6bcb-4832-9a00-87d34f3f8825.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b0860ff6-45b2-4791-b008-56000a0868b3",
             "Value": {
                 "id": "c2c3e256-f9c3-4828-acfe-55229b0499a5",
                 "resourcePath": "sprites\\spr_ghost_idle\\spr_ghost_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b0d56c65-a537-4c05-8124-ecd1d812be55",
+            "Value": {
+                "id": "f6f9f04b-c158-4c1f-9e4a-9ecfdd4a80e9",
+                "resourcePath": "sprites\\spr_gui_gamepad_y\\spr_gui_gamepad_y.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -676,6 +708,14 @@
                 "id": "e1e4c0c4-d877-4cad-8866-1add958ea156",
                 "resourcePath": "views\\c485808b-31db-4d18-bf4d-b8f56027bdb3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c7a06c3d-8bbf-4dcf-8209-f0d382a38c74",
+            "Value": {
+                "id": "f2926932-dcc8-4941-8506-231f38d68efe",
+                "resourcePath": "sprites\\spr_gui_gamepad_x\\spr_gui_gamepad_x.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

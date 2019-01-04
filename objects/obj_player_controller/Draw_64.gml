@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 draw_set_font(font_fixedsys);
 
 var text_x = 10, text_y = 10;
@@ -19,3 +16,10 @@ text_y = 10;
 draw_text(text_x, text_y, "Soul:");
 draw_text(text_x + offset, text_y, "100/100");
 text_y += line_h;
+
+
+var pad_x = view_wport[0] - 400, pad_y = view_hport[0] - 400;
+draw_sprite_stretched(spr_gui_gamepad_y, -1, pad_x + 50, pad_y, 48, 48);
+draw_sprite_stretched(spr_gui_gamepad_x, -1, pad_x, pad_y + 50, 48, 48);
+draw_sprite_stretched(spr_gui_gamepad_a, -1, pad_x + 50, pad_y + 100, 48, 48);
+draw_sprite_stretched(spr_gui_gamepad_b, -1, pad_x + 100, pad_y + 50, 48, 48);

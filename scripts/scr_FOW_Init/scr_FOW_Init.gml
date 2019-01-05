@@ -23,15 +23,15 @@ global.FOW_Alpha = argument5;                               // Base alpha for th
 // Initialise the arry in memory if NOT using the HTML5 target
 if os_browser == browser_not_a_browser
 {
-global.FOW[global.FOW_AreaW, global.FOW_AreaH] = 0;
+	global.FOW[global.FOW_AreaW, global.FOW_AreaH] = 0;
 }
 
 // Add the tiles to the area defined
 for (var i = 0; i < global.FOW_AreaW; i++;)
 {
-for (var j = 0; j < global.FOW_AreaH; j++;)
+	for (var j = 0; j < global.FOW_AreaH; j++;)
     {
-    global.FOW[i, j] = tile_add(bck_FOW_Tile, 4, 4, global.FOW_TSize, global.FOW_TSize, i * global.FOW_TSize, j * global.FOW_TSize,  global.FOW_Depth);
-    tile_set_alpha(global.FOW[i, j], global.FOW_Alpha);
+	    global.FOW[i, j] = tile_add(bck_FOW_Tile, 4, 4, global.FOW_TSize, global.FOW_TSize, i * global.FOW_TSize, j * global.FOW_TSize,  global.FOW_Depth);
+	    tile_set_alpha(global.FOW[i, j], global.FOW_Alpha);
     }
 } 

@@ -63,35 +63,11 @@
             }
         },
         {
-            "Key": "05c194e8-9baa-4600-93e5-bb8cf5be422b",
-            "Value": {
-                "id": "6a7a067d-c6ae-4a77-b0a5-cb011157db05",
-                "resourcePath": "rooms\\rm_FOW_Normal\\rm_FOW_Normal.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "05c217c3-8794-4b92-9be5-180c0cf05e58",
             "Value": {
                 "id": "8d8e2f75-4eb4-4a1a-9c0e-465603ca7431",
                 "resourcePath": "sprites\\spr_gui_gamepad_a\\spr_gui_gamepad_a.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "07eb92cc-c78c-415f-97e8-c3f41bda28f3",
-            "Value": {
-                "id": "6b7948ea-d7f9-46bd-8c72-404586018a25",
-                "resourcePath": "views\\07eb92cc-c78c-415f-97e8-c3f41bda28f3.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "08401609-7e37-4ecd-aa6a-3dca30d6a090",
-            "Value": {
-                "id": "96b5fbf5-e616-4566-8f6f-12504a3891a2",
-                "resourcePath": "objects\\obj_FOW_Demo_Controller\\obj_FOW_Demo_Controller.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -140,14 +116,6 @@
                 "id": "a94c1ef8-0c8a-44b6-aac4-95398236a889",
                 "resourcePath": "views\\1aae1036-a768-4095-987f-2e1d0658d81a.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "1aeec80d-374a-44f2-9178-0c9fcba57da4",
-            "Value": {
-                "id": "f2a9f257-d6b8-433a-a1fb-0d4bf1b0165f",
-                "resourcePath": "rooms\\rm_FOW_Views\\rm_FOW_Views.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -599,14 +567,6 @@
             }
         },
         {
-            "Key": "7c926e7a-f589-4b3d-9502-c9765855e814",
-            "Value": {
-                "id": "19edc404-9fbc-409a-93bb-cd705267b65e",
-                "resourcePath": "views\\7c926e7a-f589-4b3d-9502-c9765855e814.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "7d208c2e-45be-441e-b326-71e955120dc8",
             "Value": {
                 "id": "7fce5313-c0de-4f1b-825d-7cdbbd249a84",
@@ -743,35 +703,11 @@
             }
         },
         {
-            "Key": "969d75eb-9d96-4797-80bc-ff3958407481",
-            "Value": {
-                "id": "0aa1bc9d-a520-406f-afd2-599f87dac584",
-                "resourcePath": "rooms\\rm_FOW_Light\\rm_FOW_Light.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "9a35b6d8-bd9b-4e0e-a707-99c71546ccef",
             "Value": {
                 "id": "ec3a2472-a0b6-4237-9012-7af9b5be0811",
                 "resourcePath": "scripts\\@tile_exists\\tile_exists.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "9a8cd5cb-401f-4905-827f-3a3960dbb975",
-            "Value": {
-                "id": "68b2a842-e868-4ac0-9da0-0b981ddaa575",
-                "resourcePath": "objects\\obj_FOW_Wall_Parent\\obj_FOW_Wall_Parent.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "9f7b44b2-1f63-4ec6-a57a-562093473804",
-            "Value": {
-                "id": "b98e488c-4d81-4929-809f-44b2572da4f5",
-                "resourcePath": "objects\\obj_FOW_Demo_Player\\obj_FOW_Demo_Player.yy",
-                "resourceType": "GMObject"
             }
         },
         {

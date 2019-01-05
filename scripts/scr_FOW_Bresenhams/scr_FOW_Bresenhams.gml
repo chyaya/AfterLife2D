@@ -52,8 +52,8 @@ do
             }
         yy = y1 + (y2 - y1) * (xx - x1) / (x2 - x1);
         }
-    var inst = instance_position((xx * ts) + (ts / 2) - sign(x1 - x2), (yy * ts) + (ts / 2) - sign(y1 - y2), obj);
-    if inst return inst.id;
+    if (scr_FOW_Is_Blocked((xx * ts) + (ts / 2) - sign(x1 - x2), (yy * ts) + (ts / 2) - sign(y1 - y2), ts, obj))
+		return true;
     }
 until xx = x2 and yy = y2;
 }

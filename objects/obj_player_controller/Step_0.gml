@@ -1,3 +1,5 @@
+var obj_x = 0, obj_y = 0;
+
 with(m_player_object)
 {
 	yDir = 0;
@@ -6,7 +8,12 @@ with(m_player_object)
 	scr_pawn_doinput();
 	scr_pawn_dogamepad();
 	scr_pawn_move();
+	
+	obj_x = x;
+	obj_y = y;
 }
+
+scr_FOW_Update(obj_x, obj_y, obj_door);
 
 //////////////////////////////////////////////////////////
 // Mouse Over

@@ -1,0 +1,1 @@
+#macro TILE_WALL_GRAY 24

@@ -5,6 +5,8 @@
 #macro OBJ_HALF_W	5
 #macro OBJ_HALF_H	5
 
+scr_macro_tile_index();
+
 var seconds_passed = delta_time/1000000;
 var move_speed_this_frame = move_speed*seconds_passed;
 	
@@ -21,7 +23,7 @@ if( xDir != 0 )
 		
 	//show_debug_message("(collision X) tile1:" + string(tile1) + ", tile2: " + string(tile2));
 		
-	if(( tile1!=0 ) || (tile2!=0))
+	if(scr_Is_Block_Tile_Index(tile1) || scr_Is_Block_Tile_Index(tile2))
 	{
 		if(xDir > 0)
 		{
@@ -47,7 +49,7 @@ if( yDir != 0 )
 		
 	//show_debug_message("(collision Y) tile1:" + string(tile1) + ", tile2: " + string(tile2));
 		
-	if(( tile1!=0 ) || (tile2!=0))
+	if(scr_Is_Block_Tile_Index(tile1) || scr_Is_Block_Tile_Index(tile2))
 	{
 		if(yDir > 0)
 		{

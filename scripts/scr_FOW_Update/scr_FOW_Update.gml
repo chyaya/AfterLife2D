@@ -48,42 +48,36 @@ for (var i = tx; i < max_x;  i++;)
                 t_alpha = tile_get_alpha(tile);
                 // Tile alpha is greater than zero so keep checking
                 if t_alpha > 0
-                    {
+				{
                     // Get distance from tile to center (in array values)
                     pd = point_distance(i, j, xx, yy) / rr;
                     // Make the distance quadratic to give a better un-cover area
                     if FOW_Quad
-                        {
-                        pd = pd * pd * pd;
-                        }
+					{
+						pd = pd * pd * pd;
+					}
+					
                     // Check to see if the position changes the alpha value
                     if pd < t_alpha
-                        {
+                    {
                         // Check for blockers
-                        var inst = scr_FOW_Bresenhams(xx, yy, i, j, ob, ts);
-                        if !inst
-                            {
+                        if(scr_FOW_Bresenhams(xx, yy, i, j, ob, ts) == false)
+						{
                             // no blocker found so set tile alpha
                             tile_set_alpha(tile, pd);
-                            }
+						}
                         else
-                            {
-                            // Blocker found, so uncover the tile over it only if there are 
-                            // no ther blockers between it and the center position.
-                            inst = instance_position((i * ts), (j * ts), ob);
-                            if inst
-                                {
-                                with (inst)
-                                    {
-                                    if !scr_FOW_Bresenhams(floor(x / ts), floor(y / ts), xx, yy, ob, ts)
-                                        {
-                                        tile_set_alpha(tile, pd);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+						{
+							if(scr_FOW_Is_Blocked((i * ts), (j * ts), ts, ob))
+							{
+								if !scr_FOW_Bresenhams(i, j, xx, yy, ob, ts)
+								{
+									tile_set_alpha(tile, pd);
+								}
+							}
+						}
+					}
+				}
                 else
                     {
                     // Minor optimisation. Remove tiles with zero alpha.

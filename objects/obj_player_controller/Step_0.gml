@@ -17,34 +17,36 @@ scr_FOW_Update(obj_x, obj_y, obj_door);
 
 //////////////////////////////////////////////////////////
 // Mouse Over
-var last_mouseover_object = m_mouseover_object;
+var last_mouseover_object = m_InteractionObject;
+m_InteractionObject = noone;
 
-if(last_mouseover_object == m_player_object)
+var interactionObjectList = ds_list_create();
+var interactionObjectNum = collision_circle_list(obj_x, obj_y, 10, all, false, false, interactionObjectList, true);
+
+for (var i = 0; i < interactionObjectNum; ++i;)
 {
-	last_mouseover_object = noone;
+	var curObj = interactionObjectList[|i];
+	
+	if(curObj == m_player_object)
+		continue;
+	
+	if(object_is_ancestor(curObj.object_index, obj_pawn) == false)
+		continue;	
+		
+	m_InteractionObject = curObj;
 }
 
-m_mouseover_object = instance_position( mouse_x, mouse_y, all);
-
-if(m_mouseover_object != noone)
-{
-	if(m_mouseover_object == m_player_object || object_is_ancestor(m_mouseover_object.object_index, obj_pawn) == false)
-	{
-		m_mouseover_object = noone;
-	}
-}
-
-if(last_mouseover_object != m_mouseover_object)
+if(last_mouseover_object != m_InteractionObject)
 {
 	if(last_mouseover_object != noone)
 	{
 		last_mouseover_object.outline_enable = false;
 	}
 	
-	if(m_mouseover_object != noone)
+	if(m_InteractionObject != noone)
 	{
-		m_mouseover_object.outline_enable = true;
-		m_mouseover_object.outline_color = c_white;
+		m_InteractionObject.outline_enable = true;
+		m_InteractionObject.outline_color = c_white;
 	}
 	
 }
@@ -53,16 +55,16 @@ if(last_mouseover_object != m_mouseover_object)
 // Ability / Possess
 if(m_player_object.object_index == obj_ghost)
 {
-	if(mouse_check_button_pressed(mb_left))
+	if(keyboard_check_pressed(ord("F")))
 	{
-		if(m_mouseover_object != noone)
+		if(m_InteractionObject != noone)
 		{
 			with(m_player_object)
 			{
 				instance_destroy();
 			}
 			
-			m_player_object = m_mouseover_object;
+			m_player_object = m_InteractionObject;
 			m_player_object.cur_health = m_player_object.max_health;
 			m_player_object.outline_enable = false;
 			//m_player_object.outline_color = c_blue;

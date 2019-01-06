@@ -4,5 +4,5 @@
 
 // See the script for an explanation of the arguments.
 
-scr_FOW_Init(-1, 16, room_width, room_height, true, 1);
+scr_FOW_Init(50, 16, room_width, room_height, true, 1);
 

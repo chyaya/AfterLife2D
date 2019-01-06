@@ -1,3 +1,4 @@
+draw_set_halign(fa_left);
 draw_set_font(font_fixedsys);
 
 var text_x = 10, text_y = 10;

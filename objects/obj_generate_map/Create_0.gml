@@ -1,3 +1,5 @@
+m_ShowDebugMap = false;
+
 show_debug_message("Init Generate Map");
 
 // This is our controller object and should be placed in any room where we 

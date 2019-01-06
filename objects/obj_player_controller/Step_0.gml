@@ -21,7 +21,7 @@ var last_mouseover_object = m_InteractionObject;
 m_InteractionObject = noone;
 
 var interactionObjectList = ds_list_create();
-var interactionObjectNum = collision_circle_list(obj_x, obj_y, 10, all, false, false, interactionObjectList, true);
+var interactionObjectNum = collision_circle_list(obj_x, obj_y, 10, all, true, false, interactionObjectList, true);
 
 for (var i = 0; i < interactionObjectNum; ++i;)
 {

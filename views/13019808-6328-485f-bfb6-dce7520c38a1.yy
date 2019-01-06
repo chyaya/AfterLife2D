@@ -6,8 +6,7 @@
     "children": [
         "bdf5969c-8a18-46f9-a470-2a2b31e5fce7",
         "4d0338cc-10bb-4d5d-bd4c-42f786121208",
-        "4cce01af-65c9-4c6b-9904-fdb55c7b16ad",
-        "32c1c1b1-55e3-45cc-9844-321fc8d907ec"
+        "4cce01af-65c9-4c6b-9904-fdb55c7b16ad"
     ],
     "filterType": "GMObject",
     "folderName": "BSP Map Generation",

@@ -89,6 +89,6 @@ scr_BSP_Create_Corridors(bsp_grid, cell_size, count);
 
 // scr_BSP_Clear(bsp_grid);
 
-scr_build_map(bsp_grid, cell_size, count, obj_DEMO_Wall, obj_DEMO_Door, "Instances", "Instances");
+scr_build_map(bsp_grid, cell_size, count, noone, noone, "Instances", "Instances");
 
 

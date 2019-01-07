@@ -9,7 +9,7 @@
 ///					To solve this, we use this script to flag grid cells as corridors
 ///					and link up all the rooms.
 ///
-///					IMPORTANT! This script reuires that the object "obj_BSP_Tunneler"
+///					IMPORTANT! This script reuires that the object "oBSP_Tunneler"
 ///					so please do not remove this object from the project.
 
 show_debug_message("BSP: CREATE CORRIDORS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
@@ -40,7 +40,7 @@ for (i = 0; i < grid_w; i++;)
         {
         if ds_grid_get(argument0, i, j) > 500 && ds_grid_get(argument0, i, j) < 1000
             {
-            inst[n] = instance_create_depth((i * argument1), (j * argument1), 1000, obj_BSP_Tunneler);
+            inst[n] = instance_create_depth((i * argument1), (j * argument1), 1000, oBSP_Tunneler);
             inst[n].num = n;
             path[n] = path_add();
             n++;

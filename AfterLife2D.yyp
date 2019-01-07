@@ -146,7 +146,7 @@
             "Key": "24c65588-c331-45fd-a8f0-e0e0d0a82a03",
             "Value": {
                 "id": "68919a9d-3974-4421-8f0d-1fc8c9f130ec",
-                "resourcePath": "objects\\obj_chest\\obj_chest.yy",
+                "resourcePath": "objects\\oChest\\oChest.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -282,7 +282,7 @@
             "Key": "4cce01af-65c9-4c6b-9904-fdb55c7b16ad",
             "Value": {
                 "id": "5462f2ef-4480-457c-a4f4-6d812040b1a1",
-                "resourcePath": "objects\\obj_BSP_Tunneler\\obj_BSP_Tunneler.yy",
+                "resourcePath": "objects\\oBSP_Tunneler\\oBSP_Tunneler.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -290,7 +290,7 @@
             "Key": "4d0338cc-10bb-4d5d-bd4c-42f786121208",
             "Value": {
                 "id": "e459327f-0802-4a22-8a6f-03bcc481f0a8",
-                "resourcePath": "objects\\obj_BSP_Collision_Parent\\obj_BSP_Collision_Parent.yy",
+                "resourcePath": "objects\\oBSP_CollisionParent\\oBSP_CollisionParent.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -298,7 +298,7 @@
             "Key": "4de59b3c-d963-4039-938f-411eb057ed44",
             "Value": {
                 "id": "306f390f-2f2c-47e2-bae8-53887817070f",
-                "resourcePath": "objects\\obj_FOW_Show_Parent\\obj_FOW_Show_Parent.yy",
+                "resourcePath": "objects\\oFOW_Show_Parent\\oFOW_Show_Parent.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -314,7 +314,7 @@
             "Key": "50713be5-c334-4e22-9172-4c8449226f0c",
             "Value": {
                 "id": "fab8efba-5589-4963-b903-32c03d08b9c0",
-                "resourcePath": "objects\\obj_FOW_Control\\obj_FOW_Control.yy",
+                "resourcePath": "objects\\oFOW_Control\\oFOW_Control.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -426,7 +426,7 @@
             "Key": "65e5b5ec-b276-4eda-baf6-621a4cb4c0b1",
             "Value": {
                 "id": "02102d26-eb1c-4404-8af3-a5a195907250",
-                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
+                "resourcePath": "objects\\oCamera\\oCamera.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -442,7 +442,7 @@
             "Key": "6adbaa3e-05b9-4a3b-bf3e-e1e62f61bdd6",
             "Value": {
                 "id": "fa18b710-874b-425b-bce6-408b361434cc",
-                "resourcePath": "objects\\obj_door\\obj_door.yy",
+                "resourcePath": "objects\\oDoor\\oDoor.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -482,7 +482,7 @@
             "Key": "71188983-a6e8-48cd-8676-f964bd7eb56e",
             "Value": {
                 "id": "23efbaaf-f83b-44ae-ae5e-c95f7e6b4157",
-                "resourcePath": "objects\\obj_man\\obj_man.yy",
+                "resourcePath": "objects\\oMan\\oMan.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -506,7 +506,7 @@
             "Key": "7a688a40-48fe-4cef-91f2-de3e41004582",
             "Value": {
                 "id": "f26be002-9ab8-4135-8adb-30a9a0f8a840",
-                "resourcePath": "objects\\obj_pawn\\obj_pawn.yy",
+                "resourcePath": "objects\\oPawn\\oPawn.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -626,7 +626,7 @@
             "Key": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
             "Value": {
                 "id": "0f1d3cc0-30c4-41c3-a237-ac721a8e266d",
-                "resourcePath": "objects\\obj_prop\\obj_prop.yy",
+                "resourcePath": "objects\\oProp\\oProp.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -674,7 +674,7 @@
             "Key": "a2e1eed0-1e76-427b-8af7-d41f01d6e17f",
             "Value": {
                 "id": "22925e55-64a1-445d-9abb-742b7f8d8ca2",
-                "resourcePath": "objects\\obj_ghost\\obj_ghost.yy",
+                "resourcePath": "objects\\oGhost\\oGhost.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -754,7 +754,7 @@
             "Key": "abeb433e-bedc-49f9-95a3-c36dac112f2d",
             "Value": {
                 "id": "5dec0207-134e-4a50-bafe-d7397431abf5",
-                "resourcePath": "objects\\obj_man_corpse\\obj_man_corpse.yy",
+                "resourcePath": "objects\\oManCorpse\\oManCorpse.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -762,7 +762,7 @@
             "Key": "ad5e9135-518e-4c97-94de-ff533498f6ba",
             "Value": {
                 "id": "c6d2907f-2577-467b-9afc-a4ef6b9bd1f2",
-                "resourcePath": "objects\\obj_player_controller\\obj_player_controller.yy",
+                "resourcePath": "objects\\oPlayerController\\oPlayerController.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -858,7 +858,7 @@
             "Key": "bdf5969c-8a18-46f9-a470-2a2b31e5fce7",
             "Value": {
                 "id": "c9dc4587-0e94-43a9-8a50-e4bd96464807",
-                "resourcePath": "objects\\obj_BSP_Generate\\obj_BSP_Generate.yy",
+                "resourcePath": "objects\\oBSP_Generate\\oBSP_Generate.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1002,7 +1002,7 @@
             "Key": "d12db2eb-876f-47a3-80d3-aecb4cb500ef",
             "Value": {
                 "id": "4f0ffa9c-0831-4dec-9cf9-e2a8abe6eb4d",
-                "resourcePath": "objects\\obj_generate_map\\obj_generate_map.yy",
+                "resourcePath": "objects\\oGenerateMap\\oGenerateMap.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1178,7 +1178,7 @@
             "Key": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
             "Value": {
                 "id": "2bfc19ab-3e4b-4018-b490-f045ce39c173",
-                "resourcePath": "objects\\obj_base\\obj_base.yy",
+                "resourcePath": "objects\\oBase\\oBase.yy",
                 "resourceType": "GMObject"
             }
         },

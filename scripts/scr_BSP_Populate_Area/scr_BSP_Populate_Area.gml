@@ -40,7 +40,7 @@ else
     }
 j = 0;                                // Counter variable to prevent infinite loops
 // Now check the positions for a collision with any other child of the collision parent to prevent over-lapping
-while (place_meeting(xx + ww - spn, yy + hh - spn, obj_BSP_Collision_Parent) && j < 10)
+while (place_meeting(xx + ww - spn, yy + hh - spn, oBSP_CollisionParent) && j < 10)
     {
     // We increment the count var to prevent infinite loops
     j++;

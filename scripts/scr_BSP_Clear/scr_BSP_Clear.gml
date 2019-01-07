@@ -6,7 +6,7 @@
 show_debug_message("BSP: CLEAR GRID DATA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 
 // Remove the tunneler object
-with (obj_BSP_Tunneler) instance_destroy();
+with (oBSP_Tunneler) instance_destroy();
 
 // Remove the ds_grid
 ds_grid_destroy(argument0);

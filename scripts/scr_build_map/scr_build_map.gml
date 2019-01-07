@@ -13,7 +13,7 @@
 ///					engine, which is walls and doors, but you can add further objects easily.
 ///					For example, you can add values directly to the DS_grid using the 
 ///					the "count" variable and the room array "r" (see the create event 
-///					of "obj_BSP_Generate" for more info), and then create the instances 
+///					of "oBSP_Generate" for more info), and then create the instances 
 ///					by adding a further case.
 ///					
 ///					To show you how this would work, the DEMO will create a "player" object 
@@ -23,7 +23,7 @@
 ///					substituted for a player spawner or whatever is required.
 ///					
 ///					Note that all objects that you wish to spawn WITHOUT the possibility of 
-///					an overlap should be children of the object "obj_BSP_Collision_Parent"
+///					an overlap should be children of the object "oBSP_CollisionParent"
 ///					as the spawning scripts use this for checking. If having two instances 
 ///					occupy the same space is not an issue, then you need not use this parent.
 ///					
@@ -44,7 +44,7 @@ var xx = r[pos, 0] * ts;                                        // The x positio
 var yy = r[pos, 1] * ts;                                        // The y position of the room to spawn in
 var ww = (r[pos, 2] div 2) * ts;                                // Now get the half width of the room
 var hh = (r[pos, 3] div 2) * ts;                                // Now get the half height of the room
-instance_create_layer(xx + ww - 8, yy + hh - 8, argument[5], obj_ghost);     // Create the player!
+instance_create_layer(xx + ww - 8, yy + hh - 8, argument[5], oGhost);     // Create the player!
 
 // The following adds the walls, doors and floor tiles for the room using loops.
 // As you can see we have two sprites for horizontal and vertical doors (you can 
@@ -83,7 +83,7 @@ for (var j = 0; j < grid_h; j++;)
             break;
         case bsp_door_h: //Create horizontal door
         case bsp_door_v: //Create vertical door
-			instance_create_layer(i * ts, j * ts, argument[5], obj_door);
+			instance_create_layer(i * ts, j * ts, argument[5], oDoor);
             break;
         }
     }
@@ -113,7 +113,7 @@ for (var j = 0; j < grid_h; j++;)
 // Spawn a potion object in every room area, including the player area. 
 // Note that we do this BEFORE we spawn anything else, as it does NOT 
 // use the BSP collision parent, and we want to spawn things over them.
-scr_BSP_Populate_Rooms(obj_chest, 10, cc, -1, ts, false, true, argument[6]);
+scr_BSP_Populate_Rooms(oChest, 10, cc, -1, ts, false, true, argument[6]);
 
 // Now spawn a room full of gold that is NOT the player room
 //var ran = irandom(cc - 1);
@@ -126,6 +126,6 @@ scr_BSP_Populate_Rooms(obj_chest, 10, cc, -1, ts, false, true, argument[6]);
 //scr_BSP_Populate_Area(obj_DEMO_Boss, 1, ran, ts, true, argument[6]);
     
 // Spawn 200 enemies randomly throughout the WHOLE maze, and not just one room
-scr_BSP_Populate_Rooms(obj_man, 10, cc, pos, ts, false, true, argument[6]);
+scr_BSP_Populate_Rooms(oMan, 10, cc, pos, ts, false, true, argument[6]);
 
-scr_BSP_Populate_Rooms(obj_man_corpse, 10, cc, pos, ts, false, true, argument[6]);
+scr_BSP_Populate_Rooms(oManCorpse, 10, cc, pos, ts, false, true, argument[6]);

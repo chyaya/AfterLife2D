@@ -13,7 +13,7 @@
 ///					engine, which is walls and doors, but you can add further objects easily.
 ///					For example, you can add values directly to the DS_grid using the 
 ///					the "count" variable and the room array "r" (see the create event 
-///					of "obj_BSP_Generate" for more info), and then create the instances 
+///					of "oBSP_Generate" for more info), and then create the instances 
 ///					by adding a further case.
 ///					
 ///					To show you how this would work, the DEMO will create a "player" object 
@@ -23,7 +23,7 @@
 ///					substituted for a player spawner or whatever is required.
 ///					
 ///					Note that all objects that you wish to spawn WITHOUT the possibility of 
-///					an overlap should be children of the object "obj_BSP_Collision_Parent"
+///					an overlap should be children of the object "oBSP_CollisionParent"
 ///					as the spawning scripts use this for checking. If having two instances 
 ///					occupy the same space is not an issue, then you need not use this parent.
 ///					

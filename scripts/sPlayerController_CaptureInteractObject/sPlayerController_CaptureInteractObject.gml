@@ -12,7 +12,7 @@ for (var i = 0; i < interactionObjectNum; ++i;)
 	if(curObj == m_player_object)
 		continue;
 	
-	if(object_is_ancestor(curObj.object_index, obj_base) == false)
+	if(object_is_ancestor(curObj.object_index, oBase) == false)
 		continue;	
 		
 	m_InteractionObject = curObj;

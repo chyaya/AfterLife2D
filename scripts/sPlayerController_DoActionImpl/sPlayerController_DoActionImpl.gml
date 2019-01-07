@@ -17,7 +17,7 @@ case "Possess":
 	m_player_object.outline_enable = false;
 	break;
 case "Unpossess":
-	var ghost_obj = instance_create_layer(m_player_object.x, m_player_object.y, "Instances", obj_ghost);
+	var ghost_obj = instance_create_layer(m_player_object.x, m_player_object.y, "Instances", oGhost);
 	m_player_object.m_CurHealth = 0;
 	m_player_object.outline_enable = false;
 	m_player_object = ghost_obj;

@@ -11,7 +11,7 @@ var yy = floor(argument1 / ts);     // Y position within the tile array
 
 // Before going any further, check that the instance has actually moved 
 // and is no longer within the previous tile grid position.
-if FOW_Xprev != xx || FOW_Yprev != yy
+if FOW_Xprev != xx || FOW_Yprev != yy || FOW_Dirty
 {
 var al = global.FOW_Alpha;
 var ar = global.FOW;
@@ -68,7 +68,7 @@ for (var i = tx; i < max_x;  i++;)
 						}
                         else
 						{
-							if(scr_FOW_Is_Blocked((i * ts), (j * ts), ts, ob))
+							if(sUtil_IsBlocked((i * ts), (j * ts), ts, true))
 							{
 								if !scr_FOW_Bresenhams(i, j, xx, yy, ob, ts)
 								{
@@ -89,6 +89,7 @@ for (var i = tx; i < max_x;  i++;)
     }
 FOW_Xprev = xx;
 FOW_Yprev = yy;
+FOW_Dirty = false
 }
         
         

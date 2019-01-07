@@ -1,8 +1,8 @@
 {
-    "id": "e2ef24d5-2f7a-460e-a817-6f7dd1c80d83",
+    "id": "09155728-4df8-49f9-9467-afac805824a3",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_FOW_Is_Blocked",
+    "name": "sPlayerController_DoActionImpl",
     "IsCompatibility": false,
     "IsDnD": false
 }

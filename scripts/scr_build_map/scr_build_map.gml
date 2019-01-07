@@ -75,6 +75,7 @@ for (var j = 0; j < grid_h; j++;)
         {
         case bsp_empty: // Add floor tiles
             break;
+		case bsp_outer_wall:
         case bsp_wall: //Create wall objects
         	tilemap_set(_m, 24, i, j); // Uncomment for tiles!
             break;

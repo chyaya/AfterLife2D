@@ -39,6 +39,14 @@
             "objectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
             "propertyId": "1dc99b76-9d40-4983-ae9e-9d18262b0ce0",
             "value": "spr_man_idle"
+        },
+        {
+            "id": "6eba0a55-eaf7-4acf-ba54-c901b2997c26",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
+            "propertyId": "b443090f-23b9-45b5-85f1-c9c6ccd3b28c",
+            "value": "Man"
         }
     ],
     "parentObjectId": "7a688a40-48fe-4cef-91f2-de3e41004582",

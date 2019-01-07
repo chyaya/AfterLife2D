@@ -4,20 +4,20 @@
     "mvc": "1.0",
     "name": "obj_chest",
     "eventList": [
-        {
-            "id": "8aa591c6-0e29-4fd7-9d47-a5234b9cd5d6",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "24c65588-c331-45fd-a8f0-e0e0d0a82a03"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": [
+        {
+            "id": "1f0f7b0d-6b7c-4253-bf6c-0c2a395ef616",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
+            "propertyId": "224a275d-2e89-4f97-8365-7017d2d02440",
+            "value": "Open"
+        }
+    ],
+    "parentObjectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

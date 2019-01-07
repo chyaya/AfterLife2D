@@ -1,11 +1,18 @@
 if(m_player_object.object_index == obj_ghost)
 {
-	if(m_InteractionObject != noone)
+	if(m_InteractionObject != noone
+		&& object_is_ancestor(m_InteractionObject.object_index, obj_pawn))
 	{
-		m_ActionNames[ACTION_A] = "Possess";	
+		m_ActionNames[ACTION_B] = "Possess";	
 	}
 }
 else
 {
-	m_ActionNames[ACTION_A] = "Unpossess";	
+	if(m_InteractionObject != noone
+		&& object_is_ancestor(m_InteractionObject.object_index, obj_prop))
+	{
+		m_ActionNames[ACTION_A] = m_InteractionObject.m_ActionName;
+	}
+	
+	m_ActionNames[ACTION_B] = "Unpossess";
 }

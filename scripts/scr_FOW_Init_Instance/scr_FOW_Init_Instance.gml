@@ -8,6 +8,7 @@ FOW_Radius = argument0;     // Base radius of the "light"
 FOW_Xprev = argument1;      // Previous x position in the FOW array
 FOW_Yprev = argument2;      // Previous y position in the FOW array
 FOW_Quad = argument3;       // Use quadratic lighting (looks nicer - linear only looks good really on grid-snapped games)
+FOW_Dirty = false;
 
 // NOTE! The radius value, along with the tile size that you set,
 // will have a SERIOUS impact on performance! While these scripts are

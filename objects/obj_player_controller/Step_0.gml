@@ -1,83 +1,81 @@
-var obj_x = 0, obj_y = 0;
+m_Input_AxisL_Up = false;
+m_Input_AxisL_Down = false;
+m_Input_AxisL_Left = false;
+m_Input_AxisL_Right = false;
+m_Input_Btn_A = false;
+m_Input_Btn_B = false;
+m_Input_Btn_X = false;
+m_Input_Btn_Y = false;
+m_Input_Btn_Select = false;
+m_Input_Btn_Start = false;
 
-with(m_player_object)
+sPlayerController_CaptureKeyboard();
+sPlayerController_CaptureGamepad();
+
+if(m_player_object != noone)
 {
-	yDir = 0;
-	xDir = 0;
+	with(m_player_object)
+	{
+		yDir = 0;
+		xDir = 0;
 	
-	scr_pawn_doinput();
-	scr_pawn_dogamepad();
-	scr_pawn_move();
+		if(other.m_Input_AxisL_Up)
+		{
+			yDir -= 1;
+		}
+		else if(other.m_Input_AxisL_Down)
+		{
+			yDir += 1;
+		}
 	
-	obj_x = x;
-	obj_y = y;
+		if(other.m_Input_AxisL_Left)
+		{
+			xDir -= 1;
+		}
+		else if(other.m_Input_AxisL_Right)
+		{
+			xDir += 1;
+		}
+	
+		scr_pawn_move();
+	}
+	
+	m_PlayerObjectX = m_player_object.x;
+	m_PlayerObjectY = m_player_object.y;	
 }
 
-scr_FOW_Update(obj_x, obj_y, obj_door);
+sPlayerController_CaptureInteractObject();
 
-//////////////////////////////////////////////////////////
-// Mouse Over
-var last_mouseover_object = m_InteractionObject;
-m_InteractionObject = noone;
+scr_FOW_Update(m_PlayerObjectX, m_PlayerObjectY, obj_door);
 
-var interactionObjectList = ds_list_create();
-var interactionObjectNum = collision_circle_list(obj_x, obj_y, 10, all, true, false, interactionObjectList, true);
 
-for (var i = 0; i < interactionObjectNum; ++i;)
+if(other.m_Input_Btn_Start)
 {
-	var curObj = interactionObjectList[|i];
-	
-	if(curObj == m_player_object)
-		continue;
-	
-	if(object_is_ancestor(curObj.object_index, obj_pawn) == false)
-		continue;	
+	game_restart();
+}
 		
-	m_InteractionObject = curObj;
-}
-
-if(last_mouseover_object != m_InteractionObject)
+if(other.m_Input_Btn_Select)
 {
-	if(last_mouseover_object != noone)
+	gamepad_zoom = !gamepad_zoom;
+		
+	if(other.gamepad_zoom)
 	{
-		last_mouseover_object.outline_enable = false;
+		obj_camera.zoom = 1.0;
 	}
-	
-	if(m_InteractionObject != noone)
+	else
 	{
-		m_InteractionObject.outline_enable = true;
-		m_InteractionObject.outline_color = c_white;
+		obj_camera.zoom = 4.0;
 	}
-	
 }
+	
 
 //////////////////////////////////////////////////////////
 // Ability / Possess
-if(m_player_object.object_index == obj_ghost)
-{
-	if(keyboard_check_pressed(ord("F")))
-	{
-		if(m_InteractionObject != noone)
-		{
-			with(m_player_object)
-			{
-				instance_destroy();
-			}
-			
-			m_player_object = m_InteractionObject;
-			m_player_object.cur_health = m_player_object.max_health;
-			m_player_object.outline_enable = false;
-			//m_player_object.outline_color = c_blue;
-		}
-	}
-}
-else
-{
-	if(keyboard_check_pressed(vk_tab))
-	{
-		var ghost_obj = instance_create_layer(m_player_object.x, m_player_object.y, "Instances", obj_ghost);
-		m_player_object.cur_health = 0;
-		m_player_object.outline_enable = false;
-		m_player_object = ghost_obj;
-	}
-}
+
+m_ActionNames[ACTION_A] = "";
+m_ActionNames[ACTION_B] = "";
+m_ActionNames[ACTION_X] = "";
+m_ActionNames[ACTION_Y] = "";
+
+sPlayerController_SelectAction();
+sPlayerController_DoAction();

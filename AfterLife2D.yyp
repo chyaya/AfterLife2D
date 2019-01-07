@@ -90,7 +90,7 @@
             "Key": "18092258-e9e2-480b-a61a-24ac0424da87",
             "Value": {
                 "id": "af7a80a6-8429-4a97-bb3c-83d30fe2d674",
-                "resourcePath": "scripts\\scr_pawn_dogamepad\\scr_pawn_dogamepad.yy",
+                "resourcePath": "scripts\\sPlayerController_CaptureGamepad\\sPlayerController_CaptureGamepad.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "7cce86a3-e092-47fa-88f6-3cf92d6df0a1",
+            "Value": {
+                "id": "009d7b5f-6d1d-4151-bd6e-74b601f9db85",
+                "resourcePath": "scripts\\sPlayerController_CaptureInteractObject\\sPlayerController_CaptureInteractObject.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7d208c2e-45be-441e-b326-71e955120dc8",
             "Value": {
                 "id": "7fce5313-c0de-4f1b-825d-7cdbbd249a84",
@@ -636,6 +644,14 @@
                 "id": "ec3a2472-a0b6-4237-9012-7af9b5be0811",
                 "resourcePath": "scripts\\@tile_exists\\tile_exists.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9d24534b-0f17-4324-bbad-1afb609f68cc",
+            "Value": {
+                "id": "4fe2ce00-cae4-440b-928a-cbb23a3776b6",
+                "resourcePath": "views\\9d24534b-0f17-4324-bbad-1afb609f68cc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -871,6 +887,14 @@
             }
         },
         {
+            "Key": "c67b5f71-2a75-44bd-8675-7cf81f24ff9d",
+            "Value": {
+                "id": "ed9c5199-5f7c-4ae5-943a-0030d92c7232",
+                "resourcePath": "scripts\\sPlayerController_SelectAction\\sPlayerController_SelectAction.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c7a06c3d-8bbf-4dcf-8209-f0d382a38c74",
             "Value": {
                 "id": "f2926932-dcc8-4941-8506-231f38d68efe",
@@ -964,6 +988,14 @@
                 "id": "e4f8edb2-f630-45f0-942e-f03d78ce003f",
                 "resourcePath": "views\\d36403e2-c216-4139-aa25-ca87c76f8c5c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "da71ca88-8eb4-41cb-94a7-22e56f9a0a4b",
+            "Value": {
+                "id": "f24a96e2-1475-4b94-a7de-0cfc639eddd0",
+                "resourcePath": "scripts\\sPlayerController_DoAction\\sPlayerController_DoAction.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1066,7 +1098,7 @@
             "Key": "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
             "Value": {
                 "id": "8ef4730e-09f7-402b-ac6d-39d1b8099e52",
-                "resourcePath": "scripts\\scr_pawn_doinput\\scr_pawn_doinput.yy",
+                "resourcePath": "scripts\\sPlayerController_CaptureKeyboard\\sPlayerController_CaptureKeyboard.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1187,10 +1219,13 @@
         "53e50b84-d4d6-4c07-939b-9aa41aa5fba5",
         "51987040-c25b-48b7-aae6-ed65189cada1",
         "a6f1d00c-8abc-426f-9281-528a894c9bd1",
-        "63041d90-dbd1-46c3-9b82-8796ecf052aa",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
-        "eafab41e-4f15-478f-adf7-1f2bb49d4911",
         "18092258-e9e2-480b-a61a-24ac0424da87",
+        "7cce86a3-e092-47fa-88f6-3cf92d6df0a1",
+        "c67b5f71-2a75-44bd-8675-7cf81f24ff9d",
+        "da71ca88-8eb4-41cb-94a7-22e56f9a0a4b",
+        "63041d90-dbd1-46c3-9b82-8796ecf052aa",
+        "eafab41e-4f15-478f-adf7-1f2bb49d4911",
         "6c3b5d31-9aa9-461f-a16e-b16d7fd6cb26",
         "8a40ec99-3ca7-49b9-943e-898d85771bd0",
         "4ee8b7f7-222c-4a6e-8696-ed7ed2208e14",

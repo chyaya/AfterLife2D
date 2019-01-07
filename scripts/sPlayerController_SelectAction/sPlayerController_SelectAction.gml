@@ -1,4 +1,4 @@
-if(m_player_object.object_index == oGhost)
+if(m_PlayerObject.object_index == oGhost)
 {
 	if(m_InteractionObject != noone
 		&& object_is_ancestor(m_InteractionObject.object_index, oPawn))

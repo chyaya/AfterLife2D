@@ -12,36 +12,36 @@ m_Input_Btn_Start = false;
 sPlayerController_CaptureKeyboard();
 sPlayerController_CaptureGamepad();
 
-if(m_player_object != noone)
+if(m_PlayerObject != noone)
 {
-	with(m_player_object)
+	with(m_PlayerObject)
 	{
-		yDir = 0;
-		xDir = 0;
+		m_DirY = 0;
+		m_DirX = 0;
 	
 		if(other.m_Input_AxisL_Up)
 		{
-			yDir -= 1;
+			m_DirY -= 1;
 		}
 		else if(other.m_Input_AxisL_Down)
 		{
-			yDir += 1;
+			m_DirY += 1;
 		}
 	
 		if(other.m_Input_AxisL_Left)
 		{
-			xDir -= 1;
+			m_DirX -= 1;
 		}
 		else if(other.m_Input_AxisL_Right)
 		{
-			xDir += 1;
+			m_DirX += 1;
 		}
 	
 		sPawn_Move();
 	}
 	
-	m_PlayerObjectX = m_player_object.x;
-	m_PlayerObjectY = m_player_object.y;	
+	m_PlayerObjectX = m_PlayerObject.x;
+	m_PlayerObjectY = m_PlayerObject.y;	
 }
 
 sPlayerController_CaptureInteractObject();
@@ -56,9 +56,9 @@ if(other.m_Input_Btn_Start)
 		
 if(other.m_Input_Btn_Select)
 {
-	gamepad_zoom = !gamepad_zoom;
+	m_GamepadZoom = !m_GamepadZoom;
 		
-	if(other.gamepad_zoom)
+	if(other.m_GamepadZoom)
 	{
 		oCamera.zoom = 1.0;
 	}

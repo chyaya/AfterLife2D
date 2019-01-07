@@ -8,14 +8,14 @@ if(instance_exists(oGhost) == false)
 	show_message("no player ghost");	
 }
 
-m_player_object = instance_find(oGhost, 0);
+m_PlayerObject = instance_find(oGhost, 0);
 m_InteractionObject = noone;
-m_PlayerObjectX = m_player_object.x;
-m_PlayerObjectY = m_player_object.y;
+m_PlayerObjectX = m_PlayerObject.x;
+m_PlayerObjectY = m_PlayerObject.y;
 
-m_wall_map = layer_tilemap_get_id("Tiles");
+m_WallMap = layer_tilemap_get_id("Tiles");
 
-gamepad_zoom = false;
+m_GamepadZoom = false;
 
 #macro ACTION_A 0
 #macro ACTION_B 1

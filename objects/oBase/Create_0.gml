@@ -1,2 +1,2 @@
-outline_color = c_white;
-outline_enable = false;
+m_OutlineColor = c_white;
+m_OutlineEnable = false;

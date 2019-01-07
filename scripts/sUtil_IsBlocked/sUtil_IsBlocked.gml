@@ -3,13 +3,13 @@ var _y = argument1;
 var _ts = argument2;
 var _viewOnly = argument3;
 
-var tile = tilemap_get(oPlayerController.m_wall_map, floor(_x/_ts),floor(_y/_ts) )& tile_index_mask;
+var tile = tilemap_get(oPlayerController.m_WallMap, floor(_x/_ts),floor(_y/_ts) )& tile_index_mask;
 
 if(sIsBlockTileIndex(tile))
 	return true;
 	
 // 귀신인 경우에는 오브젝트를 통과할 수 있다.
-if(!_viewOnly && oPlayerController.m_player_object.object_index == oGhost)
+if(!_viewOnly && oPlayerController.m_PlayerObject.object_index == oGhost)
 	return false;
 
 var _list = ds_list_create();

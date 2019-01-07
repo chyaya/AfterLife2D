@@ -53,7 +53,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "80",
-            "varName": "move_speed",
+            "varName": "m_MoveSpeed",
             "varType": 0
         },
         {
@@ -67,7 +67,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "noone",
-            "varName": "sprite_index_idle",
+            "varName": "m_SpriteIndex_Idle",
             "varType": 5
         },
         {
@@ -81,7 +81,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "",
-            "varName": "sprite_index_move",
+            "varName": "m_SpriteIndex_Move",
             "varType": 5
         },
         {
@@ -95,7 +95,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "",
-            "varName": "sprite_index_dead",
+            "varName": "m_SpriteIndex_Dead",
             "varType": 5
         },
         {
@@ -125,20 +125,6 @@
             "value": "100",
             "varName": "m_CurHealth",
             "varType": 1
-        },
-        {
-            "id": "54b780a6-ee30-4396-a515-ff1a996554ef",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "",
-            "varName": "ability1",
-            "varType": 5
         }
     ],
     "solid": false,

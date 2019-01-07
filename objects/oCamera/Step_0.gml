@@ -1,37 +1,32 @@
-x += (xTo - x)/25;
-y += (yTo - y)/25;
+x += (m_TargetX - x)/25;
+y += (m_TargetY - y)/25;
 
-follow = oPlayerController.m_player_object;
+m_Follow = oPlayerController.m_PlayerObject;
 
-if(follow != noone)
+if(m_Follow != noone)
 {
-	xTo = follow.x;
-	yTo = follow.y;
+	m_TargetX = m_Follow.x;
+	m_TargetY = m_Follow.y;
 }
-else
-{
-	
-}
-
 
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
-camera_set_view_mat(camera, vm);
+camera_set_view_mat(m_Camera, vm);
 
 if(mouse_wheel_down())
 {
-	zoom /= zoom_speed;
+	m_Zoom /= m_ZoomSpeed;
 }
 
 if(mouse_wheel_up())
 {
-	zoom *= zoom_speed;
+	m_Zoom *= m_ZoomSpeed;
 }
 
 	
-if(last_zoom != zoom)
+if(m_LastZoom != m_Zoom)
 {
-	var pm = matrix_build_projection_ortho(view_wport[0]/zoom, view_hport[0]/zoom, 1, 10000);
-	camera_set_proj_mat(camera, pm);
+	var pm = matrix_build_projection_ortho(view_wport[0]/m_Zoom, view_hport[0]/m_Zoom, 1, 10000);
+	camera_set_proj_mat(m_Camera, pm);
 }
 
-last_zoom = zoom;
+m_LastZoom = m_Zoom;

@@ -9,7 +9,7 @@ for (var i = 0; i < interactionObjectNum; ++i;)
 {
 	var curObj = interactionObjectList[|i];
 	
-	if(curObj == m_player_object)
+	if(curObj == m_PlayerObject)
 		continue;
 	
 	if(object_is_ancestor(curObj.object_index, oBase) == false)
@@ -22,13 +22,13 @@ if(lastMouseOverObject != m_InteractionObject)
 {
 	if(lastMouseOverObject != noone)
 	{
-		lastMouseOverObject.outline_enable = false;
+		lastMouseOverObject.m_OutlineEnable = false;
 	}
 	
 	if(m_InteractionObject != noone)
 	{
-		m_InteractionObject.outline_enable = true;
-		m_InteractionObject.outline_color = c_white;
+		m_InteractionObject.m_OutlineEnable = true;
+		m_InteractionObject.m_OutlineColor = c_white;
 	}
 	
 }

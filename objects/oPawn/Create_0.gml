@@ -1,8 +1,7 @@
 event_inherited();
 
-last_moved = false;
-xDir = 0;
-yDir = 0;
+m_DirX = 0;
+m_DirY = 0;
 
 if(irandom(1) == 0)
 {

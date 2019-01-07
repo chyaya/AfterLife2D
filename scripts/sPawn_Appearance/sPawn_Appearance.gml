@@ -1,34 +1,34 @@
 var obj = argument0;
-var xDir = argument1; 
-var yDir = argument2; 
+var m_DirX = argument1; 
+var m_DirY = argument2; 
 
 with(obj)
 {
 	if(m_CurHealth > 0)
 	{
-		if(xDir > 0)
+		if(m_DirX > 0)
 		{
 			image_xscale = 1;
 		}
-		else if(xDir < 0)
+		else if(m_DirX < 0)
 		{
 			image_xscale = -1;
 		}
 
-		var moved = xDir != 0 || yDir != 0;
+		var moved = m_DirX != 0 || m_DirY != 0;
 
 		if(moved)
 		{
-			sprite_index = sprite_index_move;
+			sprite_index = m_SpriteIndex_Move;
 		}
 		else
 		{
-			sprite_index = sprite_index_idle;
+			sprite_index = m_SpriteIndex_Idle;
 		}
 	}
 	else
 	{
-		sprite_index = sprite_index_dead;	
+		sprite_index = m_SpriteIndex_Dead;	
 	}
 	
 	

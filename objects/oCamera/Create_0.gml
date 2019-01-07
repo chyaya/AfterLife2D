@@ -1,18 +1,18 @@
 show_debug_message("Init Camera");
 
-camera = camera_create();
+m_Camera = camera_create();
 
-zoom = 4.0;
-last_zoom = zoom;
-zoom_speed = 1.1;
+m_Zoom = 4.0;
+m_LastZoom = m_Zoom;
+m_ZoomSpeed = 1.1;
 
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
-var pm = matrix_build_projection_ortho(view_wport[0]/zoom, view_hport[0]/zoom, 1, 10000);
+var pm = matrix_build_projection_ortho(view_wport[0]/m_Zoom, view_hport[0]/m_Zoom, 1, 10000);
 
-camera_set_view_mat(camera, vm);
-camera_set_proj_mat(camera, pm);
+camera_set_view_mat(m_Camera, vm);
+camera_set_proj_mat(m_Camera, pm);
 
-view_camera[0] = camera;
+view_camera[0] = m_Camera;
 
-xTo = x;
-yTo = y;
+m_TargetX = x;
+m_TargetY = y;

@@ -1,1 +1,1 @@
-sPawn_Appearance(self, xDir, yDir);
+sPawn_Appearance(self, m_DirX, m_DirY);

@@ -6,6 +6,6 @@
 
 // NOTE! This is an essential part of the BSP script set and should not be removed 
 // from your game, unless you plan on creating your own spawning mechanism and don't 
-// plan on using the script "scr_BSP_Populate_Rooms" or "scr_BSP_Populate_Area".
+// plan on using the script "sBSP_PopulateRooms" or "sBSP_PopulateArea".
 
 

@@ -1,5 +1,5 @@
 draw_set_halign(fa_left);
-draw_set_font(font_fixedsys);
+draw_set_font(fontFixedsys);
 
 var text_x = 10, text_y = 10;
 var line_h = 40, offset = 200;

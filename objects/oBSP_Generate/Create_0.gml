@@ -37,11 +37,11 @@ var split_num = global.splitNum;         // The number of slpits that the script
 
 // Create the BSP ds_grid (Note the global variable! As with above, you can use
 // a real or other value here as the global is only added for convenience in this demo
-bsp_grid = scr_BSP_Create(global.cellSize, split_num);
+bsp_grid = sBSP_Create(global.cellSize, split_num);
 
 
 // Split the room and populate the grid with the initial areas for the map
-scr_BSP_Split_Room(bsp_grid, split_width_min, split_num);
+sBSP_SplitRoom(bsp_grid, split_width_min, split_num);
 
 
 // Parse the room grid and generate "rooms" within each split area
@@ -68,24 +68,24 @@ instance_create(xx * cell_size, yy * cell_size, OBJECT);
 // script to create your own objects anywhere within the map and be sure that 
 // they are inside a room.
 
-var count = scr_BSP_Create_Room_Space(bsp_grid, split_skip_num);
+var count = sBSP_CreateRoomSpace(bsp_grid, split_skip_num);
 
 
 // This script creates the "wall" spaces around the rooms in the map.
 
-scr_BSP_Create_Internal_Walls(bsp_grid, count, cell_size);
+sBSP_CreateInternalWalls(bsp_grid, count, cell_size);
 
 
 // This script uses pathfinding to create "corridors" between rooms
 
-scr_BSP_Create_Corridors(bsp_grid, cell_size, count);
+sBSP_CreateCorridors(bsp_grid, cell_size, count);
 
 
 // This script is for cleaning up. It is commented out since for the demo/example
 // we don't want to destroy it yet as it's being drawn to the screen, but when not 
 // debugging it can be uncommented (it is currently used in the Clean Up event)
 
-// scr_BSP_Clear(bsp_grid);
+// sBSP_Clear(bsp_grid);
 
 
 

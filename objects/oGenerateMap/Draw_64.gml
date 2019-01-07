@@ -1,6 +1,6 @@
 if(m_ShowDebugMap)
 {
-	scr_BSP_Draw_Debug(bsp_grid, cell_size);
+	sBSP_DrawDebug(bsp_grid, cell_size);
 	
 	if(oPlayerController.m_player_object != noone)
 	{

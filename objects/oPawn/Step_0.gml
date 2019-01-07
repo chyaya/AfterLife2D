@@ -1,1 +1,1 @@
-scr_pawn_appearance(self, xDir, yDir);
+sPawn_Appearance(self, xDir, yDir);

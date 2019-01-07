@@ -2,5 +2,5 @@
 // end of the room generation code in the Create Event, but for this 
 // demo we have it here to permit the debug drawing to work.
 
-scr_BSP_Clear(bsp_grid);
+sBSP_Clear(bsp_grid);
 

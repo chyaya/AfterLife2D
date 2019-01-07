@@ -5,7 +5,7 @@ var _viewOnly = argument3;
 
 var tile = tilemap_get(oPlayerController.m_wall_map, floor(_x/_ts),floor(_y/_ts) )& tile_index_mask;
 
-if(scr_Is_Block_Tile_Index(tile))
+if(sIsBlockTileIndex(tile))
 	return true;
 	
 // 귀신인 경우에는 오브젝트를 통과할 수 있다.

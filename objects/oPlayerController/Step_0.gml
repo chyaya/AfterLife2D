@@ -37,7 +37,7 @@ if(m_player_object != noone)
 			xDir += 1;
 		}
 	
-		scr_pawn_move();
+		sPawn_Move();
 	}
 	
 	m_PlayerObjectX = m_player_object.x;
@@ -46,7 +46,7 @@ if(m_player_object != noone)
 
 sPlayerController_CaptureInteractObject();
 
-scr_FOW_Update(m_PlayerObjectX, m_PlayerObjectY, oDoor);
+sFOW_Update(m_PlayerObjectX, m_PlayerObjectY, oDoor);
 
 
 if(other.m_Input_Btn_Start)

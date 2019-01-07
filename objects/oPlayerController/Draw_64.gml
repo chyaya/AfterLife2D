@@ -1,3 +1,12 @@
+if(m_PlayerObject.object_index == oGhost)
+{
+	draw_set_colour(c_aqua);
+	draw_set_alpha(0.2);
+	draw_rectangle(0, 0, view_wport[0], view_hport[0], false);
+}
+
+draw_set_colour(c_white);
+draw_set_alpha(1.0);
 draw_set_halign(fa_left);
 draw_set_font(fontFixedsys);
 

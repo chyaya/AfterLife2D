@@ -39,14 +39,6 @@
             }
         },
         {
-            "Key": "023a5161-74f5-4049-abb1-ddbb8eaa0948",
-            "Value": {
-                "id": "64af57a2-7fd8-436d-b923-458838d89e35",
-                "resourcePath": "tilesets\\bck_DEMO_Wall_tileset\\bck_DEMO_Wall_tileset.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "05c217c3-8794-4b92-9be5-180c0cf05e58",
             "Value": {
                 "id": "8d8e2f75-4eb4-4a1a-9c0e-465603ca7431",
@@ -628,14 +620,6 @@
                 "id": "bfa91573-21a3-4a91-b44d-df1850729dbc",
                 "resourcePath": "scripts\\sFOW_InitInstance\\sFOW_InitInstance.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "a5592a62-4317-4352-9a44-db520e3d5d2b",
-            "Value": {
-                "id": "56aa330c-1e4a-478a-93c5-260ddd14b89a",
-                "resourcePath": "views\\a5592a62-4317-4352-9a44-db520e3d5d2b.yy",
-                "resourceType": "GMFolder"
             }
         },
         {

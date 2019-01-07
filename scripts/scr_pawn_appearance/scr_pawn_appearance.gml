@@ -4,7 +4,7 @@ var yDir = argument2;
 
 with(obj)
 {
-	if(cur_health > 0)
+	if(m_CurHealth > 0)
 	{
 		if(xDir > 0)
 		{

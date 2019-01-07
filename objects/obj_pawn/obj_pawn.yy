@@ -109,7 +109,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "100",
-            "varName": "max_health",
+            "varName": "m_MaxHealth",
             "varType": 1
         },
         {
@@ -123,7 +123,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "100",
-            "varName": "cur_health",
+            "varName": "m_CurHealth",
             "varType": 1
         },
         {

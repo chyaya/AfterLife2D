@@ -14,7 +14,7 @@
             "mvc": "1.0",
             "objectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
             "propertyId": "34514553-8ed0-4562-86c9-f2d1c848d480",
-            "value": "spr_man_dead"
+            "value": "sprManDead"
         },
         {
             "id": "cd5880ac-a699-4201-b306-8bffe9c9383d",
@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
             "propertyId": "85328fb6-fb12-49bb-97e6-af589f00bd3b",
-            "value": "spr_man_move"
+            "value": "sprManMove"
         },
         {
             "id": "3946f40e-a5cf-4e90-a2b9-ccfc2b36ad58",
@@ -38,7 +38,7 @@
             "mvc": "1.0",
             "objectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
             "propertyId": "1dc99b76-9d40-4983-ae9e-9d18262b0ce0",
-            "value": "spr_man_idle"
+            "value": "sprManIdle"
         },
         {
             "id": "6eba0a55-eaf7-4acf-ba54-c901b2997c26",

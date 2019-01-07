@@ -63,8 +63,8 @@ instance_create_layer(xx + ww - 8, yy + hh - 8, argument[5], oGhost);     // Cre
 var _l = layer_get_id("Tiles");
 var _m = layer_tilemap_get_id(_l); // Uncomment for tiles!
 
-var _xs = ts / sprite_get_width(spr_DEMO_Floor_Empty);
-var _ys = ts  / sprite_get_height(spr_DEMO_Floor_Empty);
+//var _xs = ts / sprite_get_width(spr_DEMO_Floor_Empty);
+//var _ys = ts  / sprite_get_height(spr_DEMO_Floor_Empty);
 
 for (var i = 0; i < grid_w; i++;)
 {

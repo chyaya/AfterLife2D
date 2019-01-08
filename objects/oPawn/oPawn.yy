@@ -23,6 +23,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
+        },
+        {
+            "id": "305200f6-54c9-41d5-ab39-6aca6fde35f0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -124,6 +134,20 @@
             "resourceFilter": 1023,
             "value": "100",
             "varName": "m_CurHealth",
+            "varType": 1
+        },
+        {
+            "id": "3dac35b8-3604-4afb-8398-24dac5594765",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_CurEightDirIndex",
             "varType": 1
         }
     ],

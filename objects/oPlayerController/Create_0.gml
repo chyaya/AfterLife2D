@@ -27,3 +27,4 @@ m_ActionNames[ACTION_B] = "";
 m_ActionNames[ACTION_X] = "";
 m_ActionNames[ACTION_Y] = "";
 
+m_CurEightDirIndex = 0;

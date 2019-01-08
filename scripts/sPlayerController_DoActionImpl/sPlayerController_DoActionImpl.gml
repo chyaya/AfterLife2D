@@ -27,4 +27,12 @@ case "Open":
 	m_InteractionObject = noone;
 	FOW_Dirty = true;
 	break;
+case "Attack":
+	with (instance_create_layer(m_PlayerObject.x, m_PlayerObject.y, "Instances", oBlank))
+	{
+		m_OwnerObj = other.m_PlayerObject.id;
+		
+		instance_change(oMelee, true);
+	}
+	break;
 }

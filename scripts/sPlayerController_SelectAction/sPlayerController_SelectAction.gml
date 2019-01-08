@@ -17,5 +17,6 @@ else
 		m_ActionNames[ACTION_A] = m_InteractionObject.m_ActionName;
 	}
 	
+	m_ActionNames[ACTION_X] = "Attack";
 	m_ActionNames[ACTION_B] = "Unpossess";
 }

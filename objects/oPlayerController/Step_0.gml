@@ -38,6 +38,12 @@ if(m_PlayerObject != noone)
 		}
 	
 		sPawn_Move();
+		
+		var newEightDirIndex = sUtil_GetEightDirIndex(m_DirX, m_DirY);
+		if(newEightDirIndex < 8)
+		{
+			m_CurEightDirIndex = newEightDirIndex;
+		}
 	}
 	
 	m_PlayerObjectX = m_PlayerObject.x;

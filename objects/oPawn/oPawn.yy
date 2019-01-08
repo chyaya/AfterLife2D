@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
+        },
+        {
+            "id": "eba4a3e1-a1c7-41d5-afa3-71985d2fae5e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -109,6 +119,20 @@
             "varType": 5
         },
         {
+            "id": "1acd5c83-b9a8-4357-99e3-6d1b89fe3800",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "m_SpriteIndex_Action",
+            "varType": 5
+        },
+        {
             "id": "1c704cd6-d5c9-402c-8ffa-3a401724d9be",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -149,6 +173,20 @@
             "value": "0",
             "varName": "m_CurEightDirIndex",
             "varType": 1
+        },
+        {
+            "id": "76639d57-0a25-4edb-ba44-f6b582257226",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_Attacking",
+            "varType": 3
         }
     ],
     "solid": false,

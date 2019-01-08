@@ -370,7 +370,7 @@
             "Key": "56436457-4aa3-455c-aadd-c8281d38bff2",
             "Value": {
                 "id": "c8b8d787-d9e6-41a1-a8af-8e67656eba9e",
-                "resourcePath": "scripts\\sUtil_GetEightDirIndex\\sUtil_GetEightDirIndex.yy",
+                "resourcePath": "scripts\\sUtil_DirToAngle\\sUtil_DirToAngle.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -911,6 +911,14 @@
             }
         },
         {
+            "Key": "c93e823b-d741-4008-9521-81ecd1c60513",
+            "Value": {
+                "id": "d5f522e2-6587-42e6-9436-8f2282797cb5",
+                "resourcePath": "scripts\\sPlayerController_DoAttack\\sPlayerController_DoAttack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "caae5ed2-ccb1-4f72-bdee-5be99420d515",
             "Value": {
                 "id": "fd6589f3-6e78-4b05-a4c5-edcf3e969d92",
@@ -1180,6 +1188,7 @@
         "c67b5f71-2a75-44bd-8675-7cf81f24ff9d",
         "da71ca88-8eb4-41cb-94a7-22e56f9a0a4b",
         "09155728-4df8-49f9-9467-afac805824a3",
+        "c93e823b-d741-4008-9521-81ecd1c60513",
         "63041d90-dbd1-46c3-9b82-8796ecf052aa",
         "eafab41e-4f15-478f-adf7-1f2bb49d4911",
         "d666ef52-8966-429f-ac3a-d21c7bb6ef3d",

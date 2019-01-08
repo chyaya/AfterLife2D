@@ -39,10 +39,9 @@ if(m_PlayerObject != noone)
 	
 		sPawn_Move();
 		
-		var newEightDirIndex = sUtil_GetEightDirIndex(m_DirX, m_DirY);
-		if(newEightDirIndex < 8)
+		if(m_DirX != 0 || m_DirY != 0)
 		{
-			m_CurEightDirIndex = newEightDirIndex;
+			direction = sUtil_DirToAngle(m_DirX, m_DirY);
 		}
 	}
 	

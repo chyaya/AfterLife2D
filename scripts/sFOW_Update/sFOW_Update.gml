@@ -13,6 +13,8 @@ var yy = floor(argument1 / ts);     // Y position within the tile array
 // and is no longer within the previous tile grid position.
 if FOW_Xprev != xx || FOW_Yprev != yy || FOW_Dirty
 {
+	//show_debug_message("FOW Update");
+	
 var al = global.FOW_Alpha;
 var ar = global.FOW;
 var rr = FOW_Radius;                // Radius of the fog area to show

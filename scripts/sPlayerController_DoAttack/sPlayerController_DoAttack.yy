@@ -1,8 +1,8 @@
 {
-    "id": "56436457-4aa3-455c-aadd-c8281d38bff2",
+    "id": "c93e823b-d741-4008-9521-81ecd1c60513",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sUtil_GetEightDirIndex",
+    "name": "sPlayerController_DoAttack",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,7 +1,5 @@
 image_speed = 0;
+direction = m_OwnerObj.direction;
+image_angle = m_OwnerObj.direction;
 
-
-show_debug_message(string(m_OwnerObj));
-
-//direction = m_OwnerObj.m_CurEightDirIndex*45;
-//image_index = direction div 45;
+motion_add(image_angle, 2);

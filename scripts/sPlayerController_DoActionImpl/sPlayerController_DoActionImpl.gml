@@ -17,10 +17,7 @@ case "Possess":
 	m_PlayerObject.m_OutlineEnable = false;
 	break;
 case "Unpossess":
-	var ghost_obj = instance_create_layer(m_PlayerObject.x, m_PlayerObject.y, "Instances", oGhost);
-	m_PlayerObject.m_CurHealth = 0;
-	m_PlayerObject.m_OutlineEnable = false;
-	m_PlayerObject = ghost_obj;
+	sUtil_DoUnpossess(self);
 	break;
 case "Open":
 	instance_destroy(m_InteractionObject);
@@ -28,6 +25,6 @@ case "Open":
 	FOW_Dirty = true;
 	break;
 case "Attack":
-	sPlayerController_DoAttack();
+	sUtil_DoAttack(m_PlayerObject, room_speed*0.1);
 	break;
 }

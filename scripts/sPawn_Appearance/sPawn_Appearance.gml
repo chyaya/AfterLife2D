@@ -1,21 +1,21 @@
 var obj = argument0;
-var m_DirX = argument1; 
-var m_DirY = argument2; 
+var dirX = argument1; 
+var dirY = argument2; 
 
 with(obj)
 {
 	if(m_CurHealth > 0)
 	{
-		if(m_DirX > 0)
+		if(dirX > 0)
 		{
 			image_xscale = 1;
 		}
-		else if(m_DirX < 0)
+		else if(dirX < 0)
 		{
 			image_xscale = -1;
 		}
 
-		var moved = m_DirX != 0 || m_DirY != 0;
+		var moved = dirX != 0 || dirY != 0;
 
 		if(m_Attacking)
 		{

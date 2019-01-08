@@ -38,11 +38,6 @@ if(m_PlayerObject != noone)
 		}
 	
 		sPawn_Move();
-		
-		if(m_DirX != 0 || m_DirY != 0)
-		{
-			direction = sUtil_DirToAngle(m_DirX, m_DirY);
-		}
 	}
 	
 	m_PlayerObjectX = m_PlayerObject.x;

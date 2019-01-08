@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "59799419-8b83-4086-867f-ee2ca26a0aa1",
+            "Value": {
+                "id": "c7cd35b5-17d2-4601-99d8-061c46bfac48",
+                "resourcePath": "scripts\\sPawn_AI_Step\\sPawn_AI_Step.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5add1bbe-9b1a-4c08-ae3b-a8628f4c8051",
             "Value": {
                 "id": "030207d4-c19f-4884-92ec-221624fc5678",
@@ -607,6 +615,14 @@
             }
         },
         {
+            "Key": "8b543db5-be5e-4d03-8624-82d77dbc0865",
+            "Value": {
+                "id": "570c5d3e-39c1-49bc-bb1a-1fda92a823c4",
+                "resourcePath": "scripts\\sPawn_Dead\\sPawn_Dead.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8d425326-68de-40ae-b884-1bcc23f80aa2",
             "Value": {
                 "id": "eefbe642-b2f2-45cf-ac04-15ea5aa38146",
@@ -647,10 +663,26 @@
             }
         },
         {
+            "Key": "9930a0fa-63b5-4daa-b8d8-fd4604de47f2",
+            "Value": {
+                "id": "65053574-7ab5-458e-b3b1-2f9b7fc794c2",
+                "resourcePath": "scripts\\sUtil_DoUnpossess\\sUtil_DoUnpossess.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9a35b6d8-bd9b-4e0e-a707-99c71546ccef",
             "Value": {
                 "id": "ec3a2472-a0b6-4237-9012-7af9b5be0811",
                 "resourcePath": "scripts\\@tile_exists\\tile_exists.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9a5114f0-46d6-4835-80c2-0c1ba2641302",
+            "Value": {
+                "id": "8dd214d5-f200-4d3a-a50f-b73a803b756e",
+                "resourcePath": "scripts\\sPawn_AI_UpdateTarget\\sPawn_AI_UpdateTarget.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -748,6 +780,14 @@
                 "id": "c6d2907f-2577-467b-9afc-a4ef6b9bd1f2",
                 "resourcePath": "objects\\oPlayerController\\oPlayerController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ae593c41-5eea-4fe1-8802-655a92cc4f6c",
+            "Value": {
+                "id": "752e13c4-2abd-4325-adb9-d57bf163f95f",
+                "resourcePath": "scripts\\sPawn_PlayerVisible\\sPawn_PlayerVisible.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -914,7 +954,7 @@
             "Key": "c93e823b-d741-4008-9521-81ecd1c60513",
             "Value": {
                 "id": "d5f522e2-6587-42e6-9436-8f2282797cb5",
-                "resourcePath": "scripts\\sPlayerController_DoAttack\\sPlayerController_DoAttack.yy",
+                "resourcePath": "scripts\\sUtil_DoAttack\\sUtil_DoAttack.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1180,6 +1220,7 @@
         "e2ef24d5-2f7a-460e-a817-6f7dd1c80d83",
         "4504908f-d152-4979-b81a-0bfc48128b9b",
         "56436457-4aa3-455c-aadd-c8281d38bff2",
+        "c93e823b-d741-4008-9521-81ecd1c60513",
         "51987040-c25b-48b7-aae6-ed65189cada1",
         "a6f1d00c-8abc-426f-9281-528a894c9bd1",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
@@ -1188,9 +1229,13 @@
         "c67b5f71-2a75-44bd-8675-7cf81f24ff9d",
         "da71ca88-8eb4-41cb-94a7-22e56f9a0a4b",
         "09155728-4df8-49f9-9467-afac805824a3",
-        "c93e823b-d741-4008-9521-81ecd1c60513",
+        "9930a0fa-63b5-4daa-b8d8-fd4604de47f2",
         "63041d90-dbd1-46c3-9b82-8796ecf052aa",
         "eafab41e-4f15-478f-adf7-1f2bb49d4911",
+        "ae593c41-5eea-4fe1-8802-655a92cc4f6c",
+        "8b543db5-be5e-4d03-8624-82d77dbc0865",
+        "59799419-8b83-4086-867f-ee2ca26a0aa1",
+        "9a5114f0-46d6-4835-80c2-0c1ba2641302",
         "d666ef52-8966-429f-ac3a-d21c7bb6ef3d",
         "6c3b5d31-9aa9-461f-a16e-b16d7fd6cb26",
         "8a40ec99-3ca7-49b9-943e-898d85771bd0",

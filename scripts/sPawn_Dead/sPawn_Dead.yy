@@ -1,8 +1,8 @@
 {
-    "id": "c93e823b-d741-4008-9521-81ecd1c60513",
+    "id": "8b543db5-be5e-4d03-8624-82d77dbc0865",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sPlayerController_DoAttack",
+    "name": "sPawn_Dead",
     "IsCompatibility": false,
     "IsDnD": false
 }

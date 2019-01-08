@@ -40,11 +40,15 @@ var cc = argument[2];
 
 // Create the local vars
 var pos = irandom(cc - 1);                                      // This will be the room the player is spawned in
-var xx = r[pos, 0] * ts;                                        // The x position of the room to spawn in (and convert to pixels multiplying by the grid tile size)
-var yy = r[pos, 1] * ts;                                        // The y position of the room to spawn in
-var ww = (r[pos, 2] div 2) * ts;                                // Now get the half width of the room
-var hh = (r[pos, 3] div 2) * ts;                                // Now get the half height of the room
-instance_create_layer(xx + ww - 8, yy + hh - 8, argument[5], oGhost);     // Create the player!
+var xx = (r[pos, 0] + 1) * ts;                                        // The x position of the room to spawn in (and convert to pixels multiplying by the grid tile size)
+var yy = (r[pos, 1] + 1) * ts;                                        // The y position of the room to spawn in
+var half_ww = (r[pos, 2] div 2) * ts;                                // Now get the half width of the room
+var half_hh = (r[pos, 3] div 2) * ts;                                // Now get the half height of the room
+instance_create_layer(xx + half_ww + ts/2, yy + half_hh + ts/2, argument[5], oGhost);     // Create the player!
+
+var ww = irandom(r[pos, 2] - 2) * ts;                                // Now get the half width of the room
+var hh = irandom(r[pos, 3] - 2) * ts;                                // Now get the half height of the room
+instance_create_layer(xx + ts + ww, yy + ts + hh, argument[5], oPileOfCorpses);
 
 // The following adds the walls, doors and floor tiles for the room using loops.
 // As you can see we have two sprites for horizontal and vertical doors (you can 

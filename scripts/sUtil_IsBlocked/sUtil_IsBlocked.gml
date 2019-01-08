@@ -7,10 +7,6 @@ var tile = tilemap_get(oPlayerController.m_WallMap, floor(_x/_ts),floor(_y/_ts) 
 
 if(sIsBlockTileIndex(tile))
 	return true;
-	
-// 귀신인 경우에는 오브젝트를 통과할 수 있다.
-if(!_viewOnly && oPlayerController.m_PlayerObject.object_index == oGhost)
-	return false;
 
 var _list = ds_list_create();
 var _listCount = instance_position_list(_x, _y, all, _list, false);

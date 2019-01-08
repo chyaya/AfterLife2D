@@ -36,97 +36,97 @@ sprite_index = spr;
 // Check for equal distribution or not....
 if equ
 {
-var rm_split = num / rmc;                   // Get the number to split into each room
-var i, j, xx, yy, ww, hh;                   // More local vars
-for (i = 0; i < rmc; i++;)
-    {
-    if i != pps                             // Check to see if the player room should be skipped
-        {
-        repeat(rm_split)
-            {
-            xx = (r[i, 0] + 2) * tts;       // Get the start x position of the room, adding two to compensate for the room walls
-            yy = (r[i, 1] + 2) * tts;       // Get the starting y for the room
-            if snp
-                {
-                ww = irandom(r[i, 2]) * tts;    // Get the room width snapped to the grid
-                hh = irandom(r[i, 3]) * tts;    // Get the room height snapped to the grid
-                }
-            else
-                {
-                ww = irandom(r[i, 2] * tts);    // Get the room width
-                hh = irandom(r[i, 3] * tts);    // Get the room height
-                }
-            j = 0;                          // Counter variable to prevent infinite loops
-            // Now check the positions for a collision with any other child of the collision parent to prevent over-lapping
-            while (place_meeting(xx + ww - spn, yy + hh - spn, oBSP_CollisionParent) && j < 10)
-                {
-                // We increment the count var to prevent infinite loops
-                j++;
-                // Reset the random position
-                var xx = (r[i, 0] + 2) * tts;
-                var yy = (r[i, 1] + 2) * tts;
-                if snp
-                    {
-                    ww = irandom(r[i, 2]) * tts;    // Get the room width snapped to the grid
-                    hh = irandom(r[i, 3]) * tts;    // Get the room height snapped to the grid
-                    }
-                else
-                    {
-                    ww = random(r[i, 2] * tts);    // Get the room width
-                    hh = random(r[i, 3] * tts);    // Get the room height
-                    }
-                }
-            // The counter hasn't timed out so create an enemy.
-            if j < 10 instance_create_layer(xx + ww - spn, yy + hh - spn, lay, obj);
-            }
-        }
-    }
+	var rm_split = num / rmc;                   // Get the number to split into each room
+	var i, j, xx, yy, ww, hh;                   // More local vars
+	for (i = 0; i < rmc; i++;)
+	{
+	    if i != pps                             // Check to see if the player room should be skipped
+	    {
+	        repeat(rm_split)
+	        {
+	            xx = (r[i, 0] + 2) * tts;       // Get the start x position of the room, adding two to compensate for the room walls
+	            yy = (r[i, 1] + 2) * tts;       // Get the starting y for the room
+	            if snp
+	            {
+	                ww = irandom(r[i, 2]) * tts;    // Get the room width snapped to the grid
+	                hh = irandom(r[i, 3]) * tts;    // Get the room height snapped to the grid
+	            }
+	            else
+	            {
+	                ww = irandom(r[i, 2] * tts);    // Get the room width
+	                hh = irandom(r[i, 3] * tts);    // Get the room height
+	            }
+	            j = 0;                          // Counter variable to prevent infinite loops
+	            // Now check the positions for a collision with any other child of the collision parent to prevent over-lapping
+	            while (place_meeting(xx + ww - spn, yy + hh - spn, oBSP_CollisionParent) && j < 10)
+	            {
+	                // We increment the count var to prevent infinite loops
+	                j++;
+	                // Reset the random position
+	                var xx = (r[i, 0] + 2) * tts;
+	                var yy = (r[i, 1] + 2) * tts;
+	                if snp
+	                {
+	                    ww = irandom(r[i, 2]) * tts;    // Get the room width snapped to the grid
+	                    hh = irandom(r[i, 3]) * tts;    // Get the room height snapped to the grid
+	                }
+	                else
+	                {
+	                    ww = random(r[i, 2] * tts);    // Get the room width
+	                    hh = random(r[i, 3] * tts);    // Get the room height
+	                }
+	            }
+	            // The counter hasn't timed out so create an enemy.
+	            if j < 10 instance_create_layer(xx + ww - spn, yy + hh - spn, lay, obj);
+	        }
+	    }
+	}
 }
 else
 {
-var j, e_pos, xx, yy, ww, hh;                           // Initialise some local vars
-for (var i = 0; i < num; i++;)
-    {
-    e_pos = irandom(rmc - 1);                           // Room to spawn enemies in
-    if pps != -1                                        // Check if the player room is to be skipped
-        {
-        while (e_pos == pps) e_pos = irandom(rmc - 1);  // Make sure it is not the player room (remove if not required!)
-        }
-    xx = (r[e_pos, 0] + 2) * tts;                       // Get the start x position of the room, adding two to compensate for the room walls
-    yy = (r[e_pos, 1] + 2) * tts;                       // Get the starting y for the room
-    if snp                                              // Check for grid snapping
-        {
-        ww = irandom(r[e_pos, 2]) * tts;    // Get the room width snapped to the grid
-        hh = irandom(r[e_pos, 3]) * tts;    // Get the room height snapped to the grid
-        }
-    else
-        {
-        ww = irandom(r[e_pos, 2] * tts);    // Get the room width
-        hh = irandom(r[e_pos, 3] * tts);    // Get the room height
-        }
-    j = 0;                                  // Counter variable to prevent infinite loops
-    // Now check the positions for a collision with an enemy so as to prevent over-lapping
-    while (place_meeting(xx + ww - spn, yy + hh - spn, oBSP_CollisionParent) && j < 10)
-        {
-        // We increment the count var to prevent infinite loops
-        j++;
-        // Reset the random position
-        var xx = (r[e_pos, 0] + 2) * tts;
-        var yy = (r[e_pos, 1] + 2) * tts;
-        if snp
-            {
-            ww = irandom(r[e_pos, 2]) * tts;    // Get the room width snapped to the grid
-            hh = irandom(r[e_pos, 3]) * tts;    // Get the room height snapped to the grid
-            }
-        else
-            {
-            ww = irandom(r[e_pos, 2] * tts);    // Get the room width
-            hh = irandom(r[e_pos, 3] * tts);    // Get the room height
-            }
-        }
-    // The counter hasn't timed out so create an enemy.
-    if j < 10 instance_create_layer(xx + ww - spn, yy + hh - spn, lay, obj);
-    }
+	var j, e_pos, xx, yy, ww, hh;                           // Initialise some local vars
+	for (var i = 0; i < num; i++;)
+	{
+	    e_pos = irandom(rmc - 1);                           // Room to spawn enemies in
+	    if pps != -1                                        // Check if the player room is to be skipped
+	    {
+	        while (e_pos == pps) e_pos = irandom(rmc - 1);  // Make sure it is not the player room (remove if not required!)
+	    }
+	    xx = (r[e_pos, 0] + 2) * tts;                       // Get the start x position of the room, adding two to compensate for the room walls
+	    yy = (r[e_pos, 1] + 2) * tts;                       // Get the starting y for the room
+	    if snp                                              // Check for grid snapping
+	    {
+	        ww = irandom(r[e_pos, 2]) * tts;    // Get the room width snapped to the grid
+	        hh = irandom(r[e_pos, 3]) * tts;    // Get the room height snapped to the grid
+	    }
+	    else
+	    {
+	        ww = irandom(r[e_pos, 2] * tts);    // Get the room width
+	        hh = irandom(r[e_pos, 3] * tts);    // Get the room height
+	    }
+	    j = 0;                                  // Counter variable to prevent infinite loops
+	    // Now check the positions for a collision with an enemy so as to prevent over-lapping
+	    while (place_meeting(xx + ww - spn, yy + hh - spn, oBSP_CollisionParent) && j < 10)
+	    {
+	        // We increment the count var to prevent infinite loops
+	        j++;
+	        // Reset the random position
+	        var xx = (r[e_pos, 0] + 2) * tts;
+	        var yy = (r[e_pos, 1] + 2) * tts;
+	        if snp
+	        {
+	            ww = irandom(r[e_pos, 2]) * tts;    // Get the room width snapped to the grid
+	            hh = irandom(r[e_pos, 3]) * tts;    // Get the room height snapped to the grid
+	        }
+	        else
+	        {
+	            ww = irandom(r[e_pos, 2] * tts);    // Get the room width
+	            hh = irandom(r[e_pos, 3] * tts);    // Get the room height
+	        }
+	    }
+	    // The counter hasn't timed out so create an enemy.
+	    if j < 10 instance_create_layer(xx + ww - spn, yy + hh - spn, lay, obj);
+	}
 }
 
 sprite_index = -1;

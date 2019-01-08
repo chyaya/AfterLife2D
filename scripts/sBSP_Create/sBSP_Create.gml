@@ -20,9 +20,10 @@ cell_size = argument0;
 // no arguments and the call in the obj_BSP_Create will need to be modified.
 
 for (var i = 0; i < argument1; i++;)
-    {
+{
     col[i] = make_color_hsv((i * 12) mod 255, 100 + random(55), 155 + random(100));
-    }
+}
+
 show_debug_message("BSP: Room random seed is " + string(random_get_seed()));
 
 ///////////////////////////////////////////////////////////////////////////////////////

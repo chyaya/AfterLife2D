@@ -27,3 +27,5 @@ m_ActionNames[ACTION_A] = "";
 m_ActionNames[ACTION_B] = "";
 m_ActionNames[ACTION_X] = "";
 m_ActionNames[ACTION_Y] = "";
+
+alarm[0] = room_speed;

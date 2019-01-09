@@ -6,4 +6,4 @@ event_inherited();
 
 sPileOfCorpses_CreateCorpse();
 
-alarm[0] = 5*room_speed;
+alarm[0] = (10 + irandom(5))*room_speed;

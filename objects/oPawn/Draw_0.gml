@@ -9,13 +9,16 @@ if(m_Rotten)
 var old_image_xscale = image_xscale;
 image_xscale = 1;
 
-if(m_AI_Control && m_AI_PlayerVisible)
+if(global.ShowDebug_AI)
 {
-	var lineColor = c_white;
-	if(m_AI_TargetObject != noone)
-		lineColor = c_red;
+	if(m_AI_Control && m_AI_PlayerVisible)
+	{
+		var lineColor = c_white;
+		if(m_AI_TargetObject != noone)
+			lineColor = c_red;
 		
-	draw_circle_colour(x, y, m_AI_SearchRange, lineColor, lineColor, true);
+		draw_circle_colour(x, y, m_AI_SearchRange, lineColor, lineColor, true);
+	}
 }
 
 #macro BAR_HEIGHT 1

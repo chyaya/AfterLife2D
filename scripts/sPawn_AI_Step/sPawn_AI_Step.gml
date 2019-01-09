@@ -37,11 +37,7 @@ if(m_AI_Control)
 			m_DirX = sign(targetVectorX);
 			m_DirY = sign(targetVectorY);
 			
-			if(targetVectorX != 0)
-				x += m_DirX*move_speed_this_frame;
-		
-			if(targetVectorY != 0)
-				y += m_DirY*move_speed_this_frame;
+			sPawn_Move(m_AI_MoveSpeedRate);
 		}
 		else
 		{
@@ -49,7 +45,7 @@ if(m_AI_Control)
 			m_DirY = 0;
 			
 			if(m_Attacking == false)
-				sUtil_DoAttack(self, room_speed*1);
+				sUtil_DoAttack(self, room_speed*0.5);
 		}
 	}
 	

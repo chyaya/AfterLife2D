@@ -1,3 +1,6 @@
+if(m_CurSoulPoint <= 0)
+	m_GameOver = true;
+
 m_Input_AxisL_Up = false;
 m_Input_AxisL_Down = false;
 m_Input_AxisL_Left = false;
@@ -37,7 +40,7 @@ if(m_PlayerObject != noone)
 			m_DirX += 1;
 		}
 	
-		sPawn_Move();
+		sPawn_Move(1.0);
 	}
 	
 	m_PlayerObjectX = m_PlayerObject.x;

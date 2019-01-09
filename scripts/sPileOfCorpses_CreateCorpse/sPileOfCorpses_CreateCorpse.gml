@@ -4,7 +4,7 @@
 var _x = x + OFFSET_SIZE;
 var _y = y + OFFSET_SIZE;
 
-switch(irandom(4))
+switch(irandom(3))
 {
 case 0:
 	sUtil_CreateObject(_x - TILE_SIZE, _y, "Instances", oManCorpse);

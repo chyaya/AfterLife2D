@@ -43,6 +43,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "ad5e9135-518e-4c97-94de-ff533498f6ba"
+        },
+        {
+            "id": "d934f0d3-0ecf-48d4-ab15-b718440e84d5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "ad5e9135-518e-4c97-94de-ff533498f6ba"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -62,7 +72,62 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        
+        {
+            "id": "1674b433-a786-41ee-a54b-d0e014b01b36",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "m_CurSoulPoint",
+            "varType": 1
+        },
+        {
+            "id": "a7ba5aa5-1e42-4f93-acc9-d4fb900a573e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "m_MaxSoulPoint",
+            "varType": 1
+        },
+        {
+            "id": "d89c2563-46e4-44e7-9397-804829e14f36",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "m_GameOver",
+            "varType": 3
+        },
+        {
+            "id": "c1203103-1324-47c3-ac45-ffee49f73b13",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "m_UnpossessCost",
+            "varType": 1
+        }
     ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",

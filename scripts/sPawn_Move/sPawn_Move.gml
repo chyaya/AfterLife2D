@@ -1,3 +1,5 @@
+var moveSpeedRate = argument0;
+
 #macro TILE_SIZE	16
 #macro TILE_SHIFT   4		// 1<<4 = 16
 #macro TILE_OFFSET	0
@@ -8,7 +10,7 @@
 sMacro_TileIndex();
 
 var seconds_passed = delta_time/1000000;
-var move_speed_this_frame = m_MoveSpeed*seconds_passed;
+var move_speed_this_frame = m_MoveSpeed*moveSpeedRate*seconds_passed;
 	
 x += m_DirX*move_speed_this_frame;
 

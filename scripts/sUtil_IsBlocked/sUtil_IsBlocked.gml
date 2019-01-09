@@ -8,6 +8,7 @@ var tile = tilemap_get(oPlayerController.m_WallMap, floor(_x/_ts),floor(_y/_ts) 
 if(sIsBlockTileIndex(tile))
 	return true;
 
+/*
 var _list = ds_list_create();
 var _listCount = instance_position_list(_x, _y, all, _list, false);
 var result = false;
@@ -27,3 +28,8 @@ for(var i = 0; i < _listCount; ++i)
 	
 ds_list_destroy(_list);
 return result;
+*/
+
+var o = instance_position(_x, _y, oDoor);
+
+return o != noone;

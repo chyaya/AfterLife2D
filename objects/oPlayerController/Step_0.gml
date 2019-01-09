@@ -1,5 +1,12 @@
-if(m_CurSoulPoint <= 0)
+if(m_CurSoulPoint <= 0 && m_GameOver == false)
+{
 	m_GameOver = true;
+	
+	if(m_PlayerObject != noone)
+	{
+		m_PlayerObject.m_CurHealth = 0;
+	}
+}
 
 m_Input_AxisL_Up = false;
 m_Input_AxisL_Down = false;
@@ -14,14 +21,6 @@ m_Input_Btn_Start = false;
 
 sPlayerController_CaptureKeyboard();
 sPlayerController_CaptureGamepad();
-
-if(keyboard_check_pressed(ord("F")))
-{
-	with(instance_create_layer(0, 0, "Instances", oGUINotify))
-	{
-		m_Text = "Hello";
-	}
-}
 
 if(m_PlayerObject != noone)
 {
@@ -56,6 +55,13 @@ if(m_PlayerObject != noone)
 }
 
 sPlayerController_CaptureInteractObject();
+
+
+//if(keyboard_check_pressed(ord("F")))
+//{
+//	sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Hello");
+//}
+
 
 if(global.UseFOW)
 	sFOW_Update(m_PlayerObjectX, m_PlayerObjectY, oDoor);

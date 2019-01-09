@@ -2,7 +2,7 @@ if(m_InteractionObject != noone)
 {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
-	draw_set_font(fontFixedsys);
+	draw_set_font(fontGUINormal);
 	
 	var color = c_gray;
 	

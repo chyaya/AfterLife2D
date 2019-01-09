@@ -2,7 +2,7 @@
     "id": "93b74616-c29e-4815-9aaf-3842952ffe37",
     "modelName": "GMFont",
     "mvc": "1.0",
-    "name": "fontGameOver",
+    "name": "fontGUIGameOver",
     "AntiAlias": 0,
     "TTFName": "",
     "ascenderOffset": 0,

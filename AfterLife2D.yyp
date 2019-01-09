@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "586a2a33-bdf7-4f94-b9e6-e76b97f7acd8",
+            "Value": {
+                "id": "7afa14aa-7883-457f-bf91-9a6c2060b0aa",
+                "resourcePath": "objects\\oNotify\\oNotify.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "58f376a4-a5a4-4093-9f6a-e6437fbb1b1f",
             "Value": {
                 "id": "4cc6bba6-eeb7-4308-9024-fccfee166c76",
@@ -599,6 +607,14 @@
             }
         },
         {
+            "Key": "7ff4ad5e-8ee3-4347-b6b0-e40682f49929",
+            "Value": {
+                "id": "5cb0410a-d286-4a0a-9811-426732b082a8",
+                "resourcePath": "views\\7ff4ad5e-8ee3-4347-b6b0-e40682f49929.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "809af76f-99a7-408e-87f5-e14146ade9d8",
             "Value": {
                 "id": "5c8de637-8a55-4df5-830e-7e0f07370091",
@@ -695,10 +711,18 @@
             }
         },
         {
+            "Key": "93060c01-b1ad-4c92-a554-948b7890c743",
+            "Value": {
+                "id": "a9746a51-af51-4b23-8f9b-6146cfd9a1a5",
+                "resourcePath": "sprites\\sprGhostDead\\sprGhostDead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "93b74616-c29e-4815-9aaf-3842952ffe37",
             "Value": {
                 "id": "f5d831a3-e5d9-4df7-ae64-5dc2b8ff7478",
-                "resourcePath": "fonts\\fontGameOver\\fontGameOver.yy",
+                "resourcePath": "fonts\\fontGUIGameOver\\fontGUIGameOver.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -708,6 +732,14 @@
                 "id": "b7d5686e-a64c-4e62-ac93-775ab62f1e61",
                 "resourcePath": "sprites\\sprTile\\sprTile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "948071ea-cd48-41a1-bb82-c94fcaeb863a",
+            "Value": {
+                "id": "a2bc96ae-182f-4643-9008-8d9940c70271",
+                "resourcePath": "fonts\\fontNormal\\fontNormal.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -991,6 +1023,14 @@
             }
         },
         {
+            "Key": "c5946e86-264c-405d-9fc1-42f33dd24026",
+            "Value": {
+                "id": "2096ad47-958d-49fc-b611-00e8f6e2c05b",
+                "resourcePath": "scripts\\sUtil_CreateNotify\\sUtil_CreateNotify.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c67b5f71-2a75-44bd-8675-7cf81f24ff9d",
             "Value": {
                 "id": "ed9c5199-5f7c-4ae5-943a-0030d92c7232",
@@ -1162,7 +1202,7 @@
             "Key": "e3b87911-ccd1-47d7-8777-212976b367b9",
             "Value": {
                 "id": "fc8fbe96-4307-4df2-9fc8-cabb1693aaed",
-                "resourcePath": "fonts\\fontFixedsys\\fontFixedsys.yy",
+                "resourcePath": "fonts\\fontGUINormal\\fontGUINormal.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -1310,6 +1350,7 @@
         "56436457-4aa3-455c-aadd-c8281d38bff2",
         "c93e823b-d741-4008-9521-81ecd1c60513",
         "9930a0fa-63b5-4daa-b8d8-fd4604de47f2",
+        "c5946e86-264c-405d-9fc1-42f33dd24026",
         "51987040-c25b-48b7-aae6-ed65189cada1",
         "a6f1d00c-8abc-426f-9281-528a894c9bd1",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",

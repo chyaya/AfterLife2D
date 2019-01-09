@@ -3,7 +3,7 @@ draw_set_colour(c_white);
 draw_set_alpha(1.0);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-draw_set_font(fontFixedsys);
+draw_set_font(fontGUINormal);
 
 var text_x = 10, text_y = 10;
 var line_h = 40, offset = 200;

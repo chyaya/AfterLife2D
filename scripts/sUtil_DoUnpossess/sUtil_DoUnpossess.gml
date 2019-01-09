@@ -8,4 +8,5 @@ playerCon.m_PlayerObject = ghost_obj;
 
 playerCon.m_CurSoulPoint = playerCon.m_CurSoulPoint - playerCon.m_UnpossessCost;
 playerCon.m_CurSoulPoint = clamp(playerCon.m_CurSoulPoint, 0, playerCon.m_MaxSoulPoint);
+sUtil_CreateNotify(playerCon.m_PlayerObjectX, playerCon.m_PlayerObjectY, "Soul-" + string(playerCon.m_UnpossessCost));
 

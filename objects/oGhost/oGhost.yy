@@ -31,6 +31,14 @@
             "objectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
             "propertyId": "1dc99b76-9d40-4983-ae9e-9d18262b0ce0",
             "value": "sprGhostIdle"
+        },
+        {
+            "id": "14a3f414-1407-41cd-b7d2-4f0dff3ed9c2",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
+            "propertyId": "34514553-8ed0-4562-86c9-f2d1c848d480",
+            "value": "sprGhostDead"
         }
     ],
     "parentObjectId": "7a688a40-48fe-4cef-91f2-de3e41004582",

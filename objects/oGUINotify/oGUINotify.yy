@@ -73,6 +73,34 @@
             "value": "1",
             "varName": "m_CurAlpha",
             "varType": 0
+        },
+        {
+            "id": "18ab8aed-935b-4efe-9753-55a2f4313b64",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_OffsetX",
+            "varType": 0
+        },
+        {
+            "id": "48139471-492a-4d5b-afe2-befe04867478",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_OffsetY",
+            "varType": 0
         }
     ],
     "solid": false,

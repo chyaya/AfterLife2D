@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "083ece2a-7739-43df-a24b-7d283771c89f",
+            "Value": {
+                "id": "0b76e388-f423-4a29-b80b-e3ec7d189fe4",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_Actions\\sPlayerController_DrawGUI_Actions.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "09155728-4df8-49f9-9467-afac805824a3",
             "Value": {
                 "id": "538c8989-046e-4368-93a4-4283df86a0d7",
@@ -172,6 +180,14 @@
                 "id": "a65350e9-1d07-4fb0-bd95-dfceade7e66a",
                 "resourcePath": "shaders\\shSilhouette\\shSilhouette.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "2c215347-9393-4900-9879-ab1a5ada0269",
+            "Value": {
+                "id": "9ace96c1-ece4-4348-a745-5b47677ddc54",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_InteractObject\\sPlayerController_DrawGUI_InteractObject.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -420,6 +436,14 @@
                 "id": "030207d4-c19f-4884-92ec-221624fc5678",
                 "resourcePath": "views\\5add1bbe-9b1a-4c08-ae3b-a8628f4c8051.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5af7a7ed-f451-404a-9c08-174874e579d1",
+            "Value": {
+                "id": "58164e1e-5cef-40ce-9fce-c51b1ee690ec",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_GameOver\\sPlayerController_DrawGUI_GameOver.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -911,6 +935,14 @@
             }
         },
         {
+            "Key": "bab52cd9-619b-461c-a492-6aa9bef5b007",
+            "Value": {
+                "id": "78cbcd94-c5f8-4f5a-bc6b-ce492bf9e7c4",
+                "resourcePath": "views\\bab52cd9-619b-461c-a492-6aa9bef5b007.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bdf5969c-8a18-46f9-a470-2a2b31e5fce7",
             "Value": {
                 "id": "c9dc4587-0e94-43a9-8a50-e4bd96464807",
@@ -1103,6 +1135,14 @@
             }
         },
         {
+            "Key": "df5fb48c-1e68-4010-b2fb-eb1a42576d4f",
+            "Value": {
+                "id": "57350293-ba50-4bff-aea6-ef822fa7a582",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_GhostScreenEffect\\sPlayerController_DrawGUI_GhostScreenEffect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e08b1e28-7429-43ff-beff-23ded36965f9",
             "Value": {
                 "id": "7afe507c-6b18-4420-ad0f-c436ab5c0d30",
@@ -1156,6 +1196,14 @@
                 "id": "b706d41e-2ebb-4016-b88f-c57fed178e9f",
                 "resourcePath": "sprites\\sprRotten\\sprRotten.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ea5454a5-7e02-47ed-9c41-4bd24b6be422",
+            "Value": {
+                "id": "341247dc-75da-42f9-a783-b5b0fc0f92a3",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_Stats\\sPlayerController_DrawGUI_Stats.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1270,6 +1318,11 @@
         "c67b5f71-2a75-44bd-8675-7cf81f24ff9d",
         "da71ca88-8eb4-41cb-94a7-22e56f9a0a4b",
         "09155728-4df8-49f9-9467-afac805824a3",
+        "2c215347-9393-4900-9879-ab1a5ada0269",
+        "5af7a7ed-f451-404a-9c08-174874e579d1",
+        "083ece2a-7739-43df-a24b-7d283771c89f",
+        "ea5454a5-7e02-47ed-9c41-4bd24b6be422",
+        "df5fb48c-1e68-4010-b2fb-eb1a42576d4f",
         "63041d90-dbd1-46c3-9b82-8796ecf052aa",
         "eafab41e-4f15-478f-adf7-1f2bb49d4911",
         "ae593c41-5eea-4fe1-8802-655a92cc4f6c",

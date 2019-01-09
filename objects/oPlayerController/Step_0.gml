@@ -15,6 +15,14 @@ m_Input_Btn_Start = false;
 sPlayerController_CaptureKeyboard();
 sPlayerController_CaptureGamepad();
 
+if(keyboard_check_pressed(ord("F")))
+{
+	with(instance_create_layer(0, 0, "Instances", oGUINotify))
+	{
+		m_Text = "Hello";
+	}
+}
+
 if(m_PlayerObject != noone)
 {
 	with(m_PlayerObject)

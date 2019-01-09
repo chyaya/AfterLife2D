@@ -11,9 +11,8 @@ var yy = floor(argument1 / ts);     // Y position within the tile array
 
 // Before going any further, check that the instance has actually moved 
 // and is no longer within the previous tile grid position.
-if FOW_Xprev != xx || FOW_Yprev != yy || FOW_Dirty
-{
-	//show_debug_message("FOW Update");
+if (FOW_Xprev == xx && FOW_Yprev == yy && FOW_Dirty == false)
+	return;
 	
 var al = global.FOW_Alpha;
 var ar = global.FOW;
@@ -31,44 +30,44 @@ var tile, pd, pdir, t_alpha, inst;                                   // More tem
 
 // Loop through the area of the tile array that corresponds to the "show" area
 for (var i = tx; i < max_x;  i++;)
+{
+	for (var j = ty; j < max_y; j++;)
     {
-    for (var j = ty; j < max_y; j++;)
+	    tile = ar[i, j];
+	    if tile_exists(tile)
         {
-        tile = ar[i, j];
-        if tile_exists(tile)
+	        // If we have choosen to enable FOW lighting, set the tile alpha to 1 
+	        // before calculating the actual alpha around the position.
+			if global.FOW_Light
             {
-            // If we have choosen to enable FOW lighting, set the tile alpha to 1 
-            // before calculating the actual alpha around the position.
-            if global.FOW_Light
-                {
-                tile_set_alpha(tile, al);
-                }
-            // Is the tile in range?
-            if point_in_circle(i, j, xx, yy, rr)
-                {
-                // Get tile info
-                t_alpha = tile_get_alpha(tile);
-                // Tile alpha is greater than zero so keep checking
-                if t_alpha > 0
+				tile_set_alpha(tile, al);
+            }
+			// Is the tile in range?
+			if point_in_circle(i, j, xx, yy, rr)
+            {
+				// Get tile info
+				t_alpha = tile_get_alpha(tile);
+				// Tile alpha is greater than zero so keep checking
+				if t_alpha > 0
 				{
-                    // Get distance from tile to center (in array values)
-                    pd = point_distance(i, j, xx, yy) / rr;
-                    // Make the distance quadratic to give a better un-cover area
-                    if FOW_Quad
+	                // Get distance from tile to center (in array values)
+	                pd = point_distance(i, j, xx, yy) / rr;
+	                // Make the distance quadratic to give a better un-cover area
+	                if FOW_Quad
 					{
 						pd = pd * pd * pd;
 					}
 					
-                    // Check to see if the position changes the alpha value
-                    if pd < t_alpha
-                    {
-                        // Check for blockers
-                        if(sFOW_Bresenhams(xx, yy, i, j, ob, ts) == false)
+	                // Check to see if the position changes the alpha value
+	                if pd < t_alpha
+	                {
+	                    // Check for blockers
+	                    if(sFOW_Bresenhams(xx, yy, i, j, ob, ts) == false)
 						{
-                            // no blocker found so set tile alpha
-                            tile_set_alpha(tile, pd);
+	                        // no blocker found so set tile alpha
+	                        tile_set_alpha(tile, pd);
 						}
-                        else
+	                    else
 						{
 							if(sUtil_IsBlocked((i * ts), (j * ts), ts, true))
 							{
@@ -80,21 +79,15 @@ for (var i = tx; i < max_x;  i++;)
 						}
 					}
 				}
-                else
-                    {
-                    // Minor optimisation. Remove tiles with zero alpha.
-                    if !global.FOW_Light tile_delete(tile);
-                    }
+				else
+                {
+	                // Minor optimisation. Remove tiles with zero alpha.
+	                if !global.FOW_Light tile_delete(tile);
                 }
             }
         }
     }
+}
 FOW_Xprev = xx;
 FOW_Yprev = yy;
 FOW_Dirty = false
-}
-        
-        
-        
-        
-        

@@ -4,5 +4,7 @@
 // or simply copy the script calls into the object you wish.
 
 // Initialise some specific instance variables (see script for the arguments)
-sFOW_InitInstance(8, x, y, true);
+
+if(global.UseFOW)
+	sFOW_InitInstance(8, x, y, true);
 

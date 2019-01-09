@@ -4,5 +4,6 @@
 
 // See the script for an explanation of the arguments.
 
-sFOW_Init(50, 16, room_width, room_height, true, 1);
+if(global.UseFOW)
+	sFOW_Init(50, 16, room_width, room_height, true, 1);
 

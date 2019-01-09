@@ -1,7 +1,8 @@
 show_debug_message("Init Player Controller");
 
 // Initialise some specific instance variables (see script for the arguments)
-sFOW_InitInstance(12, x, y, true);
+if(global.UseFOW)
+	sFOW_InitInstance(12, x, y, true);
 
 if(instance_exists(oGhost) == false)
 {

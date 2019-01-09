@@ -46,7 +46,8 @@ if(m_PlayerObject != noone)
 
 sPlayerController_CaptureInteractObject();
 
-sFOW_Update(m_PlayerObjectX, m_PlayerObjectY, oDoor);
+if(global.UseFOW)
+	sFOW_Update(m_PlayerObjectX, m_PlayerObjectY, oDoor);
 
 
 if(other.m_Input_Btn_Start)

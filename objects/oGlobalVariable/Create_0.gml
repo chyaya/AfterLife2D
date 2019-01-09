@@ -1,0 +1,1 @@
+global.UseFOW = true;

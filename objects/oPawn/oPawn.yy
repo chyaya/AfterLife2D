@@ -181,8 +181,8 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "m_CurEightDirIndex",
-            "varType": 1
+            "varName": "m_Rotten",
+            "varType": 3
         },
         {
             "id": "76639d57-0a25-4edb-ba44-f6b582257226",

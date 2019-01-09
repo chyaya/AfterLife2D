@@ -15,6 +15,14 @@
             "objectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
             "propertyId": "224a275d-2e89-4f97-8365-7017d2d02440",
             "value": "Open"
+        },
+        {
+            "id": "b67c886d-fd1c-4454-9521-fb9fe9dd797b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
+            "propertyId": "b443090f-23b9-45b5-85f1-c9c6ccd3b28c",
+            "value": "Chest"
         }
     ],
     "parentObjectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",

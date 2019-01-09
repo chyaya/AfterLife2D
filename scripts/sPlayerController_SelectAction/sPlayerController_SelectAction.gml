@@ -3,7 +3,8 @@ if(m_PlayerObject.object_index == oGhost)
 	if(m_InteractionObject != noone
 		&& object_is_ancestor(m_InteractionObject.object_index, oPawn))
 	{
-		if(m_InteractionObject.m_CurHealth == 0)
+		if(m_InteractionObject.m_CurHealth == 0
+			&& m_InteractionObject.m_Rotten == false)
 		{
 			m_ActionNames[ACTION_B] = "Possess";	
 		}

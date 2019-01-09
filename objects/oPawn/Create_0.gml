@@ -12,3 +12,5 @@ m_LastHealth = m_CurHealth;
 
 if(m_CurHealth == 0)
 	sPawn_Dead();
+	
+m_RottenSprFrame = 0;

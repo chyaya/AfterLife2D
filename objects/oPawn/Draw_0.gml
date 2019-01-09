@@ -1,6 +1,11 @@
 // Inherit the parent event
 event_inherited();
 
+if(m_Rotten)
+{
+	draw_sprite(sprRotten, current_second % 3, x, y);
+}
+
 var old_image_xscale = image_xscale;
 image_xscale = 1;
 

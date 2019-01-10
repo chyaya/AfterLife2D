@@ -115,6 +115,20 @@
             "varType": 3
         },
         {
+            "id": "5e595f4a-09d1-413b-8c3d-54db1e823a2e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_GameOver_Win",
+            "varType": 3
+        },
+        {
             "id": "c1203103-1324-47c3-ac45-ffee49f73b13",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

@@ -1,0 +1,93 @@
+Converting GML script: ${project_dir}\scripts\position_create\position_create.gml
+Converted description /// @description position_create(x, y)/// @param x
+/// @param  y
+
+Converting GML script: ${project_dir}\scripts\position_get_x\position_get_x.gml
+Converted description /// @description position_get_x(position)/// @param position
+
+Converting GML script: ${project_dir}\scripts\position_get_y\position_get_y.gml
+Converted description /// @description position_get_y(position)/// @param position
+
+Converting GML script: ${project_dir}\scripts\aStar_get_blocked\aStar_get_blocked.gml
+Converted description /// @description aStar_get_blocked(x, y)/// @param x
+/// @param  y
+
+Converting GML script: ${project_dir}\scripts\aStar_get_cell_size\aStar_get_cell_size.gml
+Converted description /// @description aStar_get_cell_size()
+
+Converting GML script: ${project_dir}\scripts\aStar_get_diagonal_movement\aStar_get_diagonal_movement.gml
+Converted description /// @description aStar_get_diagonal_movement()
+
+Converting GML script: ${project_dir}\scripts\aStar_get_cutting_blocked_corners\aStar_get_cutting_blocked_corners.gml
+Converted description /// @description aStar_get_cutting_blocked_corners()
+
+Converting GML script: ${project_dir}\scripts\aStar_get_width\aStar_get_width.gml
+Converted description /// @description aStar_get_width()
+
+Converting GML script: ${project_dir}\scripts\aStar_get_height\aStar_get_height.gml
+Converted description /// @description aStar_get_height()
+
+Converting GML script: ${project_dir}\scripts\aStar_set_blocked\aStar_set_blocked.gml
+Converted description /// @description aStar_set_blocked(x, y, blocked)/// @param x
+/// @param  y
+/// @param  blocked
+
+Converting GML script: ${project_dir}\scripts\aStar_set_cell_size\aStar_set_cell_size.gml
+Converted description /// @description aStar_set_cell_size(size)/// @param size
+
+Converting GML script: ${project_dir}\scripts\aStar_set_diagonal_movement\aStar_set_diagonal_movement.gml
+Converted description /// @description aStar_set_diagonal_movement(diagonalMovement)/// @param diagonalMovement
+
+Converting GML script: ${project_dir}\scripts\aStar_set_cutting_blocked_corners\aStar_set_cutting_blocked_corners.gml
+Converted description /// @description aStar_set_cutting_blocked_corners(cuttingBlockedCorners)/// @param cuttingBlockedCorners
+
+Converting GML script: ${project_dir}\scripts\aStar_set_width\aStar_set_width.gml
+Converted description /// @description aStar_set_width(width)/// @param width
+
+Converting GML script: ${project_dir}\scripts\aStar_set_height\aStar_set_height.gml
+Converted description /// @description aStar_set_height(height)/// @param height
+
+Converting GML script: ${project_dir}\scripts\aStar_set_size\aStar_set_size.gml
+Converted description /// @description aStar_set_size(width, height)/// @param width
+/// @param  height
+
+Converting GML script: ${project_dir}\scripts\aStar_init\aStar_init.gml
+Converted description /// @description aStar_init(maxWidth, maxHeight, cellSize, allowDiagonalMovement, allowCuttingBlockedCorners)/// @param maxWidth
+/// @param  maxHeight
+/// @param  cellSize
+/// @param  allowDiagonalMovement
+/// @param  allowCuttingBlockedCorners
+
+Converting GML script: ${project_dir}\scripts\aStar_close\aStar_close.gml
+Converted description /// @description aStar_close()
+
+Converting GML script: ${project_dir}\scripts\aStar_find_path\aStar_find_path.gml
+Converted description /// @description aStar_find_path(startX, startY, endX, endY)/// @param startX
+/// @param  startY
+/// @param  endX
+/// @param  endY
+
+Converting GML script: ${project_dir}\scripts\aStar_heuristic_cost\aStar_heuristic_cost.gml
+Converted description /// @description aStar_heuristic_cost(fromX, fromY, toX, toY)/// @param fromX
+/// @param  fromY
+/// @param  toX
+/// @param  toY
+
+Converting GML script: ${project_dir}\scripts\aStar_get_neighbor_position\aStar_get_neighbor_position.gml
+Converted description /// @description aStar_get_neighbor_position(position, i)/// @param position
+/// @param  i
+
+Converting GML script: ${project_dir}\scripts\aStar_get_node_with_lowest_cost\aStar_get_node_with_lowest_cost.gml
+Converted description /// @description aStar_get_node_with_lowest_cost(openList, fCostGrid, gCostGrid)/// @param openList
+/// @param  fCostGrid
+/// @param  gCostGrid
+
+Converting GML script: ${project_dir}\scripts\aStar_get_cell_coordinate\aStar_get_cell_coordinate.gml
+Converted description /// @description aStar_get_cell_coordinate(coordinate)/// @param coordinate
+
+Converting GML script: ${project_dir}\scripts\generate_map\generate_map.gml
+Converted description /// @description generate_map(percentage)/// @param percentage
+
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script '__global_object_depths.gml'

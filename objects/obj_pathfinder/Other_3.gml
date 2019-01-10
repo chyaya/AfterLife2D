@@ -1,0 +1,2 @@
+aStar_close();
+

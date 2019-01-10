@@ -29,7 +29,7 @@ with(instance_create_layer(_deploy_x, _deploy_y, "Instances", oBlank))
 {
 	m_Level = 0;
 	
-	instance_change(oMan, true);
+	instance_change(irandom(1) ? oMan : oWoman, true);
 
 	m_CurHealth = 0;
 }

@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "1b4ea305-22d6-4725-82e0-758e5bfc3f0a",
+            "Value": {
+                "id": "af5ddd1f-6e33-453d-856e-81c09cdbaa22",
+                "resourcePath": "sprites\\sprWomanDead\\sprWomanDead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f002dd3-f2fb-4c78-91d3-31bec3b54364",
             "Value": {
                 "id": "e68bc4bd-e69d-4c4f-9066-b29a75a6bce4",
@@ -287,6 +295,14 @@
             }
         },
         {
+            "Key": "293cc64d-8cfb-4337-9eaa-3a8b28db80e4",
+            "Value": {
+                "id": "1b5015e6-efdc-4345-8434-408010b2b1f1",
+                "resourcePath": "views\\293cc64d-8cfb-4337-9eaa-3a8b28db80e4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2b91dedf-3372-4e1f-bd4b-b1f75bfc52c4",
             "Value": {
                 "id": "a65350e9-1d07-4fb0-bd95-dfceade7e66a",
@@ -348,6 +364,14 @@
                 "id": "3bc58bfc-976e-4f14-8a24-749eecf89c54",
                 "resourcePath": "scripts\\aStar_get_neighbor_position\\aStar_get_neighbor_position.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "34d78747-a29d-415a-8477-db9bad68909b",
+            "Value": {
+                "id": "a6df3714-cf28-4137-b956-66deaf0aa663",
+                "resourcePath": "sprites\\sprWomanMove\\sprWomanMove.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -540,6 +564,14 @@
                 "id": "92ab4150-f0bf-4a72-a6cd-6b48ba2fdd15",
                 "resourcePath": "scripts\\sBSP_SplitRoom\\sBSP_SplitRoom.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4fb83f0e-aa9f-4826-aabb-337516b93961",
+            "Value": {
+                "id": "d7e24f75-2f5a-4d30-b05d-fe3fea1ccb02",
+                "resourcePath": "sprites\\sprWomanIdle\\sprWomanIdle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1167,6 +1199,14 @@
             }
         },
         {
+            "Key": "9e582680-ed3c-4f02-9f44-904f830611b6",
+            "Value": {
+                "id": "17ef4ff1-2c81-41f8-8d34-1fb3e7c6f5f7",
+                "resourcePath": "sprites\\sprWomanAction\\sprWomanAction.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9fd35b1f-4c4b-40b1-b32f-3daab3c05c89",
             "Value": {
                 "id": "57dc25ad-707e-4839-b252-bf26cf0a51d4",
@@ -1684,6 +1724,14 @@
                 "id": "00274b80-a4ce-44a7-b811-856846d8e833",
                 "resourcePath": "scripts\\sFOW_Update\\sFOW_Update.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e6441e24-a1a5-44a2-822a-90ca35067c4f",
+            "Value": {
+                "id": "2c23f8b6-0fc0-4401-8876-a4e183223084",
+                "resourcePath": "objects\\oWoman\\oWoman.yy",
+                "resourceType": "GMObject"
             }
         },
         {

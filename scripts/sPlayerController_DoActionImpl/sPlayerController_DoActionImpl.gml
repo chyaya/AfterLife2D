@@ -17,7 +17,14 @@ case "Possess":
 	m_PlayerObject.m_OutlineEnable = false;
 	break;
 case "Unpossess":
-	sUtil_DoUnpossess(self);
+	if(m_CurSoulPoint > m_UnpossessCost)
+	{
+		sUtil_DoUnpossess(self);
+	}
+	else
+	{
+		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul is too low");
+	}
 	break;
 case "Open":
 	instance_destroy(m_InteractionObject);

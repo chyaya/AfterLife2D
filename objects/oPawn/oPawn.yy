@@ -171,6 +171,20 @@
             "varType": 1
         },
         {
+            "id": "765cc31c-94e0-4b63-80e0-e969bc9416d9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "m_Damage",
+            "varType": 1
+        },
+        {
             "id": "3dac35b8-3604-4afb-8398-24dac5594765",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

@@ -3,20 +3,33 @@
 
 var _x = x + OFFSET_SIZE;
 var _y = y + OFFSET_SIZE;
+var _deploy_x = _x;
+var _deploy_y = _y;
 
 switch(irandom(3))
 {
 case 0:
-	sUtil_CreateObject(_x - TILE_SIZE, _y, "Instances", oManCorpse);
+	_deploy_x -= TILE_SIZE;
 	break;
 case 1:
-	sUtil_CreateObject(_x + TILE_SIZE, _y, "Instances", oManCorpse);
+	_deploy_x += TILE_SIZE;
 	break;
 case 2:
-	sUtil_CreateObject(_x, _y - TILE_SIZE, "Instances", oManCorpse);
+	_deploy_y -= TILE_SIZE;
 	break;
 case 3:
-	sUtil_CreateObject(_x, _y + TILE_SIZE, "Instances", oManCorpse);
+	_deploy_y += TILE_SIZE;
 	break;
 }
 
+if(place_meeting(_x, _y, oMan))
+	return;
+
+with(instance_create_layer(_deploy_x, _deploy_y, "Instances", oBlank))
+{
+	m_Level = 0;
+	
+	instance_change(oMan, true);
+
+	m_CurHealth = 0;
+}

@@ -2,11 +2,11 @@
     "id": "3dda2dad-d279-4f0a-9d31-c53e541cc9d5",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprMelee",
+    "name": "sprMelee1",
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 15,
+    "bbox_bottom": 19,
     "bbox_left": 0,
     "bbox_right": 15,
     "bbox_top": 0,
@@ -40,7 +40,7 @@
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 16,
+    "height": 20,
     "layers": [
         {
             "id": "5e973c25-58af-4be6-a2e4-c62e31fe65d4",
@@ -66,5 +66,5 @@
     "type": 0,
     "width": 16,
     "xorig": 8,
-    "yorig": 8
+    "yorig": 10
 }

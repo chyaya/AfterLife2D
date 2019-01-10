@@ -69,6 +69,20 @@
             "value": "0",
             "varName": "m_BlockMove",
             "varType": 3
+        },
+        {
+            "id": "97c3e468-0b1e-4923-8dc5-0756e6c6efe5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "$FFFFFFFF",
+            "varName": "m_MultiplyColor",
+            "varType": 7
         }
     ],
     "solid": false,

@@ -132,4 +132,3 @@ sBSP_PopulateRooms(oChest, 10, cc, -1, ts, false, true, argument[6]);
 // Spawn 200 enemies randomly throughout the WHOLE maze, and not just one room
 sBSP_PopulateRooms(oMan, 10, cc, pos, ts, false, true, argument[6]);
 
-//sBSP_PopulateRooms(oManCorpse, 10, cc, pos, ts, false, true, argument[6]);

@@ -2,7 +2,7 @@
     "id": "caae5ed2-ccb1-4f72-bdee-5be99420d515",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oMelee",
+    "name": "oMelee1",
     "eventList": [
         {
             "id": "3e24ff18-02cd-4843-89dc-b0dff4ade200",
@@ -27,14 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
-        {
-            "id": "275f5487-2676-4530-a848-4af13839eba7",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "5221310b-6bcd-4f84-9005-79e80c211ee7",
-            "propertyId": "2602e57c-7e86-4311-aa13-306e857bf0d5",
-            "value": "10"
-        }
+        
     ],
     "parentObjectId": "5221310b-6bcd-4f84-9005-79e80c211ee7",
     "persistent": false,

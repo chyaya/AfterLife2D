@@ -26,12 +26,20 @@ case "Unpossess":
 		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul is too low");
 	}
 	break;
+case "Collect":
+	instance_destroy(m_InteractionObject);
+	m_InteractionObject = noone;
+	sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul+10");
+	m_CurSoulPoint += 10;
+	if(m_CurSoulPoint >= m_MaxSoulPoint)
+		m_CurSoulPoint = m_MaxSoulPoint;
+	break;
 case "Open":
 	instance_destroy(m_InteractionObject);
 	m_InteractionObject = noone;
 	FOW_Dirty = true;
 	break;
 case "Attack":
-	sUtil_DoAttack(m_PlayerObject, room_speed*0.1);
+	sUtil_DoAttack(m_PlayerObject, room_speed*0.2);
 	break;
 }

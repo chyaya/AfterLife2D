@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "058e887e-33af-44a0-a1b2-e329d9188a75",
+            "Value": {
+                "id": "7cf1570d-9189-4825-a645-d575c7de44bf",
+                "resourcePath": "extensions\\Optimized_Path\\Optimized_Path.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "05c217c3-8794-4b92-9be5-180c0cf05e58",
             "Value": {
                 "id": "8d8e2f75-4eb4-4a1a-9c0e-465603ca7431",
@@ -172,6 +180,14 @@
                 "id": "d0ce5f90-e01d-4391-8213-fe46b7ce5edd",
                 "resourcePath": "views\\1410d462-8089-40bf-8f38-5b18674a072b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "14f3ef2c-bfe5-47c8-9e16-af619426765e",
+            "Value": {
+                "id": "1b12dc80-f652-4329-9567-70f5107f813d",
+                "resourcePath": "sprites\\sprSoul\\sprSoul.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -887,6 +903,14 @@
             }
         },
         {
+            "Key": "7591f6a4-9265-43c1-a0c3-0224c8ea7016",
+            "Value": {
+                "id": "63028794-08d1-483a-91f1-65237f38dad1",
+                "resourcePath": "objects\\oSoul\\oSoul.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "75fe9111-7244-4fee-ac1e-a013713bfbdf",
             "Value": {
                 "id": "409df3c6-1593-4d8c-a592-8021237ac674",
@@ -1007,6 +1031,14 @@
             }
         },
         {
+            "Key": "86b4f796-e994-472d-87db-a801fa25c32e",
+            "Value": {
+                "id": "48e05da1-be80-4dbf-a32e-e65b0e34c39e",
+                "resourcePath": "scripts\\funcPathOptimized\\funcPathOptimized.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "879d4709-9e51-453a-b56f-a846af38a2cb",
             "Value": {
                 "id": "afcb4546-6905-473a-af3b-17fe33076593",
@@ -1044,6 +1076,14 @@
                 "id": "570c5d3e-39c1-49bc-bb1a-1fda92a823c4",
                 "resourcePath": "scripts\\sPawn_Dead\\sPawn_Dead.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8b650e16-ccc5-4625-b0ba-045975e6f8da",
+            "Value": {
+                "id": "bd628b0f-2789-4e6a-b93a-8221ce77f2fa",
+                "resourcePath": "notes\\compatibility_report_100119_2057325732.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -1996,7 +2036,8 @@
         "3473ea96-748f-4370-89e6-ee85f4e7733f",
         "718dbcbd-39e5-4a83-b6ff-ecb0d5ad67f3",
         "613d3a7a-1735-45d8-af95-3ac6cabd04fb",
-        "2f4cff19-ee97-4921-b150-9e0c2cf89d4e"
+        "2f4cff19-ee97-4921-b150-9e0c2cf89d4e",
+        "86b4f796-e994-472d-87db-a801fa25c32e"
     ],
     "tutorial": ""
 }

@@ -78,7 +78,7 @@
     ],
     "origin": 4,
     "originLocked": true,
-    "playbackSpeed": 3,
+    "playbackSpeed": 5,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,

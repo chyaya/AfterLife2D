@@ -1,0 +1,4 @@
+Converting GML script: ${project_dir}\scripts\funcPathOptimized\funcPathOptimized.gml
+Converted description /// @description funcPathOptimized(id,gridSize,obstacle)/// @param id
+/// @param gridSize
+/// @param obstacle

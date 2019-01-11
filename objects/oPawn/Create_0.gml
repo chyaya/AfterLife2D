@@ -40,3 +40,10 @@ if(m_CurHealth == 0)
 }
 	
 m_RottenSprFrame = 0;
+m_LastImageIndex = -1;
+
+m_Sound_Idle = ds_list_create();
+m_Sound_Hit = ds_list_create();
+m_Sound_Dead = ds_list_create();
+
+

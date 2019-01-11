@@ -53,6 +53,16 @@
             "enumb": 10,
             "eventtype": 7,
             "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
+        },
+        {
+            "id": "29a3f5c9-c054-4e53-ae22-18308c4870c5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "7a688a40-48fe-4cef-91f2-de3e41004582"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -267,6 +277,20 @@
             "value": "0.4",
             "varName": "m_AI_MoveSpeedRate",
             "varType": 0
+        },
+        {
+            "id": "fd5180f5-d312-4813-a3ee-d7e0e4da63ae",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "m_PlayFootStepSound",
+            "varType": 3
         }
     ],
     "solid": false,

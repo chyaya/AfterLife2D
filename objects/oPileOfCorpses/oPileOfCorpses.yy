@@ -34,6 +34,14 @@
             "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
             "propertyId": "b443090f-23b9-45b5-85f1-c9c6ccd3b28c",
             "value": "Pile of Corpses"
+        },
+        {
+            "id": "6e0adbb4-6bc6-4b7d-a27a-ab15444f7960",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
+            "propertyId": "06880099-d3dd-4af7-b49f-a836c7b82c1a",
+            "value": "False"
         }
     ],
     "parentObjectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",

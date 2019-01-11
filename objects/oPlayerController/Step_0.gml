@@ -97,3 +97,6 @@ m_ActionNames[ACTION_Y] = "";
 
 sPlayerController_SelectAction();
 sPlayerController_DoAction();
+
+
+audio_listener_set_position(self, x, y, 0);

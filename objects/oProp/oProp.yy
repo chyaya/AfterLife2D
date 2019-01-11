@@ -55,6 +55,20 @@
             "value": "",
             "varName": "m_ActionName",
             "varType": 2
+        },
+        {
+            "id": "d6184f42-2a09-4ae8-8d7b-a35d7b0fd628",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "m_ActionSound",
+            "varType": 5
         }
     ],
     "solid": false,

@@ -1,3 +1,3 @@
 global.UseFOW = true;
-global.ShowDebug_AI = false;
+global.ShowDebug_AI = true;
 

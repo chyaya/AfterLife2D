@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "4b48257f-5472-4a69-94a8-4be7b641313b",
+            "Value": {
+                "id": "178a9c18-1f2e-467f-9d6f-34c89818cbbd",
+                "resourcePath": "scripts\\sPawn_FindPath\\sPawn_FindPath.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4cb43c04-7f17-490a-babb-b86fc680d00a",
             "Value": {
                 "id": "ab15ec3e-3015-4c95-a048-aa60985a8053",
@@ -1986,6 +1994,7 @@
         "8b543db5-be5e-4d03-8624-82d77dbc0865",
         "59799419-8b83-4086-867f-ee2ca26a0aa1",
         "9a5114f0-46d6-4835-80c2-0c1ba2641302",
+        "4b48257f-5472-4a69-94a8-4be7b641313b",
         "d666ef52-8966-429f-ac3a-d21c7bb6ef3d",
         "6c3b5d31-9aa9-461f-a16e-b16d7fd6cb26",
         "8a40ec99-3ca7-49b9-943e-898d85771bd0",
@@ -2025,10 +2034,10 @@
         "3a15d771-c050-47b2-bb48-7e5aeb404c39",
         "09be2c60-e9ef-4f42-9a68-9f9b2f17ee6c",
         "04234c62-1c19-478c-b96e-76eae1dac6c1",
-        "6fce9e92-cc48-49d5-b37a-9e5141eba4d9",
         "562a4154-907e-464a-a776-dd692a23895a",
         "7d00036f-e1be-444a-b9b1-00861de5fbd7",
         "2071b2a2-ec87-4675-85e1-6f5173cc7a10",
+        "6fce9e92-cc48-49d5-b37a-9e5141eba4d9",
         "2e108a37-2150-4f66-abbc-2da3a062b5d9",
         "531f05c0-32cb-4e80-bc78-08415cadf9c8",
         "a383bcff-e0fd-4d96-a119-b32dfcf1fca6",

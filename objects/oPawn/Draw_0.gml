@@ -19,6 +19,21 @@ if(global.ShowDebug_AI)
 		
 		draw_circle_colour(x, y, m_AI_SearchRange, lineColor, lineColor, true);
 	}
+	
+	var size = aStar_get_cell_size() / 2;
+	if(m_Path != undefined)
+	{
+	    for(var i = 0; i < path_get_number(m_Path) - 1; i ++)
+	    {
+	        draw_line(
+				path_get_point_x(m_Path, i) + size,
+				path_get_point_y(m_Path, i) + size,
+				path_get_point_x(m_Path, i + 1) + size,
+				path_get_point_y(m_Path, i + 1) + size);
+	    }
+	}
+
+
 }
 
 #macro BAR_HEIGHT 1

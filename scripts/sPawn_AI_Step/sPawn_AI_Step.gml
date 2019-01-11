@@ -20,6 +20,38 @@ if(m_AI_Control)
 			exit;
 		}
 		
+		var pathTargetX = aStar_get_cell_coordinate(m_AI_TargetObject.x);
+		var pathTargetY = aStar_get_cell_coordinate(m_AI_TargetObject.y);
+		
+		if(position_get_x(m_PathEndPos) != pathTargetX
+			|| position_get_y(m_PathEndPos) != pathTargetY)
+		{
+			var cellSize = aStar_get_cell_size();
+			var halfCellSize = cellSize div 2;
+			var pathMyX = aStar_get_cell_coordinate(x);
+			var pathMyY = aStar_get_cell_coordinate(y);
+		
+			if(m_Path != undefined)
+			{
+				path_end();
+			}
+		
+			m_Path = aStar_find_path(pathMyX, pathMyY, pathTargetX, pathTargetY);
+		
+			if(m_Path != undefined)
+			{
+				path_start(m_Path, 3, path_action_reverse, true);
+			    m_PathEndPos = position_create(
+					path_get_point_x(m_Path, path_get_number(m_Path) - 1),
+					path_get_point_y(m_Path, path_get_number(m_Path) - 1)
+					);
+			}
+		}
+
+
+		
+		
+		/*
 		var seconds_passed = delta_time/1000000;
 		var move_speed_this_frame = m_MoveSpeed*seconds_passed*m_AI_MoveSpeedRate;
 		var targetVectorX = m_AI_TargetObject.x - x;
@@ -47,6 +79,7 @@ if(m_AI_Control)
 			if(m_Attacking == false)
 				sUtil_DoAttack(self, room_speed*0.5);
 		}
+		*/
 	}
 	
 }

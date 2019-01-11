@@ -37,3 +37,6 @@ if(m_CurHealth == 0)
 }
 	
 m_RottenSprFrame = 0;
+
+m_Path = undefined;
+m_PathEndPos = position_create(-100, -100);

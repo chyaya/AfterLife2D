@@ -14,21 +14,14 @@ if(m_AI_Control)
 	{
 		if(m_AI_TargetObject.m_CurHealth == 0)
 		{
-			m_AI_TargetObject = noone;
-			m_DirX = 0;
-			m_DirY = 0;
-			
-			if(m_Path != undefined)
-			{
-				m_Path = undefined;
-				path_end();
-			}
-			
+			sPawn_AI_ClearTarget();
 			exit;
 		}
 		
+		var distance = point_distance(x, y, m_AI_TargetObject.x, m_AI_TargetObject.y);
 		
-		if(point_distance(x, y, m_AI_TargetObject.x, m_AI_TargetObject.y) <= 15)
+		
+		if(distance <= 15)
 	    {
 	        sPawn_EndPath();
 			
@@ -38,6 +31,10 @@ if(m_AI_Control)
 			if(m_Attacking == false)
 				sUtil_DoAttack(self, room_speed*0.5);
 	    }
+		else if(distance > 150)
+		{
+			sPawn_AI_ClearTarget();
+		}
 		else
 		{
 			var pathTargetX = aStar_get_cell_coordinate(m_AI_TargetObject.x);
@@ -61,6 +58,8 @@ if(m_AI_Control)
 				{
 					path_delete_point(m_Path, 0);
 					path_insert_point(m_Path, 0, x, y, 100);
+					
+					funcPathOptimized(m_Path, aStar_get_cell_size());
 				
 					path_start(m_Path, m_MoveSpeed/room_speed*m_AI_MoveSpeedRate, path_action_reverse, true);
 				
@@ -71,37 +70,6 @@ if(m_AI_Control)
 			m_DirX = sUtil_AngleToDirX(direction);
 			m_DirY = sUtil_AngleToDirY(direction);
 		}
-	
-		
-		/*
-		var seconds_passed = delta_time/1000000;
-		var move_speed_this_frame = m_MoveSpeed*seconds_passed*m_AI_MoveSpeedRate;
-		var targetVectorX = m_AI_TargetObject.x - x;
-		var targetVectorY = m_AI_TargetObject.y - y;
-		var targetVectorLength = sqrt(targetVectorX*targetVectorX + targetVectorY*targetVectorY);
-		
-		if(abs(targetVectorX) < 0.5)
-			targetVectorX = 0;
-			
-		if(abs(targetVectorY) < 0.5)
-			targetVectorY = 0;
-		
-		if(targetVectorLength > 15)
-		{
-			m_DirX = sign(targetVectorX);
-			m_DirY = sign(targetVectorY);
-			
-			sPawn_Move(m_AI_MoveSpeedRate);
-		}
-		else
-		{
-			m_DirX = 0;
-			m_DirY = 0;
-			
-			if(m_Attacking == false)
-				sUtil_DoAttack(self, room_speed*0.5);
-		}
-		*/
 	}
 	
 }

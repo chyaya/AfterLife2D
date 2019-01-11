@@ -3,7 +3,6 @@
 /// @param  y1
 /// @param  x2
 /// @param  y2
-/// @param  object_solid
 /// @param  tile_size
 
 // This script uses Bresenham's algorithm for finding all the grid squares that
@@ -18,8 +17,7 @@ var y1 = argument1;
 var x2 = argument2;
 var y2 = argument3;
 
-var obj = argument4;
-var ts = argument5;
+var ts = argument4;
 
 var xx = x1;
 var yy = y1;

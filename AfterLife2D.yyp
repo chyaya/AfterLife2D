@@ -1175,6 +1175,14 @@
             }
         },
         {
+            "Key": "94111e66-f9b3-41f4-b633-62b80b3f4b2e",
+            "Value": {
+                "id": "bfbe8725-c73d-428b-a71b-48a1d15d4e00",
+                "resourcePath": "scripts\\sPawn_AI_ClearTarget\\sPawn_AI_ClearTarget.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9457c34c-8bf3-4976-a413-9b8d99df7b42",
             "Value": {
                 "id": "082345c0-1041-4aa9-bad2-5bfa4dc17400",
@@ -2002,6 +2010,7 @@
         "8b543db5-be5e-4d03-8624-82d77dbc0865",
         "59799419-8b83-4086-867f-ee2ca26a0aa1",
         "9a5114f0-46d6-4835-80c2-0c1ba2641302",
+        "94111e66-f9b3-41f4-b633-62b80b3f4b2e",
         "4b48257f-5472-4a69-94a8-4be7b641313b",
         "9e30a3ac-1ef2-4421-af11-b1e756c2f831",
         "d666ef52-8966-429f-ac3a-d21c7bb6ef3d",

@@ -62,7 +62,7 @@ for (var i = tx; i < max_x;  i++;)
 	                if pd < t_alpha
 	                {
 	                    // Check for blockers
-	                    if(sFOW_Bresenhams(xx, yy, i, j, ob, ts) == false)
+	                    if(sFOW_Bresenhams(xx, yy, i, j, ts) == false)
 						{
 	                        // no blocker found so set tile alpha
 	                        tile_set_alpha(tile, pd);
@@ -71,7 +71,7 @@ for (var i = tx; i < max_x;  i++;)
 						{
 							if(aStar_get_blocked(i, j))
 							{
-								if !sFOW_Bresenhams(i, j, xx, yy, ob, ts)
+								if !sFOW_Bresenhams(i, j, xx, yy, ts)
 								{
 									tile_set_alpha(tile, pd);
 								}

@@ -1,8 +1,8 @@
 {
-    "id": "a6f1d00c-8abc-426f-9281-528a894c9bd1",
+    "id": "9e30a3ac-1ef2-4421-af11-b1e756c2f831",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sIsBlockTileIndex",
+    "name": "sPawn_EndPath",
     "IsCompatibility": false,
     "IsDnD": false
 }

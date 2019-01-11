@@ -20,8 +20,7 @@ if( m_DirX != 0 )
 	var ty1 = ((y + OBJ_HALF_H - TILE_OFFSET - 1)>>TILE_SHIFT);
 	var ty2 = ((y - OBJ_HALF_H - TILE_OFFSET)>>TILE_SHIFT);
 		
-	if(sUtil_IsBlocked(tx*TILE_SIZE, ty1*TILE_SIZE, TILE_SIZE, false)
-		|| sUtil_IsBlocked(tx*TILE_SIZE, ty2*TILE_SIZE, TILE_SIZE, false))
+	if(aStar_get_blocked(tx, ty1) || aStar_get_blocked(tx, ty2))
 	{
 		if(m_DirX > 0)
 		{
@@ -42,8 +41,7 @@ if( m_DirY != 0 )
 	var tx2 = (x - OBJ_HALF_W - TILE_OFFSET)>>TILE_SHIFT;		// check right edge
 	var ty	= ((y + m_DirY*OBJ_HALF_H - TILE_OFFSET)>>TILE_SHIFT);
 	
-	if(sUtil_IsBlocked(tx1*TILE_SIZE, ty*TILE_SIZE, TILE_SIZE, false)
-		|| sUtil_IsBlocked(tx2*TILE_SIZE, ty*TILE_SIZE, TILE_SIZE, false))
+	if(aStar_get_blocked(tx1, ty) || aStar_get_blocked(tx2, ty))
 	{
 		if(m_DirY > 0)
 		{

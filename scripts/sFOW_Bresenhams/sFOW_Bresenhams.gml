@@ -52,7 +52,7 @@ do
             }
         yy = y1 + (y2 - y1) * (xx - x1) / (x2 - x1);
         }
-    if (sUtil_IsBlocked((xx * ts) + (ts / 2) - sign(x1 - x2), (yy * ts) + (ts / 2) - sign(y1 - y2), ts, true))
+    if (aStar_get_blocked(xx - sign(x1 - x2)/ts + 0.5, yy - sign(y1 - y2)/ts  + 0.5))
 		return true;
     }
 until xx = x2 and yy = y2;

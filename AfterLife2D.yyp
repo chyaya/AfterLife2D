@@ -1039,6 +1039,14 @@
             }
         },
         {
+            "Key": "85dcb2d2-6327-47e2-98bc-e7c09774aec7",
+            "Value": {
+                "id": "a695253c-0eb5-464c-b642-53506082368e",
+                "resourcePath": "scripts\\sUtil_AngleToDirY\\sUtil_AngleToDirY.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "86b4f796-e994-472d-87db-a801fa25c32e",
             "Value": {
                 "id": "48e05da1-be80-4dbf-a32e-e65b0e34c39e",
@@ -1247,6 +1255,14 @@
             }
         },
         {
+            "Key": "9e30a3ac-1ef2-4421-af11-b1e756c2f831",
+            "Value": {
+                "id": "7f6b1cbd-143f-4b0a-8057-0816856b4cbd",
+                "resourcePath": "scripts\\sPawn_EndPath\\sPawn_EndPath.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9e582680-ed3c-4f02-9f44-904f830611b6",
             "Value": {
                 "id": "17ef4ff1-2c81-41f8-8d34-1fb3e7c6f5f7",
@@ -1315,14 +1331,6 @@
             "Value": {
                 "id": "1c346967-4bf1-49c9-a45f-973d0d86954f",
                 "resourcePath": "scripts\\sBSP_Clear\\sBSP_Clear.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "a6f1d00c-8abc-426f-9281-528a894c9bd1",
-            "Value": {
-                "id": "3205c0d7-ad67-4519-b413-26d573a09d01",
-                "resourcePath": "scripts\\sIsBlockTileIndex\\sIsBlockTileIndex.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1460,6 +1468,14 @@
                 "id": "27e80189-1013-4d0b-be95-880c7237d5da",
                 "resourcePath": "sprites\\sprManAction\\sprManAction.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b95ceab0-f28b-494f-b9c8-905e2bd13d7d",
+            "Value": {
+                "id": "e0bd83ee-ad80-4cbd-8bd8-88e1af1e0d10",
+                "resourcePath": "scripts\\sUtil_AngleToDirX\\sUtil_AngleToDirX.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1743,14 +1759,6 @@
             }
         },
         {
-            "Key": "e2ef24d5-2f7a-460e-a817-6f7dd1c80d83",
-            "Value": {
-                "id": "cd0be4e6-68c1-4e0e-be40-ab33ca8028e3",
-                "resourcePath": "scripts\\sUtil_IsBlocked\\sUtil_IsBlocked.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e3b87911-ccd1-47d7-8777-212976b367b9",
             "Value": {
                 "id": "fc8fbe96-4307-4df2-9fc8-cabb1693aaed",
@@ -1969,14 +1977,14 @@
     ],
     "script_order": [
         "6f9d1225-dcf6-4ffa-b3ea-46c675de6272",
-        "e2ef24d5-2f7a-460e-a817-6f7dd1c80d83",
         "56436457-4aa3-455c-aadd-c8281d38bff2",
+        "b95ceab0-f28b-494f-b9c8-905e2bd13d7d",
+        "85dcb2d2-6327-47e2-98bc-e7c09774aec7",
         "c93e823b-d741-4008-9521-81ecd1c60513",
         "9930a0fa-63b5-4daa-b8d8-fd4604de47f2",
         "c5946e86-264c-405d-9fc1-42f33dd24026",
         "949f516a-b6e4-4271-a51e-681fc26860f9",
         "51987040-c25b-48b7-aae6-ed65189cada1",
-        "a6f1d00c-8abc-426f-9281-528a894c9bd1",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
         "18092258-e9e2-480b-a61a-24ac0424da87",
         "7cce86a3-e092-47fa-88f6-3cf92d6df0a1",
@@ -1995,6 +2003,7 @@
         "59799419-8b83-4086-867f-ee2ca26a0aa1",
         "9a5114f0-46d6-4835-80c2-0c1ba2641302",
         "4b48257f-5472-4a69-94a8-4be7b641313b",
+        "9e30a3ac-1ef2-4421-af11-b1e756c2f831",
         "d666ef52-8966-429f-ac3a-d21c7bb6ef3d",
         "6c3b5d31-9aa9-461f-a16e-b16d7fd6cb26",
         "8a40ec99-3ca7-49b9-943e-898d85771bd0",

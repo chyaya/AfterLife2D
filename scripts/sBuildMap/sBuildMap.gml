@@ -82,6 +82,7 @@ for (var j = 0; j < grid_h; j++;)
 		case bsp_outer_wall:
         case bsp_wall: //Create wall objects
         	tilemap_set(_m, 24, i, j); // Uncomment for tiles!
+			aStar_set_blocked(i, j, true);
             break;
         case bsp_corridor: // Add corridor tiles
             break;

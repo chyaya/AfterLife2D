@@ -5,7 +5,8 @@ if(path != undefined)
 {
     for(var i = 0; i < path_get_number(path) - 1; i ++)
     {
-        draw_line(path_get_point_x(path, i) + size, path_get_point_y(path, i) + size, path_get_point_x(path, i + 1) + size, path_get_point_y(path, i + 1) + size);
+        draw_line(path_get_point_x(path, i) + size,
+			path_get_point_y(path, i) + size, path_get_point_x(path, i + 1) + size, path_get_point_y(path, i + 1) + size);
     }
 }
 

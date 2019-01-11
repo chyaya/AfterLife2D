@@ -3,6 +3,9 @@ event_inherited();
 m_DirX = 0;
 m_DirY = 0;
 
+m_Path = undefined;
+m_PathEndPos = position_create(-100, -100);
+
 if(irandom(1) == 0)
 {
 	image_xscale = -1;	
@@ -37,6 +40,3 @@ if(m_CurHealth == 0)
 }
 	
 m_RottenSprFrame = 0;
-
-m_Path = undefined;
-m_PathEndPos = position_create(-100, -100);

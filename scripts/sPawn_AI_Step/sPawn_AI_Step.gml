@@ -17,39 +17,61 @@ if(m_AI_Control)
 			m_AI_TargetObject = noone;
 			m_DirX = 0;
 			m_DirY = 0;
+			
+			if(m_Path != undefined)
+			{
+				m_Path = undefined;
+				path_end();
+			}
+			
 			exit;
 		}
 		
-		var pathTargetX = aStar_get_cell_coordinate(m_AI_TargetObject.x);
-		var pathTargetY = aStar_get_cell_coordinate(m_AI_TargetObject.y);
 		
-		if(position_get_x(m_PathEndPos) != pathTargetX
-			|| position_get_y(m_PathEndPos) != pathTargetY)
+		if(point_distance(x, y, m_AI_TargetObject.x, m_AI_TargetObject.y) <= 15)
+	    {
+	        sPawn_EndPath();
+			
+			m_DirX = 0;
+			m_DirY = 0;
+			
+			if(m_Attacking == false)
+				sUtil_DoAttack(self, room_speed*0.5);
+	    }
+		else
 		{
-			var cellSize = aStar_get_cell_size();
-			var halfCellSize = cellSize div 2;
-			var pathMyX = aStar_get_cell_coordinate(x);
-			var pathMyY = aStar_get_cell_coordinate(y);
+			var pathTargetX = aStar_get_cell_coordinate(m_AI_TargetObject.x);
+			var pathTargetY = aStar_get_cell_coordinate(m_AI_TargetObject.y);
 		
-			if(m_Path != undefined)
+			if(position_get_x(m_PathEndPos) != pathTargetX
+				|| position_get_y(m_PathEndPos) != pathTargetY)
 			{
-				path_end();
-			}
+				show_debug_message(string(current_time) + " path finding");
+			
+				var cellSize = aStar_get_cell_size();
+				var halfCellSize = cellSize div 2;
+				var pathMyX = aStar_get_cell_coordinate(x);
+				var pathMyY = aStar_get_cell_coordinate(y);
 		
-			m_Path = aStar_find_path(pathMyX, pathMyY, pathTargetX, pathTargetY);
+				sPawn_EndPath();
 		
-			if(m_Path != undefined)
-			{
-				path_start(m_Path, 3, path_action_reverse, true);
-			    m_PathEndPos = position_create(
-					path_get_point_x(m_Path, path_get_number(m_Path) - 1),
-					path_get_point_y(m_Path, path_get_number(m_Path) - 1)
-					);
+				m_Path = aStar_find_path(pathMyX, pathMyY, pathTargetX, pathTargetY);
+		
+				if(m_Path != undefined)
+				{
+					path_delete_point(m_Path, 0);
+					path_insert_point(m_Path, 0, x, y, 100);
+				
+					path_start(m_Path, m_MoveSpeed/room_speed*m_AI_MoveSpeedRate, path_action_reverse, true);
+				
+					m_PathEndPos = position_create(pathTargetX, pathTargetY);
+				}
 			}
+			
+			m_DirX = sUtil_AngleToDirX(direction);
+			m_DirY = sUtil_AngleToDirY(direction);
 		}
-
-
-		
+	
 		
 		/*
 		var seconds_passed = delta_time/1000000;

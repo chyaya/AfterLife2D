@@ -1,8 +1,8 @@
 {
-    "id": "e2ef24d5-2f7a-460e-a817-6f7dd1c80d83",
+    "id": "b95ceab0-f28b-494f-b9c8-905e2bd13d7d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sUtil_IsBlocked",
+    "name": "sUtil_AngleToDirX",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -69,7 +69,7 @@ for (var i = tx; i < max_x;  i++;)
 						}
 	                    else
 						{
-							if(sUtil_IsBlocked((i * ts), (j * ts), ts, true))
+							if(aStar_get_blocked(i, j))
 							{
 								if !sFOW_Bresenhams(i, j, xx, yy, ob, ts)
 								{

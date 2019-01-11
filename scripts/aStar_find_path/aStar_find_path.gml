@@ -70,13 +70,14 @@ while(ds_list_size(open) > 0)
     if(lowestX == endX && lowestY == endY)
     {
         var cellSize = obj_pathfinder.cellSize;
-        path_add_point(path, lowestX * cellSize, lowestY * cellSize, 100);
+		var halfcellSize = cellSize div 2;
+        path_add_point(path, lowestX * cellSize + halfcellSize, lowestY * cellSize + halfcellSize, 100);
         while(ds_grid_get(cameFrom, lowestX, lowestY) != -1)
         {
             var nextPosition = ds_grid_get(cameFrom, lowestX, lowestY);
             lowestX = position_get_x(nextPosition);
             lowestY = position_get_y(nextPosition);
-            path_add_point(path, lowestX * cellSize, lowestY * cellSize, 100);
+            path_add_point(path, lowestX * cellSize + halfcellSize, lowestY * cellSize + halfcellSize, 100);
         }
         path_reverse(path);
         return path;

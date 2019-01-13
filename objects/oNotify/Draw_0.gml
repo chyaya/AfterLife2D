@@ -6,7 +6,7 @@ draw_text_color(x + m_OffsetX, y + m_OffsetY + m_CurY, m_Text,
 	
 var seconds_passed = delta_time/1000000;
 m_CurY -= seconds_passed*30;
-m_CurAlpha -= seconds_passed;
+m_CurAlpha -= seconds_passed*.5;
 
 if(m_CurAlpha <= 0)
 	instance_destroy();

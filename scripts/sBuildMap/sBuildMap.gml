@@ -50,9 +50,11 @@ var ww = irandom(r[pos, 2] - 2) * ts;                                // Now get 
 var hh = irandom(r[pos, 3] - 2) * ts;                                // Now get the half height of the room
 instance_create_layer(xx + ts + ww, yy + ts + hh, "Props", oPileOfCorpses);
 
+/*
 var ww = irandom(r[pos, 2] - 2) * ts;                                // Now get the half width of the room
 var hh = irandom(r[pos, 3] - 2) * ts;                                // Now get the half height of the room
 instance_create_layer(xx + ts + ww, yy + ts + hh, "Props", oStair);
+*/
 
 // The following adds the walls, doors and floor tiles for the room using loops.
 // As you can see we have two sprites for horizontal and vertical doors (you can 
@@ -121,7 +123,7 @@ for (var j = 0; j < grid_h; j++;)
 // Spawn a potion object in every room area, including the player area. 
 // Note that we do this BEFORE we spawn anything else, as it does NOT 
 // use the BSP collision parent, and we want to spawn things over them.
-sBSP_PopulateRooms(oChest, 10, cc, -1, ts, false, true, "Props");
+sBSP_PopulateRooms(oChest, 10, cc, pos, ts, false, true, "Props");
 
 // Now spawn a room full of gold that is NOT the player room
 //var ran = irandom(cc - 1);

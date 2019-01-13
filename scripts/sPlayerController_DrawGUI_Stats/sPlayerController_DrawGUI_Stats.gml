@@ -43,7 +43,7 @@ if(m_CurSoulPoint <= m_UnpossessCost)
 	soulTextColor = current_second % 2 ? c_white : c_red;
 }
 
-text_x = view_wport[0] - 400;
+text_x = view_wport[0] - 420;
 text_y = 10;
 draw_text_color(text_x, text_y, "Soul:",
 	soulTextColor, soulTextColor, soulTextColor, soulTextColor, 1);

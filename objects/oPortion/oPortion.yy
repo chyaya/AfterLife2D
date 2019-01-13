@@ -1,45 +1,37 @@
 {
-    "id": "24c65588-c331-45fd-a8f0-e0e0d0a82a03",
+    "id": "4888b3dd-b004-4827-add1-101450e2de74",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oChest",
+    "name": "oPortion",
     "eventList": [
         {
-            "id": "82c15ee6-9c0f-4abb-887a-5d543dface66",
+            "id": "8f98d321-4f9d-46d3-95c6-ce750a8e928b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 1,
-            "m_owner": "24c65588-c331-45fd-a8f0-e0e0d0a82a03"
+            "m_owner": "4888b3dd-b004-4827-add1-101450e2de74"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "1f0f7b0d-6b7c-4253-bf6c-0c2a395ef616",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
-            "propertyId": "224a275d-2e89-4f97-8365-7017d2d02440",
-            "value": "Open"
-        },
-        {
-            "id": "b67c886d-fd1c-4454-9521-fb9fe9dd797b",
+            "id": "f8b87902-38ef-4f1d-8e1f-f83c296249a0",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
             "propertyId": "b443090f-23b9-45b5-85f1-c9c6ccd3b28c",
-            "value": "Chest"
+            "value": "Portion(+Health)"
         },
         {
-            "id": "fa78241c-9415-4926-b6ce-a4bb10037a2d",
+            "id": "69928c39-3932-4d19-a907-98b425433257",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
-            "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
-            "propertyId": "06880099-d3dd-4af7-b49f-a836c7b82c1a",
-            "value": "False"
+            "objectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
+            "propertyId": "224a275d-2e89-4f97-8365-7017d2d02440",
+            "value": "Use"
         }
     ],
     "parentObjectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
@@ -58,6 +50,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "a3023449-9ba1-41bf-9317-24a71777dbe7",
+    "spriteId": "5b90e0a6-6423-4baa-b49d-b0532ffceec9",
     "visible": true
 }

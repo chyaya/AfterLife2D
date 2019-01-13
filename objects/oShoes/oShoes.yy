@@ -1,45 +1,37 @@
 {
-    "id": "24c65588-c331-45fd-a8f0-e0e0d0a82a03",
+    "id": "b0b3c254-b009-488f-bf6e-2227847aacae",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oChest",
+    "name": "oShoes",
     "eventList": [
         {
-            "id": "82c15ee6-9c0f-4abb-887a-5d543dface66",
+            "id": "5bc486fc-fd1a-4990-9dee-9a83f51d27aa",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 1,
-            "m_owner": "24c65588-c331-45fd-a8f0-e0e0d0a82a03"
+            "m_owner": "b0b3c254-b009-488f-bf6e-2227847aacae"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "1f0f7b0d-6b7c-4253-bf6c-0c2a395ef616",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
-            "propertyId": "224a275d-2e89-4f97-8365-7017d2d02440",
-            "value": "Open"
-        },
-        {
-            "id": "b67c886d-fd1c-4454-9521-fb9fe9dd797b",
+            "id": "822c519c-d297-4522-a100-c5bd49dfb67e",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
             "propertyId": "b443090f-23b9-45b5-85f1-c9c6ccd3b28c",
-            "value": "Chest"
+            "value": "Shoes(+Speed)"
         },
         {
-            "id": "fa78241c-9415-4926-b6ce-a4bb10037a2d",
+            "id": "39b89bab-5880-4218-a560-c7147e00120d",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
-            "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
-            "propertyId": "06880099-d3dd-4af7-b49f-a836c7b82c1a",
-            "value": "False"
+            "objectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
+            "propertyId": "224a275d-2e89-4f97-8365-7017d2d02440",
+            "value": "Equip"
         }
     ],
     "parentObjectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
@@ -58,6 +50,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "a3023449-9ba1-41bf-9317-24a71777dbe7",
+    "spriteId": "b810933c-b0a1-44ef-af09-aac50b412322",
     "visible": true
 }

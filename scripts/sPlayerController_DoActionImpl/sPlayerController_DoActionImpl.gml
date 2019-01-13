@@ -40,11 +40,14 @@ case "Collect":
 		m_CurSoulPoint = m_MaxSoulPoint;
 	break;
 case "Open":
+case "Equip":
+case "Use":
 	if(m_InteractionObject.m_ActionSound != noone)
 		audio_play_sound(m_InteractionObject.m_ActionSound, 1, false);
+	if(m_InteractionObject.m_BlockMove == true)
+		FOW_Dirty = true;
 	instance_destroy(m_InteractionObject);
 	m_InteractionObject = noone;
-	FOW_Dirty = true;
 	break;
 case "Attack":
 	sUtil_DoAttack(m_PlayerObject, room_speed*0.2);

@@ -4,13 +4,13 @@
 gml_pragma( "global", "__global_object_depths()");
 
 // insert the generated arrays here
-global.__objectDepths[0] = -100000; // obj_pathfinder
+global.__objectDepths[0] = -100000; // oPathFinder
 global.__objectDepths[1] = 0; // obj_player
 global.__objectDepths[2] = -10000000; // obj_controller
 global.__objectDepths[3] = -100; // obj_tree
 
 
-global.__objectNames[0] = "obj_pathfinder";
+global.__objectNames[0] = "oPathFinder";
 global.__objectNames[1] = "obj_player";
 global.__objectNames[2] = "obj_controller";
 global.__objectNames[3] = "obj_tree";

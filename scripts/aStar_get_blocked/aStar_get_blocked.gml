@@ -10,9 +10,9 @@
  * Returns: true if the cell is blocked, false otherwise, or undefined if the pathfinder
  *          is not initialized.
 */
-if(instance_exists(obj_pathfinder))
+if(instance_exists(oPathFinder))
 {
-    if(argument0 >= 0 && argument0 < ds_grid_width(obj_pathfinder.cells) && argument1 >= 0 && argument1 < ds_grid_height(obj_pathfinder.cells))
-        return ds_grid_get(obj_pathfinder.cells, argument0, argument1);
+    if(argument0 >= 0 && argument0 < ds_grid_width(oPathFinder.cells) && argument1 >= 0 && argument1 < ds_grid_height(oPathFinder.cells))
+        return ds_grid_get(oPathFinder.cells, argument0, argument1);
 }
 return undefined;

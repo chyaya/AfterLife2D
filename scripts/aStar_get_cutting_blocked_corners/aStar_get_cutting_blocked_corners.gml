@@ -14,6 +14,6 @@
  * Returns: true if cutting blocked corners is allowed, false otherwise, or undefined if the 
  *          pathfinder is not initialized.
 */
-if(instance_exists(obj_pathfinder))
-    return obj_pathfinder.cuttingBlockedCorners;
+if(instance_exists(oPathFinder))
+    return oPathFinder.cuttingBlockedCorners;
 return undefined;

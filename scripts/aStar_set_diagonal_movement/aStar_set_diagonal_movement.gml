@@ -7,5 +7,5 @@
  *
  * Returns: None
 */
-if(instance_exists(obj_pathfinder))
-    obj_pathfinder.cuttingCorners = argument0;
+if(instance_exists(oPathFinder))
+    oPathFinder.cuttingCorners = argument0;

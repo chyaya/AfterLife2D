@@ -8,6 +8,19 @@ view_visible[0] = true;
 view_wport[0] = 1920;
 view_hport[0] = 1080;
 
+/*
+m_Follow = oPlayerController.m_PlayerObject;
+
+if(m_Follow != noone)
+{
+	x = m_Follow.x;
+	y = m_Follow.y;
+}
+
+m_TargetX = x;
+m_TargetY = y;
+*/
+
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
 var viewW = view_wport[0]/m_Zoom;
 var viewH = view_hport[0]/m_Zoom;

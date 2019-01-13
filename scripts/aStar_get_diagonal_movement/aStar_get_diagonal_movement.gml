@@ -5,6 +5,6 @@
  * Returns: true if moving diagonally is allowed, false otherwise, or undefined if the 
  *          pathfinder is not initialized.
 */
-if(instance_exists(obj_pathfinder))
-    return obj_pathfinder.cuttingCorners;
+if(instance_exists(oPathFinder))
+    return oPathFinder.cuttingCorners;
 return undefined;

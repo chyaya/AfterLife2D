@@ -11,8 +11,8 @@
  *
  * Returns: None
 */
-if(instance_exists(obj_pathfinder))
+if(instance_exists(oPathFinder))
 {
-    if(argument0 >= 0 && argument0 < ds_grid_width(obj_pathfinder.cells) && argument1 >= 0 && argument1 < ds_grid_height(obj_pathfinder.cells))
-        ds_grid_set(obj_pathfinder.cells, argument0, argument1, argument2);
+    if(argument0 >= 0 && argument0 < ds_grid_width(oPathFinder.cells) && argument1 >= 0 && argument1 < ds_grid_height(oPathFinder.cells))
+        ds_grid_set(oPathFinder.cells, argument0, argument1, argument2);
 }

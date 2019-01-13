@@ -12,8 +12,8 @@
 var position = argument0, i = argument1;
 var positionX = position_get_x(position);
 var positionY = position_get_y(position);
-var width = ds_grid_width(obj_pathfinder.cells);
-var height = ds_grid_height(obj_pathfinder.cells);
+var width = ds_grid_width(oPathFinder.cells);
+var height = ds_grid_height(oPathFinder.cells);
 
 if(i == 0)
 {

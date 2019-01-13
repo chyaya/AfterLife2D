@@ -5,9 +5,9 @@
  * Returns: None
 */
 
-if(instance_exists(obj_pathfinder))
+if(instance_exists(oPathFinder))
 {
-    with(obj_pathfinder)
+    with(oPathFinder)
     {
         ds_grid_destroy(cells);
         instance_destroy();

@@ -7,5 +7,5 @@
  *
  * Returns: none
 */
-if(instance_exists(obj_pathfinder))
-    obj_pathfinder.cellSize = argument0;
+if(instance_exists(oPathFinder))
+    oPathFinder.cellSize = argument0;

@@ -14,7 +14,7 @@
  *
  * Returns: The path from start to end, or undefined if there is no path
 */
-if(!instance_exists(obj_pathfinder))
+if(!instance_exists(oPathFinder))
 {
     show_message("Path finder has not been initialized!");
     return undefined;
@@ -22,7 +22,7 @@ if(!instance_exists(obj_pathfinder))
 var startX = argument0, startY = argument1, endX = argument2, endY = argument3;
 
 var path = path_add();
-if(ds_grid_get(obj_pathfinder.cells, endX, endY) == true)
+if(ds_grid_get(oPathFinder.cells, endX, endY) == true)
 {
     return undefined;
 }
@@ -30,14 +30,14 @@ if(startX == endX && startY == endY)
 {
     return undefined;
 }
-var width = ds_grid_width(obj_pathfinder.cells), height = ds_grid_height(obj_pathfinder.cells);
+var width = ds_grid_width(oPathFinder.cells), height = ds_grid_height(oPathFinder.cells);
 var closed = ds_list_create();
 
-for(var i = 0; i < ds_grid_width(obj_pathfinder.cells); i ++)
+for(var i = 0; i < ds_grid_width(oPathFinder.cells); i ++)
 {
-    for(var j = 0; j < ds_grid_height(obj_pathfinder.cells); j ++)
+    for(var j = 0; j < ds_grid_height(oPathFinder.cells); j ++)
     {
-        if(ds_grid_get(obj_pathfinder.cells, i, j))
+        if(ds_grid_get(oPathFinder.cells, i, j))
         {
             ds_list_add(closed, position_create(i, j));
         }
@@ -69,7 +69,7 @@ while(ds_list_size(open) > 0)
     lowestY = position_get_y(position);
     if(lowestX == endX && lowestY == endY)
     {
-        var cellSize = obj_pathfinder.cellSize;
+        var cellSize = oPathFinder.cellSize;
 		var halfcellSize = cellSize div 2;
         path_add_point(path, lowestX * cellSize + halfcellSize, lowestY * cellSize + halfcellSize, 100);
         while(ds_grid_get(cameFrom, lowestX, lowestY) != -1)

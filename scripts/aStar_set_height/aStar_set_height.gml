@@ -7,7 +7,7 @@
  *
  * Returns: None
 */
-if(instance_exists(obj_pathfinder))
+if(instance_exists(oPathFinder))
 {
-    ds_grid_resize(obj_pathfinder.cells, ds_grid_width(obj_pathfinder.cells), argument0);
+    ds_grid_resize(oPathFinder.cells, ds_grid_width(oPathFinder.cells), argument0);
 }

@@ -5,8 +5,8 @@
  * Returns: The amount of cells vertically, or undefined if the pathfinder is not
  *          initialized
 */
-if(instance_exists(obj_pathfinder))
+if(instance_exists(oPathFinder))
 {
-    return ds_grid_height(obj_pathfinder.cells);
+    return ds_grid_height(oPathFinder.cells);
 }
 return undefined;

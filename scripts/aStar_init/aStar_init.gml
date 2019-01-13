@@ -17,12 +17,12 @@
  * Returns: true if the pathfinder was initialized successfully, false otherwise.
 */
 
-if(instance_exists(obj_pathfinder))
+if(instance_exists(oPathFinder))
 {
     show_message("Trying to initiate pathfinder, but is already initialized");
     return false;
 }
-var finder = instance_create(0, 0, obj_pathfinder);
+var finder = instance_create(0, 0, oPathFinder);
 var width = argument0, height = argument1, cellSize = argument2, cuttingCorners = argument3, cuttingBlockedCorners = argument4;
 finder.cellSize = cellSize;
 finder.cells = ds_grid_create(width, height);

@@ -39,6 +39,22 @@
             "objectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
             "propertyId": "d6184f42-2a09-4ae8-8d7b-a35d7b0fd628",
             "value": "sndDoor"
+        },
+        {
+            "id": "03a15f26-ce06-4d21-93e2-a4a0875a156e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
+            "propertyId": "35cb542a-1ce4-4338-9e59-97cb333a0ca3",
+            "value": "True"
+        },
+        {
+            "id": "12338041-228c-4828-926b-73221ec43a5d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
+            "propertyId": "60fa6bbc-afed-4bc7-824d-3b661ff9193b",
+            "value": "$FFFFFFFF"
         }
     ],
     "parentObjectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",

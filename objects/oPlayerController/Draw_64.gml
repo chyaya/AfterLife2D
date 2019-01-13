@@ -3,4 +3,4 @@ sPlayerController_DrawGUI_Stats();
 sPlayerController_DrawGUI_Actions();
 sPlayerController_DrawGUI_InteractObject();
 sPlayerController_DrawGUI_GameOver();
-
+sPlayerController_DrawGUI_Minimap();

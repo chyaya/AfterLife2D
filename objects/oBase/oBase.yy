@@ -83,6 +83,34 @@
             "value": "$FFFFFFFF",
             "varName": "m_MultiplyColor",
             "varType": 7
+        },
+        {
+            "id": "35cb542a-1ce4-4338-9e59-97cb333a0ca3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_MinimapVisible",
+            "varType": 3
+        },
+        {
+            "id": "60fa6bbc-afed-4bc7-824d-3b661ff9193b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "$FFFFFF00",
+            "varName": "m_MinimapColor",
+            "varType": 7
         }
     ],
     "solid": false,

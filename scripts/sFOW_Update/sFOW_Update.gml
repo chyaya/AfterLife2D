@@ -66,6 +66,7 @@ for (var i = tx; i < max_x;  i++;)
 						{
 	                        // no blocker found so set tile alpha
 	                        tile_set_alpha(tile, pd);
+							m_MinimapGrid[# i, j] = true;
 						}
 	                    else
 						{
@@ -74,6 +75,7 @@ for (var i = tx; i < max_x;  i++;)
 								if !sFOW_Bresenhams(i, j, xx, yy, ts)
 								{
 									tile_set_alpha(tile, pd);
+									m_MinimapGrid[# i, j] = true;
 								}
 							}
 						}

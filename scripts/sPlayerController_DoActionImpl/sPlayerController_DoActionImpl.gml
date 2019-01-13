@@ -18,7 +18,11 @@ case "Possess":
 	m_PlayerObject.persistent = true;
 	break;
 case "Unpossess":
-	if(m_CurSoulPoint > m_UnpossessCost)
+	if(room == room_Boss)
+	{
+		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Can't do that");
+	}
+	else if(m_CurSoulPoint > m_UnpossessCost)
 	{
 		sUtil_DoUnpossess(self);
 	}

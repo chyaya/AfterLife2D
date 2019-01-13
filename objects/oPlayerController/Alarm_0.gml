@@ -4,9 +4,16 @@ if(m_PlayerObject.object_index == oGhost)
 {
 	if(m_CurSoulPoint > 0)
 	{
-		--m_CurSoulPoint; 
+		var soulDamage = 1;
+		if(room == room_Boss)
+		{
+			soulDamage = 666;
+		}
 		
-		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul-1");
+		m_CurSoulPoint -= soulDamage;
+		m_CurSoulPoint = max(m_CurSoulPoint, 0);
+		
+		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul-" + string(soulDamage));
 	}
 }
 

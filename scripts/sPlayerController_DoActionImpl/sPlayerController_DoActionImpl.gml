@@ -15,6 +15,7 @@ case "Possess":
 	m_PlayerObject = m_InteractionObject;
 	m_PlayerObject.m_CurHealth = m_PlayerObject.m_MaxHealth;
 	m_PlayerObject.m_OutlineEnable = false;
+	m_PlayerObject.persistent = true;
 	break;
 case "Unpossess":
 	if(m_CurSoulPoint > m_UnpossessCost)
@@ -43,5 +44,8 @@ case "Open":
 	break;
 case "Attack":
 	sUtil_DoAttack(m_PlayerObject, room_speed*0.2);
+	break;
+case "Down":
+	room_goto_next();
 	break;
 }

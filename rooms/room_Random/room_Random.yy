@@ -7,9 +7,9 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "4722a48c-00e6-4fc9-8f6b-5ae76ff76a02",
         "4c6a06a5-2c8d-456c-b716-7cda24638e00",
         "33bacc59-1da3-457b-9191-73a304008cb5",
+        "4722a48c-00e6-4fc9-8f6b-5ae76ff76a02",
         "3b458ce7-5f7d-458c-bb8b-02bc1fa0221c",
         "963fd036-b4dc-4081-9019-755af7a1b268",
         "bf40753f-5d0c-45d4-affd-063c5f95aeea"
@@ -100,10 +100,36 @@
             "visible": true
         },
         {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Props",
+            "id": "42504306-de8f-493e-986a-18762a35aa6d",
+            "depth": 300,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Tiles",
             "id": "07d56418-eab1-4b75-b3c9-b4211f25b5fa",
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -191,7 +217,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

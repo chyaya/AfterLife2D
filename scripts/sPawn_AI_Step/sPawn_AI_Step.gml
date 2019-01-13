@@ -43,7 +43,7 @@ if(m_AI_Control)
 			if(position_get_x(m_PathEndPos) != pathTargetX
 				|| position_get_y(m_PathEndPos) != pathTargetY)
 			{
-				show_debug_message(string(current_time) + " path finding");
+				//show_debug_message(string(current_time) + " path finding");
 			
 				var cellSize = aStar_get_cell_size();
 				var halfCellSize = cellSize div 2;

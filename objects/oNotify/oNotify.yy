@@ -47,6 +47,20 @@
             "varType": 2
         },
         {
+            "id": "7b623398-f6d9-42a7-919b-6f8ef30c3d2e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_CurX",
+            "varType": 0
+        },
+        {
             "id": "f1fe5736-5cf7-4694-8294-84fb92032ef7",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -100,6 +114,34 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "m_OffsetY",
+            "varType": 0
+        },
+        {
+            "id": "9d6e509c-8e34-44a2-a619-c857193a0958",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_VX",
+            "varType": 0
+        },
+        {
+            "id": "3a52e7bf-5f55-4cf6-861c-e2362de8be21",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_VY",
             "varType": 0
         }
     ],

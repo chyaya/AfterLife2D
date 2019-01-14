@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "12f8d348-17e7-4083-83b2-60cd26e30ce7",
+            "Value": {
+                "id": "4a492060-d9b2-4f49-b434-586a854f6b98",
+                "resourcePath": "objects\\oCoffin\\oCoffin.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "13019808-6328-485f-bfb6-dce7520c38a1",
             "Value": {
                 "id": "5a8b1b6c-b8c6-4f8a-86c9-2f521a42970b",

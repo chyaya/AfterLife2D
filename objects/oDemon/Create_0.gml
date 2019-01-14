@@ -10,4 +10,5 @@ m_MaxHealth = 666;
 m_Damage = 13;
 m_MoveSpeed = 66;
 
-m_AI_MoveSpeedRate = 0.5;
+m_AI_MoveSpeedRate = 0.7;
+m_AI_AttackRange = 30;

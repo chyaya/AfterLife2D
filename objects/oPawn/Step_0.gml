@@ -33,3 +33,17 @@ if(m_PlayFootStepSound
 }
 
 m_LastImageIndex  = image_index;
+
+
+var rottenAlarmTime = alarm_get(1);
+if(rottenAlarmTime > 0)
+{
+	var leftSec = rottenAlarmTime div room_speed + 1;
+	
+	if(leftSec != m_RottenNotifySec)
+	{
+		sUtil_CreateNotify(x, y, string(leftSec), 0, 0);
+		
+		m_RottenNotifySec = leftSec;
+	}
+}

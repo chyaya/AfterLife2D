@@ -10,7 +10,7 @@ switch(actionName)
 case "Possess":
 	if(m_InteractionObject.object_index == oPileOfCorpses)
 	{
-		var obj = sUtil_CreateCorpse(m_PlayerObjectX, m_PlayerObjectY);
+		var obj = sUtil_CreateCorpse(m_PlayerObjectX, m_PlayerObjectY, 0);
 		sUtil_DoPossess(self, obj);
 	}
 	else
@@ -22,7 +22,7 @@ case "Possess":
 case "Unpossess":
 	if(room == room_Boss)
 	{
-		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Can't do that");
+		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Can't do that", 0, -30);
 	}
 	else if(m_CurSoulPoint > m_UnpossessCost)
 	{
@@ -30,13 +30,13 @@ case "Unpossess":
 	}
 	else
 	{
-		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul is too low");
+		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul is too low", 0, -30);
 	}
 	break;
 case "Collect":
 	instance_destroy(m_InteractionObject);
 	m_InteractionObject = noone;
-	sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul+10");
+	sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul+10", 0, -30);
 	m_CurSoulPoint += 10;
 	if(m_CurSoulPoint >= m_MaxSoulPoint)
 		m_CurSoulPoint = m_MaxSoulPoint;

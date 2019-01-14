@@ -136,11 +136,12 @@ sBSP_PopulateRooms(oChest, 10, cc, pos, ts, false, true, "Props");
 //while (ran == pos) ran = irandom(cc - 1);
 //sBSP_PopulateArea(obj_DEMO_Boss, 1, ran, ts, true, argument[6]);
     
+sBSP_PopulateRooms(oCoffin, 2, cc, pos, ts, false, true, "Props");
+sBSP_PopulateRooms(oStair, 1, cc, pos, ts, false, true, "Props");
+	
 // Spawn 200 enemies randomly throughout the WHOLE maze, and not just one room
 sBSP_PopulateRooms(oMan, 2, cc, pos, ts, false, true, argument[6]);
 sBSP_PopulateRooms(oWoman, 2, cc, pos, ts, false, true, argument[6]);
-
 sBSP_PopulateRooms(oZombie, 10, cc, pos, ts, false, true, argument[6]);
 
-sBSP_PopulateRooms(oStair, 1, cc, pos, ts, false, true, "Props");
 

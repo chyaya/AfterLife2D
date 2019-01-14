@@ -9,5 +9,5 @@ if(oPlayerController.m_PlayerObject != noone)
 	var valueUp = 5;
 	oPlayerController.m_PlayerObject.m_MaxHealth += valueUp;
 	sUtil_CreateNotify(oPlayerController.m_PlayerObjectX, oPlayerController.m_PlayerObjectY,
-		"Max Health+" + string(valueUp))
+		"Max Health+" + string(valueUp), 0, -30);
 }

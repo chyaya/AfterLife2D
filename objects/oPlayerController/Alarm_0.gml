@@ -13,7 +13,7 @@ if(m_PlayerObject.object_index == oGhost)
 		m_CurSoulPoint -= soulDamage;
 		m_CurSoulPoint = max(m_CurSoulPoint, 0);
 		
-		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul-" + string(soulDamage));
+		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Soul-" + string(soulDamage), 0, -30);
 	}
 }
 

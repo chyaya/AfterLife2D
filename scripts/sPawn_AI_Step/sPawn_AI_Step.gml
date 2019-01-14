@@ -21,7 +21,7 @@ if(m_AI_Control)
 		var distance = point_distance(x, y, m_AI_TargetObject.x, m_AI_TargetObject.y);
 		
 		
-		if(distance <= 15)
+		if(distance <= m_AI_AttackRange)
 	    {
 	        sPawn_EndPath();
 			

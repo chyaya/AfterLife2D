@@ -1,12 +1,18 @@
 if(m_PlayerObject.object_index == oGhost)
 {
-	if(m_InteractionObject != noone
-		&& object_is_ancestor(m_InteractionObject.object_index, oPawn))
+	if(m_InteractionObject != noone)
 	{
-		if(m_InteractionObject.m_CurHealth == 0
-			&& m_InteractionObject.m_Rotten == false)
+		if(m_InteractionObject.object_index == oPileOfCorpses)
+		{		
+			m_ActionNames[ACTION_B] = "Possess";
+		}
+		else if(object_is_ancestor(m_InteractionObject.object_index, oPawn))
 		{
-			m_ActionNames[ACTION_B] = "Possess";	
+			if(m_InteractionObject.m_CurHealth == 0
+				&& m_InteractionObject.m_Rotten == false)
+			{
+				m_ActionNames[ACTION_B] = "Possess";	
+			}
 		}
 	}
 }

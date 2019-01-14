@@ -8,14 +8,16 @@ var actionName = argument1;
 switch(actionName)
 {
 case "Possess":
-	with(m_PlayerObject)
+	if(m_InteractionObject.object_index == oPileOfCorpses)
 	{
-		instance_destroy();
+		var obj = sUtil_CreateCorpse(m_PlayerObjectX, m_PlayerObjectY);
+		sUtil_DoPossess(self, obj);
 	}
-	m_PlayerObject = m_InteractionObject;
-	m_PlayerObject.m_CurHealth = m_PlayerObject.m_MaxHealth;
-	m_PlayerObject.m_OutlineEnable = false;
-	m_PlayerObject.persistent = true;
+	else
+	{
+		sUtil_DoPossess(self, m_InteractionObject);
+	}
+	sPlayerController_ClearInteractObject();
 	break;
 case "Unpossess":
 	if(room == room_Boss)

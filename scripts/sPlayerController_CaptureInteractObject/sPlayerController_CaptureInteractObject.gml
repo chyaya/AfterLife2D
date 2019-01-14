@@ -1,5 +1,4 @@
-var lastMouseOverObject = m_InteractionObject;
-m_InteractionObject = noone;
+var newMouseOverObject = noone;
 
 var interactionObjectList = ds_list_create();
 var interactionObjectNum = collision_circle_list(
@@ -21,20 +20,18 @@ for (var i = 0; i < interactionObjectNum; ++i;)
 			continue;
 	}
 		
-	m_InteractionObject = curObj;
+	newMouseOverObject = curObj;
 }
 
-if(lastMouseOverObject != m_InteractionObject)
+if(newMouseOverObject != m_InteractionObject)
 {
-	if(lastMouseOverObject != noone)
-	{
-		lastMouseOverObject.m_OutlineEnable = false;
-	}
+	sPlayerController_ClearInteractObject();
 	
-	if(m_InteractionObject != noone)
+	if(newMouseOverObject != noone)
 	{
-		m_InteractionObject.m_OutlineEnable = true;
-		m_InteractionObject.m_OutlineColor = c_white;
+		newMouseOverObject.m_OutlineEnable = true;
+		newMouseOverObject.m_OutlineColor = c_white;
+		m_InteractionObject = newMouseOverObject;
 	}
 	
 }

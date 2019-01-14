@@ -37,6 +37,7 @@ var grid_w = ds_grid_width(argument[0]);
 var grid_h = ds_grid_height(argument[0]);
 var ts = argument[1];
 var cc = argument[2];
+var halfTileSize = ts/2;
 
 // Create the local vars
 var pos = irandom(cc - 1);                                      // This will be the room the player is spawned in
@@ -48,7 +49,7 @@ instance_create_layer(xx + half_ww + ts/2, yy + half_hh + ts/2, argument[5], oGh
 
 var ww = irandom(r[pos, 2] - 2) * ts;                                // Now get the half width of the room
 var hh = irandom(r[pos, 3] - 2) * ts;                                // Now get the half height of the room
-instance_create_layer(xx + ts + ww, yy + ts + hh, "Props", oPileOfCorpses);
+instance_create_layer(xx + ts + ww + halfTileSize, yy + ts + hh +  + halfTileSize, "Props", oPileOfCorpses);
 
 /*
 var ww = irandom(r[pos, 2] - 2) * ts;                                // Now get the half width of the room
@@ -93,7 +94,7 @@ for (var j = 0; j < grid_h; j++;)
             break;
         case bsp_door_h: //Create horizontal door
         case bsp_door_v: //Create vertical door
-			instance_create_layer(i * ts, j * ts, argument[5], oDoor);
+			instance_create_layer(i * ts + halfTileSize, j * ts + halfTileSize, argument[5], oDoor);
             break;
         }
     }

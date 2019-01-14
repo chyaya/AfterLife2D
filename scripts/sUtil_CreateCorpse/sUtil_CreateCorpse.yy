@@ -1,8 +1,8 @@
 {
-    "id": "51987040-c25b-48b7-aae6-ed65189cada1",
+    "id": "d666ef52-8966-429f-ac3a-d21c7bb6ef3d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sBuildMap",
+    "name": "sUtil_CreateCorpse",
     "IsCompatibility": false,
     "IsDnD": false
 }

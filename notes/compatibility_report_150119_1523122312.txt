@@ -1,0 +1,40 @@
+Converting GML script: ${project_dir}\scripts\inv_create_item\inv_create_item.gml
+Converted description /// @description inv_create_item(itemid,sprite,name)/// @param itemid
+/// @param sprite
+/// @param name
+
+Converting GML script: ${project_dir}\scripts\inv_remove_item\inv_remove_item.gml
+Converted description /// @description inv_remove_item(itemid)/// @param itemid
+
+Converting GML script: ${project_dir}\scripts\inv_remove_item_all\inv_remove_item_all.gml
+Converted description /// @description inv_remove_item_all(itemid)/// @param itemid
+
+Converting GML script: ${project_dir}\scripts\inv_add_item\inv_add_item.gml
+Converted description /// @description inv_add_item(itemid,number of items)/// @param itemid
+/// @param number of items
+
+Converting GML script: ${project_dir}\scripts\inv_add_or_drop\inv_add_or_drop.gml
+Converted description /// @description inv_add_or_drop(itemid,number of items)/// @param itemid
+/// @param number of items
+
+Converting GML script: ${project_dir}\scripts\inv_drop_item\inv_drop_item.gml
+Converted description /// @description inv_drop_item(itemid)/// @param itemid
+
+Converting GML script: ${project_dir}\scripts\inv_check_if_in\inv_check_if_in.gml
+Converted description /// @description inv_check_if_in(item_id)/// @param item_id
+
+Converting GML script: ${project_dir}\scripts\inv_get_first_slot_of\inv_get_first_slot_of.gml
+Converted description /// @description inv_get_first_slot_of(item id)/// @param item id
+
+Converting GML script: ${project_dir}\scripts\inv_check_slot_for\inv_check_slot_for.gml
+Converted description /// @description inv_check_slot_for(slot id, item id)/// @param slot id
+/// @param  item id
+
+Converting GML script: ${project_dir}\objects\obj_inventory\Draw_64.gml
+Converted builtin - line 45: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 45: view_yview -> __view_get( e__VW.YView, 0 )
+
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Updated compatibility script '__global_object_depths.gml'

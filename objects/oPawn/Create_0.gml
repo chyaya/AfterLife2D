@@ -46,4 +46,5 @@ m_Sound_Idle = ds_list_create();
 m_Sound_Hit = ds_list_create();
 m_Sound_Dead = ds_list_create();
 
+sPawn_Inven_Init();
 

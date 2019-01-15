@@ -12,7 +12,8 @@
         "9a5114f0-46d6-4835-80c2-0c1ba2641302",
         "94111e66-f9b3-41f4-b633-62b80b3f4b2e",
         "4b48257f-5472-4a69-94a8-4be7b641313b",
-        "9e30a3ac-1ef2-4421-af11-b1e756c2f831"
+        "9e30a3ac-1ef2-4421-af11-b1e756c2f831",
+        "4cdf3419-dc4a-4aef-8303-314cccf7d468"
     ],
     "filterType": "GMScript",
     "folderName": "Pawn",

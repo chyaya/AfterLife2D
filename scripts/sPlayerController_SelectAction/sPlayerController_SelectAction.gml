@@ -8,20 +8,26 @@ if(m_PlayerObject.object_index == oGhost)
 		}
 		else if(object_is_ancestor(m_InteractionObject.object_index, oPawn))
 		{
-			if(m_InteractionObject.m_CurHealth == 0
-				&& m_InteractionObject.m_Rotten == false)
+			if(m_InteractionObject.m_CurHealth == 0)
 			{
-				m_ActionNames[ACTION_B] = "Possess";	
+				if(m_InteractionObject.m_Rotten == false)
+					m_ActionNames[ACTION_B] = "Possess";	
 			}
 		}
 	}
 }
 else
 {
-	if(m_InteractionObject != noone
-		&& object_is_ancestor(m_InteractionObject.object_index, oProp))
+	if(m_InteractionObject != noone)
 	{
-		m_ActionNames[ACTION_A] = m_InteractionObject.m_ActionName;
+		if(object_is_ancestor(m_InteractionObject.object_index, oProp))
+		{
+			m_ActionNames[ACTION_A] = m_InteractionObject.m_ActionName;
+		}
+		else if(m_InteractionObject.object_index == oItem)
+		{
+			m_ActionNames[ACTION_A] = "PickUp";
+		}
 	}
 	
 	m_ActionNames[ACTION_X] = "Attack";

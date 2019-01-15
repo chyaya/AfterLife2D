@@ -20,6 +20,16 @@ if(m_GameOver == false)
 	{
 		m_Input_AxisL_Right = true;
 	}
+	
+	if(keyboard_check_pressed(ord("Q")))
+	{
+		m_Input_DPad_Left = true;
+	}
+	
+	if(keyboard_check_pressed(ord("E")))
+	{
+		m_Input_DPad_Right = true;
+	}
 
 	if(keyboard_check_pressed(vk_up))
 	{

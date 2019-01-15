@@ -14,11 +14,13 @@ for (var i = 0; i < interactionObjectNum; ++i;)
 	if(object_is_ancestor(curObj.object_index, oBase) == false)
 		continue;	
 		
+		/*
 	if(object_is_ancestor(curObj.object_index, oPawn))
 	{
 		if(curObj.m_CurHealth == 0 && curObj.m_Rotten)
 			continue;
 	}
+	*/
 		
 	newMouseOverObject = curObj;
 }

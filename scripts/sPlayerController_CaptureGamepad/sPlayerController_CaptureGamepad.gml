@@ -4,22 +4,32 @@ if(gamepad_get_device_count() > 0)
 {
 	if(m_GameOver == false)
 	{
-		if(gamepad_axis_value(0, gp_axislv) < -AXIS_THRESHOLD || gamepad_button_check(0, gp_padu))
+		if(gamepad_axis_value(0, gp_axislv) < -AXIS_THRESHOLD)
 		{
 			m_Input_AxisL_Up = true;
 		}
-		else if(gamepad_axis_value(0, gp_axislv) > AXIS_THRESHOLD || gamepad_button_check(0, gp_padd))
+		else if(gamepad_axis_value(0, gp_axislv) > AXIS_THRESHOLD)
 		{
 			m_Input_AxisL_Down = true;
 		}
 	
-		if(gamepad_axis_value(0, gp_axislh) < -AXIS_THRESHOLD || gamepad_button_check(0, gp_padl))
+		if(gamepad_axis_value(0, gp_axislh) < -AXIS_THRESHOLD)
 		{
 			m_Input_AxisL_Left = true;
 		}
-		else if(gamepad_axis_value(0, gp_axislh) > AXIS_THRESHOLD || gamepad_button_check(0, gp_padr))
+		else if(gamepad_axis_value(0, gp_axislh) > AXIS_THRESHOLD)
 		{
 			m_Input_AxisL_Right = true;
+		}
+		
+		if(gamepad_button_check_pressed(0, gp_padl))
+		{
+			m_Input_DPad_Left = true;	
+		}
+		
+		if(gamepad_button_check_pressed(0, gp_padr))
+		{
+			m_Input_DPad_Right = true;	
 		}
 	
 		if(gamepad_button_check_pressed(0, gp_face1))

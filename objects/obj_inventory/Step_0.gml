@@ -1,3 +1,4 @@
+/*
 if show_inventory = true {
     x_mouse = device_mouse_x_to_gui(0); //Determine where the mouse is on the view.
     y_mouse = device_mouse_y_to_gui(0);
@@ -72,12 +73,4 @@ if show_inventory = true {
         }
     }
 }
-
-
-
-
-
-
-
-
-
+*/

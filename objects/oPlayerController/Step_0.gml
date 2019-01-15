@@ -12,6 +12,10 @@ m_Input_AxisL_Up = false;
 m_Input_AxisL_Down = false;
 m_Input_AxisL_Left = false;
 m_Input_AxisL_Right = false;
+m_Input_DPad_Up = false;
+m_Input_DPad_Down = false;
+m_Input_DPad_Left = false;
+m_Input_DPad_Right = false;
 m_Input_Btn_A = false;
 m_Input_Btn_B = false;
 m_Input_Btn_X = false;
@@ -46,6 +50,18 @@ if(m_PlayerObject != noone)
 		{
 			m_DirX += 1;
 		}
+		
+		if(other.m_Input_DPad_Left)
+		{
+			selected--;
+		}
+		
+		if(other.m_Input_DPad_Right)
+		{
+			selected++;
+		}
+		
+		selected = clamp(selected, 1, total_slots);
 	
 		sPawn_Move(1.0);
 	}

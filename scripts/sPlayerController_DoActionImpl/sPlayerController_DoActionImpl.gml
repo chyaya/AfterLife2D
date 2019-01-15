@@ -57,4 +57,14 @@ case "Attack":
 case "Down":
 	room_goto_next();
 	break;
+case "PickUp":
+
+	with(m_PlayerObject)
+	{
+		sPawn_Inven_AddItem(other.m_InteractionObject.m_ItemId, 1);
+	}
+
+	instance_destroy(m_InteractionObject);
+	m_InteractionObject = noone;
+	break;
 }

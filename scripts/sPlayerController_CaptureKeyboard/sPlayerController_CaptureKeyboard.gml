@@ -30,6 +30,11 @@ if(m_GameOver == false)
 	{
 		m_Input_DPad_Right = true;
 	}
+	
+	if(keyboard_check_pressed(vk_pagedown))
+	{
+		m_Input_Btn_RT = true;
+	}
 
 	if(keyboard_check_pressed(vk_up))
 	{

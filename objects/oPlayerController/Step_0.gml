@@ -22,6 +22,10 @@ m_Input_Btn_X = false;
 m_Input_Btn_Y = false;
 m_Input_Btn_Select = false;
 m_Input_Btn_Start = false;
+m_Input_Btn_LB = false;
+m_Input_Btn_RB = false;
+m_Input_Btn_LT = false;
+m_Input_Btn_RT = false;
 
 sPlayerController_CaptureKeyboard();
 sPlayerController_CaptureGamepad();
@@ -51,12 +55,12 @@ if(m_PlayerObject != noone)
 			m_DirX += 1;
 		}
 		
-		if(other.m_Input_DPad_Left)
+		if(other.m_Input_DPad_Left || other.m_Input_Btn_LB)
 		{
 			selected--;
 		}
 		
-		if(other.m_Input_DPad_Right)
+		if(other.m_Input_DPad_Right || other.m_Input_Btn_RB)
 		{
 			selected++;
 		}
@@ -71,6 +75,12 @@ if(m_PlayerObject != noone)
 }
 
 sPlayerController_CaptureInteractObject();
+
+
+if(m_Input_Btn_RT == true)
+{
+	sPlayerController_DoActionImpl(true, "Drop");
+}
 
 
 //if(keyboard_check_pressed(ord("F")))

@@ -51,6 +51,26 @@ if(gamepad_get_device_count() > 0)
 		{
 			m_Input_Btn_Y	= true;
 		}
+		
+		if(gamepad_button_check_pressed(0, gp_shoulderl))
+		{
+			m_Input_Btn_LB	= true;
+		}
+		
+		if(gamepad_button_check_pressed(0, gp_shoulderr))
+		{
+			m_Input_Btn_RB	= true;
+		}
+		
+		if(gamepad_button_check_pressed(0, gp_shoulderlb))
+		{
+			m_Input_Btn_LT	= true;
+		}
+		
+		if(gamepad_button_check_pressed(0, gp_shoulderrb))
+		{
+			m_Input_Btn_RT	= true;
+		}
 	}
 	
 	if(gamepad_button_check_pressed(0, gp_start))

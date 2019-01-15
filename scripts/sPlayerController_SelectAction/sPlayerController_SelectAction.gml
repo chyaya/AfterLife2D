@@ -32,4 +32,12 @@ else
 	
 	m_ActionNames[ACTION_X] = "Attack";
 	m_ActionNames[ACTION_B] = "Unpossess";
+	
+	with(m_PlayerObject)
+	{
+		if(global.Item_OnUse[inv[selected]] != noone)
+		{
+			other.m_ActionNames[ACTION_Y] = "Use";
+		}
+	}
 }

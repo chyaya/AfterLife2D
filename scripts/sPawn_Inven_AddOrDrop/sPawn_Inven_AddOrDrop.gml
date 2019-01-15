@@ -4,13 +4,13 @@
 
 //Adds items to your inventory. If your inventory is full it places them on the ground.
 
-var ii = 1
-var items = argument1
-while (ii <= total_slots) and items > 0 {
-    if inv[ii]=0 {inv[ii]=argument0 items-=1}
-    ii++
-}
-while items > 0 {
-    sPawn_Inven_DropItem(argument0)
-    items--
-}
+//var ii = 1
+//var items = argument1
+//while (ii <= total_slots) and items > 0 {
+//    if inv[ii]=0 {inv[ii]=argument0 items-=1}
+//    ii++
+//}
+//while items > 0 {
+//    sPawn_Inven_DropItem(argument0)
+//    items--
+//}

@@ -1,12 +1,16 @@
-/// @description inv_drop_item(itemid)
-/// @param itemid
+var itemId = argument0;
+var _x = argument1;
+var _y = argument2;
 
-//Drops an item at the desired location.
+if(itemId == 0)
+	return;
 
-drop_x=mouse_x
-drop_y=mouse_y
+if(sPawn_Inven_RemoveItem(itemId, 1) != 0)
+	return;
 
-dropitem = instance_create(drop_x-obj_inventory.slot_size/2,drop_y-obj_inventory.slot_size/2,obj_ground_item)
-dropitem.itemid = argument0
+with(instance_create_layer(_x, _y, "Props", oBlank))
+{
+	m_ItemId = argument0;
 
-
+	instance_change(oItem, true);
+}

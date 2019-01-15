@@ -42,8 +42,6 @@ case "Collect":
 		m_CurSoulPoint = m_MaxSoulPoint;
 	break;
 case "Open":
-case "Equip":
-case "Use":
 	if(m_InteractionObject.m_ActionSound != noone)
 		audio_play_sound(m_InteractionObject.m_ActionSound, 1, false);
 	if(m_InteractionObject.m_BlockMove == true)
@@ -66,5 +64,17 @@ case "PickUp":
 
 	instance_destroy(m_InteractionObject);
 	m_InteractionObject = noone;
+	break;
+case "Use":
+	with(m_PlayerObject)
+	{
+		sPawn_Inven_UseItem(inv[selected]);
+	}
+	break;
+case "Drop":
+	with(m_PlayerObject)
+	{
+		sPawn_Inven_DropItem(inv[selected], x, y);
+	}
 	break;
 }

@@ -51,6 +51,10 @@ var ww = irandom(r[pos, 2] - 2) * ts;                                // Now get 
 var hh = irandom(r[pos, 3] - 2) * ts;                                // Now get the half height of the room
 instance_create_layer(xx + ts + ww + halfTileSize, yy + ts + hh +  + halfTileSize, "Props", oPileOfCorpses);
 
+var ww = irandom(r[pos, 2] - 2) * ts;                                // Now get the half width of the room
+var hh = irandom(r[pos, 3] - 2) * ts;                                // Now get the half height of the room
+instance_create_layer(xx + ts + ww + halfTileSize, yy + ts + hh +  + halfTileSize, "Props", oChest);
+
 /*
 var ww = irandom(r[pos, 2] - 2) * ts;                                // Now get the half width of the room
 var hh = irandom(r[pos, 3] - 2) * ts;                                // Now get the half height of the room

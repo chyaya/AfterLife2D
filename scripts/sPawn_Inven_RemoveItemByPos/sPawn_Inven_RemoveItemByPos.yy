@@ -1,8 +1,8 @@
 {
-    "id": "f7d75b2a-7adc-4705-8242-eab9e54f1eca",
+    "id": "2fede171-345f-4d1d-9e85-c8b070c1c917",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sItem_Weapon_OnAdd",
+    "name": "sPawn_Inven_RemoveItemByPos",
     "IsCompatibility": false,
     "IsDnD": false
 }

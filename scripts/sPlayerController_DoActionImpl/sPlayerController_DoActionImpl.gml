@@ -59,22 +59,27 @@ case "PickUp":
 
 	with(m_PlayerObject)
 	{
-		sPawn_Inven_AddItem(other.m_InteractionObject.m_ItemId, 1);
+		if(sPawn_Inven_AddItem(other.m_InteractionObject.m_ItemId, 1) == 0)
+		{
+			instance_destroy(other.m_InteractionObject);
+			other.m_InteractionObject = noone;
+		}
+		else
+		{
+			sUtil_CreateNotify(x, y, "Inventory is full", 0, -30);
+		}
 	}
-
-	instance_destroy(m_InteractionObject);
-	m_InteractionObject = noone;
 	break;
 case "Use":
 	with(m_PlayerObject)
 	{
-		sPawn_Inven_UseItem(inv[selected]);
+		sPawn_Inven_UseItemByPos(selected);
 	}
 	break;
 case "Drop":
 	with(m_PlayerObject)
 	{
-		sPawn_Inven_DropItem(inv[selected], x, y);
+		sPawn_Inven_DropItemByPos(selected, x, y);
 	}
 	break;
 }

@@ -1,8 +1,8 @@
 {
-    "id": "e77993bc-1341-4314-aae2-e1af13a20087",
+    "id": "f7d75b2a-7adc-4705-8242-eab9e54f1eca",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sItem_Shoes_OnAdd",
+    "name": "sItem_Weapon_OnAddOrRemove",
     "IsCompatibility": false,
     "IsDnD": false
 }

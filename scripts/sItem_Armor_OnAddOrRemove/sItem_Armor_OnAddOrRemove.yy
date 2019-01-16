@@ -1,8 +1,8 @@
 {
-    "id": "a9232305-3626-426b-94a2-785f2f4fe4bd",
+    "id": "f6ff6d53-1e6d-4cae-a008-7e3c81532ce2",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sItem_Armor_OnRemove",
+    "name": "sItem_Armor_OnAddOrRemove",
     "IsCompatibility": false,
     "IsDnD": false
 }

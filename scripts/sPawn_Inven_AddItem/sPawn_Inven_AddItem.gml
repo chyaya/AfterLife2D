@@ -11,8 +11,8 @@ while (ii <= total_slots) and items > 0 {
 	{
 		inv[ii]=argument0
 		
-		if(global.Item_OnAdd[inv[ii]] != noone)
-			script_execute(global.Item_OnAdd[inv[ii]], self);
+		if(global.Item_OnAddOrRemove[inv[ii]] != noone)
+			script_execute(global.Item_OnAddOrRemove[inv[ii]], self, 1);
 			
 		items-=1
 	}

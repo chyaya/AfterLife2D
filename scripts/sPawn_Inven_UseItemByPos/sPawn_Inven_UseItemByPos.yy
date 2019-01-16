@@ -1,8 +1,8 @@
 {
-    "id": "f6ff6d53-1e6d-4cae-a008-7e3c81532ce2",
+    "id": "4881c8ff-1517-4873-add2-af2e3eeace9f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sItem_Armor_OnAdd",
+    "name": "sPawn_Inven_UseItemByPos",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,8 +1,8 @@
 {
-    "id": "1fd6a40c-6304-403a-9140-a1f71a2b76bc",
+    "id": "e77993bc-1341-4314-aae2-e1af13a20087",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sPawn_Inven_DropItem",
+    "name": "sItem_Shoes_OnAddOrRemove",
     "IsCompatibility": false,
     "IsDnD": false
 }

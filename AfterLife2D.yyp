@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "349720dc-dd1b-4066-90d2-a94d69ee50cd",
+            "Value": {
+                "id": "dcd16ee6-4814-44bf-9235-65f84c2b6be8",
+                "resourcePath": "scripts\\sPawn_Inven_LootPawn\\sPawn_Inven_LootPawn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "34d78747-a29d-415a-8477-db9bad68909b",
             "Value": {
                 "id": "a6df3714-cf28-4137-b956-66deaf0aa663",
@@ -2572,6 +2580,7 @@
         "c4b5e6a4-f54d-4333-b922-9389b7366b09",
         "b06d1cb7-e5e9-40c6-be05-5d7fbceafd58",
         "1aa02443-afe3-4a16-97ad-19d32f7b0173",
+        "349720dc-dd1b-4066-90d2-a94d69ee50cd",
         "6c3b5d31-9aa9-461f-a16e-b16d7fd6cb26",
         "8a40ec99-3ca7-49b9-943e-898d85771bd0",
         "4ee8b7f7-222c-4a6e-8696-ed7ed2208e14",

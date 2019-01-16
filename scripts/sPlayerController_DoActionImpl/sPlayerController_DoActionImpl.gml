@@ -82,4 +82,11 @@ case "Drop":
 		sPawn_Inven_DropItemByPos(selected, x, y);
 	}
 	break;
+case "Loot":
+	with(m_PlayerObject)
+	{
+		sPawn_Inven_LootPawn(other.m_InteractionObject);
+	}
+
+	break;
 }

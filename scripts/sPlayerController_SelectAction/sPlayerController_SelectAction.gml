@@ -8,10 +8,10 @@ if(m_PlayerObject.object_index == oGhost)
 		}
 		else if(object_is_ancestor(m_InteractionObject.object_index, oPawn))
 		{
-			if(m_InteractionObject.m_CurHealth == 0)
+			if(m_InteractionObject.m_CurHealth == 0
+				&& m_InteractionObject.m_Rotten == false)
 			{
-				if(m_InteractionObject.m_Rotten == false)
-					m_ActionNames[ACTION_B] = "Possess";	
+				m_ActionNames[ACTION_B] = "Possess";
 			}
 		}
 	}
@@ -27,6 +27,13 @@ else
 		else if(m_InteractionObject.object_index == oItem)
 		{
 			m_ActionNames[ACTION_A] = "PickUp";
+		}
+		else if(object_is_ancestor(m_InteractionObject.object_index, oPawn))
+		{
+			if(m_InteractionObject.m_CurHealth == 0)
+			{
+				m_ActionNames[ACTION_A] = "Loot";
+			}
 		}
 	}
 	

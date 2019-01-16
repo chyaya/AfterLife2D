@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "1aa02443-afe3-4a16-97ad-19d32f7b0173",
+            "Value": {
+                "id": "2a20f4dd-903c-4044-9b18-da1eaf64e500",
+                "resourcePath": "scripts\\sPawn_Inven_DrawUI\\sPawn_Inven_DrawUI.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1aae1036-a768-4095-987f-2e1d0658d81a",
             "Value": {
                 "id": "a94c1ef8-0c8a-44b6-aac4-95398236a889",
@@ -804,14 +812,6 @@
                 "id": "d7e24f75-2f5a-4d30-b05d-fe3fea1ccb02",
                 "resourcePath": "sprites\\sprWomanIdle\\sprWomanIdle.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "4fc77c42-7b64-496a-a33b-cc8a9345bfec",
-            "Value": {
-                "id": "b761be0b-5b4d-4057-b748-8e792f970d12",
-                "resourcePath": "views\\4fc77c42-7b64-496a-a33b-cc8a9345bfec.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -1531,14 +1531,6 @@
             "Value": {
                 "id": "eea10812-5f23-46e5-84ff-9ffb176e0d9e",
                 "resourcePath": "objects\\oPileOfCorpses\\oPileOfCorpses.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "9b2a4758-a068-4360-81b0-ecf41c61794b",
-            "Value": {
-                "id": "3c213b88-282e-4a0e-a332-0541147add55",
-                "resourcePath": "objects\\obj_ground_item\\obj_ground_item.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2287,14 +2279,6 @@
             }
         },
         {
-            "Key": "e1a8054c-bbb5-4ab3-95d7-a697bfcf8121",
-            "Value": {
-                "id": "9d0ace89-bbb3-4a6e-91fa-7ac074f67eb8",
-                "resourcePath": "objects\\obj_inventory\\obj_inventory.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "e3b87911-ccd1-47d7-8777-212976b367b9",
             "Value": {
                 "id": "fc8fbe96-4307-4df2-9fc8-cabb1693aaed",
@@ -2587,6 +2571,7 @@
         "b894faf5-c921-4a9e-a449-e1009e88b1a6",
         "c4b5e6a4-f54d-4333-b922-9389b7366b09",
         "b06d1cb7-e5e9-40c6-be05-5d7fbceafd58",
+        "1aa02443-afe3-4a16-97ad-19d32f7b0173",
         "6c3b5d31-9aa9-461f-a16e-b16d7fd6cb26",
         "8a40ec99-3ca7-49b9-943e-898d85771bd0",
         "4ee8b7f7-222c-4a6e-8696-ed7ed2208e14",

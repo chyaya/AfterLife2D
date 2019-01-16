@@ -17,13 +17,27 @@ if(m_InteractionObject != noone)
 		else
 			color = c_white;
 		
-		draw_text_color(view_wport[0]/2, view_hport[0]/2 + 300,
-			m_InteractionObject.m_Name + "(lv:" + string(m_InteractionObject.m_Level) + ")", color, color, color, color, 1);	
+		var yPos = view_hport[0]/2 + 250;
 		
-		draw_text(view_wport[0]/2, view_hport[0]/2 + 350, "Health:" + string(m_InteractionObject.m_MaxHealth));
-		draw_text(view_wport[0]/2, view_hport[0]/2 + 390, "Damage:" + string(m_InteractionObject.m_Damage));
-		draw_text(view_wport[0]/2, view_hport[0]/2 + 430, "Speed:" + string(m_InteractionObject.m_MoveSpeed));
-		draw_text(view_wport[0]/2, view_hport[0]/2 + 470, "AttackType:" + string(m_InteractionObject.m_AttackType));
+		draw_text_color(view_wport[0]/2, yPos,
+			m_InteractionObject.m_Name + "(lv:" + string(m_InteractionObject.m_Level) + ")", color, color, color, color, 1);	
+		yPos += 50;
+		
+		draw_text(view_wport[0]/2, yPos, "Health:" + string(m_InteractionObject.m_MaxHealth));
+		yPos += 40;
+		draw_text(view_wport[0]/2, yPos, "Damage:" + string(m_InteractionObject.m_Damage));
+		yPos += 40;
+		draw_text(view_wport[0]/2, yPos, "Speed:" + string(m_InteractionObject.m_MoveSpeed));
+		yPos += 40;
+		draw_text(view_wport[0]/2, yPos, "AttackType:" + string(m_InteractionObject.m_AttackType));
+		yPos += 40;
+		
+		with(m_InteractionObject)
+		{
+			var slotSize = 64;
+			var offsetx = other.m_InteractionObject.total_slots*0.5*slotSize;
+			sPawn_Inven_DrawUI(view_wport[0]/2-offsetx, yPos, slotSize);
+		}
 	}
 	else
 	{

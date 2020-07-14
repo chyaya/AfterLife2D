@@ -1,7 +1,7 @@
 {
     "id": "2b7e9c14-4352-46a9-abc6-07a4fa4bb970",
     "modelName": "GMExtension",
-    "mvc": "1.0",
+    "mvc": "1.2",
     "name": "Easy_Inventory",
     "IncludedResources": [
         "Sprites\\Inventory\\spr_slot",
@@ -46,6 +46,7 @@
     "copyToTargets": -1,
     "date": "2019-23-15 03:01:11",
     "description": "",
+    "exportToGame": true,
     "extensionName": "",
     "files": [
         
@@ -66,9 +67,12 @@
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
+    "options": null,
+    "optionsFile": "options.json",
     "packageID": "com.codedgames.easyinventory",
     "productID": "D3E8258A9D986D3AD4F3F0E8E67047FF",
     "sourcedir": "",
+    "supportedTargets": -1,
     "tvosProps": false,
     "tvosSystemFrameworkEntries": [
         

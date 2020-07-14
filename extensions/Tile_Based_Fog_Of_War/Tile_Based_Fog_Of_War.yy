@@ -1,7 +1,7 @@
 {
     "id": "e87087bf-ca2e-42e3-859b-7a535882262f",
     "modelName": "GMExtension",
-    "mvc": "1.0",
+    "mvc": "1.2",
     "name": "Tile_Based_Fog_Of_War",
     "IncludedResources": [
         "Sprites\\FOW DEMO (Can be deleted)\\spr_FOW_Wall_32x32",
@@ -37,6 +37,7 @@
     "copyToTargets": -1,
     "date": "2019-52-04 05:01:43",
     "description": "",
+    "exportToGame": true,
     "extensionName": "",
     "files": [
         
@@ -57,9 +58,12 @@
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
+    "options": null,
+    "optionsFile": "options.json",
     "packageID": "com.nocturnegames.fow",
     "productID": "ACBD3CFF4E539AD869A0E8E3B4B022DD",
     "sourcedir": "",
+    "supportedTargets": -1,
     "tvosProps": false,
     "tvosSystemFrameworkEntries": [
         

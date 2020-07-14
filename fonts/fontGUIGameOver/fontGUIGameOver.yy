@@ -1,7 +1,7 @@
 {
     "id": "93b74616-c29e-4815-9aaf-3842952ffe37",
     "modelName": "GMFont",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "fontGUIGameOver",
     "AntiAlias": 0,
     "TTFName": "",
@@ -10,6 +10,7 @@
     "charset": 0,
     "first": 0,
     "fontName": "Fixedsys Excelsior 3.01",
+    "glyphOperations": 0,
     "glyphs": [
         {
             "Key": 32,
@@ -1467,13 +1468,16 @@
             }
         }
     ],
-    "image": null,
+    "hinting": 0,
     "includeTTF": false,
+    "interpreter": 0,
     "italic": false,
     "kerningPairs": [
         
     ],
     "last": 0,
+    "maintainGms1Font": false,
+    "pointRounding": 0,
     "ranges": [
         {
             "x": 32,

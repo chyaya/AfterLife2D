@@ -1,7 +1,7 @@
 {
     "id": "52c5c86f-c335-4321-a1df-878965bf4c58",
     "modelName": "GMExtension",
-    "mvc": "1.0",
+    "mvc": "1.2",
     "name": "AStar_Pathfinding",
     "IncludedResources": [
         "Sprites\\Pathfinder Example\\spr_player",
@@ -50,6 +50,7 @@
     "copyToTargets": -1,
     "date": "2019-15-10 07:01:01",
     "description": "",
+    "exportToGame": true,
     "extensionName": "",
     "files": [
         
@@ -70,9 +71,12 @@
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
+    "options": null,
+    "optionsFile": "options.json",
     "packageID": "com.kanelbull3games.astarpathfinding",
     "productID": "ACBD3CFF4E539AD869A0E8E3B4B022DD",
     "sourcedir": "",
+    "supportedTargets": -1,
     "tvosProps": false,
     "tvosSystemFrameworkEntries": [
         

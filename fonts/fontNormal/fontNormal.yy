@@ -1,7 +1,7 @@
 {
     "id": "948071ea-cd48-41a1-bb82-c94fcaeb863a",
     "modelName": "GMFont",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "fontNormal",
     "AntiAlias": 0,
     "TTFName": "${project_dir}\\fonts\\fontNormal\\BMmini.TTF",
@@ -10,6 +10,7 @@
     "charset": 0,
     "first": 0,
     "fontName": "BM mini",
+    "glyphOperations": 0,
     "glyphs": [
         {
             "Key": 32,
@@ -1452,13 +1453,16 @@
             }
         }
     ],
-    "image": null,
+    "hinting": 0,
     "includeTTF": true,
+    "interpreter": 0,
     "italic": false,
     "kerningPairs": [
         
     ],
     "last": 0,
+    "maintainGms1Font": false,
+    "pointRounding": 0,
     "ranges": [
         {
             "x": 32,

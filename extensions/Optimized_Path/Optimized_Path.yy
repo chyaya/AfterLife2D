@@ -1,7 +1,7 @@
 {
     "id": "058e887e-33af-44a0-a1b2-e329d9188a75",
     "modelName": "GMExtension",
-    "mvc": "1.0",
+    "mvc": "1.2",
     "name": "Optimized_Path",
     "IncludedResources": [
         "Scripts\\funcPathOptimized"
@@ -20,6 +20,7 @@
     "copyToTargets": -1,
     "date": "2019-57-10 08:01:32",
     "description": "",
+    "exportToGame": true,
     "extensionName": "",
     "files": [
         
@@ -40,9 +41,12 @@
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
+    "options": null,
+    "optionsFile": "options.json",
     "packageID": "com.lorenzoproietti.optimizedpath",
     "productID": "ACBD3CFF4E539AD869A0E8E3B4B022DD",
     "sourcedir": "",
+    "supportedTargets": -1,
     "tvosProps": false,
     "tvosSystemFrameworkEntries": [
         
